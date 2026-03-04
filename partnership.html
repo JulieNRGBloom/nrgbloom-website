@@ -1,0 +1,574 @@
+<!DOCTYPE html><!--  This site was created in Webflow. https://webflow.com  --><!--  Last Published: Tue Mar 03 2026 15:13:55 GMT+0000 (Coordinated Universal Time)  -->
+<html data-wf-page="65fafae164ae35b067700d82" data-wf-site="65e9c5a26e8864c80aafb002" lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Partnership | NRG Bloom - Bitcoin Mining In Africa</title>
+  <meta content="Partner with NRG Bloom, a leading sustainable Bitcoin mining company in Nigeria, Africa. We leverage flared gas and stranded energy to optimize mining operations, ensuring efficiency and environmental responsibility. Join us in revolutionizing the cryptocurrency mining industry." name="description">
+  <meta content="Partnership | NRG Bloom - Bitcoin Mining In Africa" property="og:title">
+  <meta content="Partner with NRG Bloom, a leading sustainable Bitcoin mining company in Nigeria, Africa. We leverage flared gas and stranded energy to optimize mining operations, ensuring efficiency and environmental responsibility. Join us in revolutionizing the cryptocurrency mining industry." property="og:description">
+  <meta content="https://uploads-ssl.webflow.com/65e9c5a26e8864c80aafb002/66861d19c0b77bdc9c335fb8_NRG%20bloom%20meta%20image.webp" property="og:image">
+  <meta content="Partnership | NRG Bloom - Bitcoin Mining In Africa" property="twitter:title">
+  <meta content="Partner with NRG Bloom, a leading sustainable Bitcoin mining company in Nigeria, Africa. We leverage flared gas and stranded energy to optimize mining operations, ensuring efficiency and environmental responsibility. Join us in revolutionizing the cryptocurrency mining industry." property="twitter:description">
+  <meta content="https://uploads-ssl.webflow.com/65e9c5a26e8864c80aafb002/66861d19c0b77bdc9c335fb8_NRG%20bloom%20meta%20image.webp" property="twitter:image">
+  <meta property="og:type" content="website">
+  <meta content="summary_large_image" name="twitter:card">
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <meta content="google-site-verification=6tTalLzrBXBO4Gy9700TAbpg2QTKzGYEuZ_Ls69jle8" name="google-site-verification">
+  <meta content="Webflow" name="generator">
+  <link href="css/normalize.css" rel="stylesheet" type="text/css">
+  <link href="css/webflow.css" rel="stylesheet" type="text/css">
+  <link href="css/nrg-bloom.webflow.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" type="text/javascript"></script>
+  <script type="text/javascript">WebFont.load({  google: {    families: ["Inconsolata:400,700","Montserrat:100,100italic,200,200italic,300,300italic,400,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic"]  }});</script>
+  <script type="text/javascript">!function(o,c){var n=c.documentElement,t=" w-mod-";n.className+=t+"js",("ontouchstart"in o||o.DocumentTouch&&c instanceof DocumentTouch)&&(n.className+=t+"touch")}(window,document);</script>
+  <link href="images/favicon.png" rel="shortcut icon" type="image/x-icon">
+  <link href="images/webclip.png" rel="apple-touch-icon">
+  <style>
+  body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+</style>
+  <style>
+/* Apply this class to your scrollable div */
+.minimal-scroll {
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(0,0,0,0.25) transparent;
+}
+/* Chrome, Edge, Safari */
+.minimal-scroll::-webkit-scrollbar {
+  width: 4px;
+}
+.minimal-scroll::-webkit-scrollbar-track {
+  background: transparent;
+}
+.minimal-scroll::-webkit-scrollbar-thumb {
+  background: rgba(0,0,0,0.25);
+  border-radius: 20px;
+  transition: background 0.3s ease;
+}
+.minimal-scroll::-webkit-scrollbar-thumb:hover {
+  background: rgba(0,0,0,0.45);
+}
+</style>
+</head>
+<body>
+  <section class="section u-padding-bottom-1em">
+    <div data-animation="default" data-collapse="medium" data-duration="400" data-easing="ease" data-easing2="ease" role="banner" class="navbar-copy w-nav">
+      <div class="container cc-navbar w-container">
+        <a href="index.html" class="logo-link w-nav-brand"></a>
+        <nav role="navigation" class="nav-links-wrap white w-nav-menu">
+          <div class="nav-links-container">
+            <div class="div-block-29">
+              <a href="strategy.html" class="nav-link w-nav-link">Strategy</a>
+              <a href="about-leadership.html" class="nav-link w-nav-link">About &amp; Leadership</a>
+              <a href="energy-partners.html" class="nav-link w-nav-link">Energy Partners</a>
+              <a href="investor-relations.html" class="nav-link w-nav-link">Investor Relations</a>
+              <a href="insights.html" class="nav-link last w-nav-link">Insights</a>
+            </div>
+            <div class="div-block-6">
+              <div id="btcPrice" class="html-embed-4 w-embed w-script">
+                <script>
+document.addEventListener("DOMContentLoaded", function() {
+    const btcPriceElement = document.getElementById('btcPrice'); 
+    let pauseUpdates = false;
+    function updateBitcoinPrice() {
+        if (!pauseUpdates) {
+            fetch('https://api.binance.com/api/v3/ticker/price?symbol=BTCUSDT')
+                .then(response => {
+                    if (response.status === 429) {
+                        console.warn('Rate limit exceeded. Pausing updates.');
+                        pauseUpdates = true;
+                        setTimeout(() => {
+                            pauseUpdates = false;
+                        }, 60000); // Pause for 1 minute
+                        return;
+                    }
+                    return response.json();
+                })
+                .then(data => {
+                    if (btcPriceElement && data && data.price) {
+                        const formattedPrice = parseFloat(data.price).toLocaleString('en-US', {
+                            minimumFractionDigits: 2,
+                            maximumFractionDigits: 2
+                        });
+                        btcPriceElement.innerHTML = `
+                            <div style="display: flex;"><img src="https://uploads-ssl.webflow.com/65e9c5a26e8864c80aafb002/66047b0e56be8e998c63a278_bitcoin.webp" alt="Bitcoin Logo" style="height: 1.5em; vertical-align: middle; padding-right: 3px;"/>
+                            <span style="font-weight: 600; font-size: 1.5em; font-family: 'Intertight Variablefont Wght', sans-serif; color: black; line-height: 1.1; min-width: 120px;">$${formattedPrice}</span></div>
+                        `;
+                    }
+                })
+                .catch(error => console.error('Error fetching Bitcoin price:', error));
+        }
+    }
+    updateBitcoinPrice();
+    setInterval(updateBitcoinPrice, 30000); // Update every 30 sec
+});
+</script>
+              </div>
+            </div>
+          </div>
+        </nav>
+        <div class="nav-menu-button w-nav-button">
+          <div class="mobil-menu-icon black w-icon-nav-menu"></div>
+        </div>
+        <a href="index.html" class="w-inline-block"><img src="images/NRG-bloom-meta-image_1.webp" loading="lazy" width="100" height="Auto" alt="" srcset="images/NRG-bloom-meta-image_1NRG-bloom-meta-image.webp 500w, images/NRG-bloom-meta-image_1NRG-bloom-meta-image.webp 800w, images/NRG-bloom-meta-image_1NRG-bloom-meta-image.webp 1080w, images/NRG-bloom-meta-image_1.webp 1350w" sizes="100px" class="logo-image"></a>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row cc-blog-top less-margin-bottom">
+        <div class="column more-upper-margin full-width">
+          <div class="paragraph-1-1em cc-page-label">Investment Opportunities</div>
+          <h1 class="h1 less-upper-margin">Join the future of Bitcoin mining in Africa</h1>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section reduce-top-and-bottom-margin">
+    <div class="container">
+      <div class="row-2">
+        <div data-w-id="bff2efe3-adaa-c92b-7369-50af0ca60afb" style="opacity:0" class="column-2 primary">
+          <h2 data-w-id="bff2efe3-adaa-c92b-7369-50af0ca60afe" style="opacity:0" class="heading-3">Our vision and progress </h2>
+          <p class="paragraph-2">We have successfully build build out our first operation on this site, representing 500 kW. We are committed to both maintaining our operations and imparting vital skills to the local community for sustained operational management.</p>
+          <p class="paragraph-2">In collaboration with our energy provider, we are putting a framework in place to make meaningful contributions towards healthcare, education, and employment opportunities within the local community. Our initiatives will foster business growth and social development.</p>
+        </div>
+        <div data-w-id="ccc57202-ea48-52ed-819c-d1ce2ff241ad" style="opacity:0" class="column-2 secondary"><img src="images/homepage-image_1.avif" loading="lazy" sizes="(max-width: 1513px) 100vw, 1513px" srcset="images/homepage-image_1homepage-image.avif 500w, images/homepage-image_1homepage-image.avif 800w, images/homepage-image_1.avif 1513w" alt="Front view of our fenced off operations showing our mining container in the centre, an electric pole behind the container and a security guard house on the left." class="image"></div>
+      </div>
+    </div>
+  </section>
+  <section class="section-2">
+    <div class="container">
+      <h2 data-w-id="b4611012-fa12-7c63-3152-10fd4cd6c95b" style="opacity:0" class="heading-3">Investment opportunities</h2>
+      <div class="row-2">
+        <div data-w-id="b4611012-fa12-7c63-3152-10fd4cd6c95a" style="opacity:0" class="column-2 equal vc">
+          <div class="div-block-2">
+            <h3 class="h3 u-text-white margin-top">Financial Investment</h3>
+            <div class="html-embed w-embed">
+              <hr>
+            </div>
+            <p class="paragraph-4 u-text-white"><strong>For Venture Capitalists, Angel Investors and Institutional Backers. </strong><br></p>
+            <p class="paragraph-4 u-text-white">We are looking for investors to form an integral part of our groundbreaking journey into energy, sustainability and Bitcoin mining. Africa is fast emerging as one of the most important hubs for Bitcoin mining and we are looking for partners to help us scale across the continent. </p>
+          </div>
+        </div>
+        <div data-w-id="b4611012-fa12-7c63-3152-10fd4cd6c95f" style="opacity:0" class="column-2 equal miner">
+          <div class="div-block-2">
+            <h3 class="h3 u-text-white margin-top">Equipment Investment</h3>
+            <div class="html-embed w-embed">
+              <hr>
+            </div>
+            <p class="paragraph-4 u-text-white"><strong>For Miners and Tech Enthusiasts.</strong><br></p>
+            <p class="paragraph-4 u-text-white">As a young company we’re open to partnerships based on acquiring Bitcoin mining equipment. Conscious of our environmental impact, our goal is to repurpose ASICs and use them in training new African Bitcoiners. We can also provide hosting services and a range of options to share future growth. </p>
+          </div>
+        </div>
+      </div>
+      <div class="row-2">
+        <div data-w-id="b4611012-fa12-7c63-3152-10fd4cd6c962" style="opacity:0" class="column-2 primary"></div>
+        <div data-w-id="b4611012-fa12-7c63-3152-10fd4cd6c965" style="opacity:0" class="column-2 secondary"></div>
+      </div>
+    </div>
+  </section>
+  <section class="section-2">
+    <div class="container">
+      <h2 data-w-id="3bbd18d9-2139-c6fb-e947-32b2994ba2a7" style="opacity:0" class="heading-3">Overview</h2>
+      <div class="row-2 no-bottom-margin-on-phone">
+        <div data-w-id="18b7341f-0605-e348-dc0a-a8700d2e2268" style="opacity:0" class="column-2 equal">
+          <div class="c-accordion-item">
+            <div class="_w-accordion-item">
+              <div class="c-accordion-item-q">
+                <div class="_w-accordion-item-q">
+                  <div class="c-accordion-item-q-text">
+                    <h3 class="h3">Energy costs</h3>
+                  </div>
+                  <div class="c-accordion-item-q-icon">
+                    <div class="_w-accordion-item-q-icon">
+                      <div class="accordion-item-q-icon-stripe-1"></div>
+                      <div class="accordion-item-q-icon-stripe-2"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="c-accordion-item-a">
+                <div class="_w-accordion-content-divider">
+                  <div class="accordion-content-divider"></div>
+                </div>
+                <div class="_w-accordion-item-a">
+                  <p class="paragraph-2 margin-0px">In partnership with the local community, NRG Bloom has secured &gt; 5 MW of electricity. Under the agreement, the local community is our energy supplier and partner in mining Bitcoin. This innovative model supports our operational needs whilst also supporting the community directly and ensuring they share in the success of our venture. </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div data-w-id="e9668182-fbdd-fafe-3a0b-de015adaaab8" style="opacity:0" class="column-2 equal">
+          <div class="c-accordion-item">
+            <div class="_w-accordion-item">
+              <div class="c-accordion-item-q">
+                <div class="_w-accordion-item-q">
+                  <div class="c-accordion-item-q-text">
+                    <h3 class="h3">Operational costs</h3>
+                  </div>
+                  <div class="c-accordion-item-q-icon">
+                    <div class="_w-accordion-item-q-icon">
+                      <div class="accordion-item-q-icon-stripe-1"></div>
+                      <div class="accordion-item-q-icon-stripe-2"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="c-accordion-item-a">
+                <div class="_w-accordion-content-divider">
+                  <div class="accordion-content-divider"></div>
+                </div>
+                <div class="_w-accordion-item-a">
+                  <p class="paragraph-2 margin-0px">Our activities encompass a range of essential expenses from personnel, to mining pools and the expenses for training the local community. Our operational costs are localised to the region as we will be operating on the ground in Nigeria. </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row-2 no-top-padding-on-phone">
+        <div data-w-id="7797ffd5-e4e7-c2f6-e46c-5e937240c5b0" style="opacity:0" class="column-2 equal">
+          <div class="c-accordion-item">
+            <div class="_w-accordion-item">
+              <div class="c-accordion-item-q">
+                <div class="_w-accordion-item-q">
+                  <div class="c-accordion-item-q-text">
+                    <h3 class="h3">Break-Even</h3>
+                  </div>
+                  <div class="c-accordion-item-q-icon">
+                    <div class="_w-accordion-item-q-icon">
+                      <div class="accordion-item-q-icon-stripe-1"></div>
+                      <div class="accordion-item-q-icon-stripe-2"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="c-accordion-item-a">
+                <div class="_w-accordion-content-divider">
+                  <div class="accordion-content-divider"></div>
+                </div>
+                <div class="_w-accordion-item-a">
+                  <p class="paragraph-2 margin-0px">The break-even point for our operation remains low at $10,400. Having put in place agreements for power supply, a fundamental element of Bitcoin economics, our operation remains low on cost but positively correlated with Bitcoin activity. </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div data-w-id="7797ffd5-e4e7-c2f6-e46c-5e937240c5c2" style="opacity:0" class="column-2 equal">
+          <div class="c-accordion-item">
+            <div class="_w-accordion-item">
+              <div class="c-accordion-item-q">
+                <div class="_w-accordion-item-q">
+                  <div class="c-accordion-item-q-text">
+                    <h3 class="h3">ROI</h3>
+                  </div>
+                  <div class="c-accordion-item-q-icon">
+                    <div class="_w-accordion-item-q-icon">
+                      <div class="accordion-item-q-icon-stripe-1"></div>
+                      <div class="accordion-item-q-icon-stripe-2"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="c-accordion-item-a">
+                <div class="_w-accordion-content-divider">
+                  <div class="accordion-content-divider"></div>
+                </div>
+                <div class="_w-accordion-item-a">
+                  <p class="paragraph-2 margin-0px"></p>
+                  <div class="div-block-4">
+                    <div id="roiElement" class="html-embed-2 w-embed w-script">
+                      <script>
+document.addEventListener("DOMContentLoaded", function() {
+    // Function to fetch Bitcoin price and calculate ROI
+    function updateBitcoinPriceAndROI() {
+        fetch('https://api.binance.com/api/v3/ticker/price?symbol=BTCUSDT')
+            .then(response => response.json())
+            .then(data => {
+                const btcPrice = parseFloat(data.price);
+                const roi = calculateROI(btcPrice);
+                const message = `At 80TH/s per ASIC, we estimate an annual Return on Investment (ROI) of ${roi.toFixed(2)}%`;
+                document.getElementById('roiElement').innerText = message;
+            })
+            .catch(error => console.error('Error fetching Bitcoin price:', error));
+    }
+    // ROI Calculation function
+    function calculateROI(btcPrice) {
+        // Updated formula with btcPrice
+        return ((((8432 + (0.6840794 * btcPrice)) * 0.9) - (((8432 + (0.6840794 * btcPrice)) * 0.9) * 0.05)) * 100) / 313200;
+    }
+    // Initial update and setting interval for every 5 minutes
+    updateBitcoinPriceAndROI();
+    setInterval(updateBitcoinPriceAndROI, 300000); // 300000 milliseconds = 5 minutes
+});
+</script>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section-2">
+    <div class="container">
+      <h2 data-w-id="923fa2e2-5ba5-8690-bf73-c45ba49baddb" style="opacity:0" class="heading-3">Growth and scalability</h2>
+      <div class="row-2">
+        <div data-w-id="923fa2e2-5ba5-8690-bf73-c45ba49badde" style="opacity:0" class="column-2">
+          <p>Our team is proficient in ASIC repair and maintenance. Under our social partnership we will use this to experience to train members of the local community. We want to set a benchmark of responsible Bitcoin mining and use the strategy to expand into new communities over time. Our Nigerian energy partnership will play a crucial role in identifying future sites that enable us to scale our operation. </p>
+        </div>
+      </div>
+      <div class="row-2">
+        <div data-w-id="923fa2e2-5ba5-8690-bf73-c45ba49badf5" style="opacity:0" class="column-2 primary"></div>
+        <div data-w-id="923fa2e2-5ba5-8690-bf73-c45ba49badf6" style="opacity:0" class="column-2 secondary"></div>
+      </div>
+    </div>
+  </section>
+  <section class="section-2">
+    <div class="container">
+      <h2 data-w-id="bf9dbfd1-a294-3e7b-0194-45806251fe9c" style="opacity:0" class="heading-3">Risks and mitigation</h2>
+      <div class="row-2 no-bottom-margin-on-phone">
+        <div data-w-id="bf9dbfd1-a294-3e7b-0194-45806251fe9f" style="opacity:0" class="column-2 equal">
+          <div class="c-accordion-item">
+            <div class="_w-accordion-item">
+              <div class="c-accordion-item-q">
+                <div class="_w-accordion-item-q">
+                  <div class="c-accordion-item-q-text">
+                    <h3 class="h3">Natural Disaster Mitigation</h3>
+                  </div>
+                  <div class="c-accordion-item-q-icon">
+                    <div class="_w-accordion-item-q-icon">
+                      <div class="accordion-item-q-icon-stripe-1"></div>
+                      <div class="accordion-item-q-icon-stripe-2"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="c-accordion-item-a">
+                <div class="_w-accordion-content-divider">
+                  <div class="accordion-content-divider"></div>
+                </div>
+                <div class="_w-accordion-item-a">
+                  <ul role="list">
+                    <li>Strategic location</li>
+                    <li>Property coverage</li>
+                    <li>Business interruption and insurance coverage</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div data-w-id="bf9dbfd1-a294-3e7b-0194-45806251feb1" style="opacity:0" class="column-2 equal">
+          <div class="c-accordion-item">
+            <div class="_w-accordion-item">
+              <div class="c-accordion-item-q">
+                <div class="_w-accordion-item-q">
+                  <div class="c-accordion-item-q-text">
+                    <h3 class="h3">Cybersecurity Measures</h3>
+                  </div>
+                  <div class="c-accordion-item-q-icon">
+                    <div class="_w-accordion-item-q-icon">
+                      <div class="accordion-item-q-icon-stripe-1"></div>
+                      <div class="accordion-item-q-icon-stripe-2"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="c-accordion-item-a">
+                <div class="_w-accordion-content-divider">
+                  <div class="accordion-content-divider"></div>
+                </div>
+                <div class="_w-accordion-item-a">
+                  <ul role="list">
+                    <li>Anti-malware software</li>
+                    <li>Use of strong passwords and 2FA</li>
+                    <li>VPN for enhanced security</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row-2 no-top-padding-on-phone">
+        <div data-w-id="bf9dbfd1-a294-3e7b-0194-45806251fec4" style="opacity:0" class="column-2 equal">
+          <div class="c-accordion-item">
+            <div class="_w-accordion-item">
+              <div class="c-accordion-item-q">
+                <div class="_w-accordion-item-q">
+                  <div class="c-accordion-item-q-text">
+                    <h3 class="h3">Physical Protection</h3>
+                  </div>
+                  <div class="c-accordion-item-q-icon">
+                    <div class="_w-accordion-item-q-icon">
+                      <div class="accordion-item-q-icon-stripe-1"></div>
+                      <div class="accordion-item-q-icon-stripe-2"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="c-accordion-item-a">
+                <div class="_w-accordion-content-divider">
+                  <div class="accordion-content-divider"></div>
+                </div>
+                <div class="_w-accordion-item-a">
+                  <ul role="list">
+                    <li>Secure the facilities including measures to fence the equipment and restrict access.</li>
+                    <li>Employment of security personnel</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div data-w-id="bf9dbfd1-a294-3e7b-0194-45806251fed6" style="opacity:0" class="column-2 equal">
+          <div class="c-accordion-item">
+            <div class="_w-accordion-item">
+              <div class="c-accordion-item-q">
+                <div class="_w-accordion-item-q">
+                  <div class="c-accordion-item-q-text">
+                    <h3 class="h3">Thermal Management</h3>
+                  </div>
+                  <div class="c-accordion-item-q-icon">
+                    <div class="_w-accordion-item-q-icon">
+                      <div class="accordion-item-q-icon-stripe-1"></div>
+                      <div class="accordion-item-q-icon-stripe-2"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="c-accordion-item-a">
+                <div class="_w-accordion-content-divider">
+                  <div class="accordion-content-divider"></div>
+                </div>
+                <div class="_w-accordion-item-a">
+                  <p class="paragraph-2 margin-0px"></p>
+                  <ul role="list">
+                    <li>Temperature checks and auto-responses</li>
+                    <li>MERV-8 filters for dust control</li>
+                    <li>Evaporative cooling for heat management</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section-2 less-mobile-padding">
+    <div class="container">
+      <h2 data-w-id="f435e91f-fd53-5a13-1269-06c7c752fdaa" style="opacity:0" class="heading-3">Industry trends</h2>
+      <p>Bitcoin represents financial opportunity and empowerment but the industry has had to adapt.  <br><br>Environmental concerns have prompted a shift to supporting Bitcoin with clean energy. With the outlook in the US becoming increasingly uncertain for Bitcoin miners, some are concerned that a ban similar to China may follow. As Bitcoin processing (measured in hash rate) has accelerated, it has become more globally distributed. For Africa this represents a unique opportunity to both solve a problem (access to reliable energy supply) and position the continent as a Bitcoin hub. </p>
+      <div class="row-2">
+        <div data-w-id="f435e91f-fd53-5a13-1269-06c7c752fdad" style="opacity:0" class="column-2"></div>
+      </div>
+      <div class="row-2">
+        <div data-w-id="f435e91f-fd53-5a13-1269-06c7c752fdb1" style="opacity:0" class="column-2 primary"></div>
+        <div data-w-id="f435e91f-fd53-5a13-1269-06c7c752fdb2" style="opacity:0" class="column-2 secondary"></div>
+      </div>
+    </div>
+  </section>
+  <div class="map-section">
+    <div data-w-id="c46239a8-e7b4-6c95-9653-f3bf5156e3b8" style="opacity:0" class="map-wrapper">
+      <a data-w-id="c46239a8-e7b4-6c95-9653-f3bf5156e3b9" href="#" class="map-pin w-inline-block">
+        <div style="display:none;-webkit-transform:translate3d(0, 0, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:1" class="map-pin-tooltip north-america">
+          <h3 class="country">North America <br>44.32% of hash rate</h3>
+          <p class="paragraph-5">Marathon - 1.91%<br>Bitfarms - 1.33%<br>TeraWulf - 1.25%<br>Cleanspark - 1.78%<br>Coinmint - 1.13%<br><br><span class="text-span-4">Major energy sources:<br>Hyrdo, wind, and nuclear nuclear</span></p>
+        </div>
+      </a>
+      <a data-w-id="c46239a8-e7b4-6c95-9653-f3bf5156e3bd" href="#" target="_blank" class="map-pin latin-america _2 w-inline-block">
+        <div style="display:none;-webkit-transform:translate3d(0, 0, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:1" class="map-pin-tooltip north-america">
+          <h3 class="country">Latin America -<br>0.68% of hash rate</h3>
+          <p class="paragraph-5"><span class="text-span-4">Major energy sources:<br>Hyrdo and geothermal</span></p>
+        </div>
+      </a>
+      <a data-w-id="c46239a8-e7b4-6c95-9653-f3bf5156e3c9" href="#" target="_blank" class="map-pin west-africa w-inline-block">
+        <div style="display:none;-webkit-transform:translate3d(0, 0, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:1" class="map-pin-tooltip north-america">
+          <h5 class="country">Africa<br>0.18% of hash rate</h5>
+          <p class="paragraph-5">Soluna<br>Gridless Compute<br>Trojan Mining<br>NRG Bloom<br><br><span class="text-span-4">Major energy sources:<br>Hyrdo, wind, solar, and excess natural gas</span></p>
+        </div>
+      </a>
+      <a data-w-id="c46239a8-e7b4-6c95-9653-f3bf5156e3d1" href="#" target="_blank" class="map-pin russia w-inline-block">
+        <div style="display:none;-webkit-transform:translate3d(0, 0, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:1" class="map-pin-tooltip north-america">
+          <h3 class="country">Russia<br>4.66% of hash rate</h3>
+        </div>
+      </a>
+      <a data-w-id="c46239a8-e7b4-6c95-9653-f3bf5156e3d5" href="#" target="_blank" class="map-pin sensitive-nations sensitive-3 w-inline-block">
+        <div style="display:none;-webkit-transform:translate3d(0, 0, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:1" class="map-pin-tooltip north-america">
+          <h3 class="country">China and East Asia<br>25.31% of hash rate</h3>
+          <p class="paragraph-5"><span class="text-span-4">Major energy sources:<br>Fossil fuels, hydro</span></p>
+        </div>
+      </a>
+      <a data-w-id="c46239a8-e7b4-6c95-9653-f3bf5156e3d9" href="#" target="_blank" class="map-pin sensitive-nations w-inline-block">
+        <div style="display:none;-webkit-transform:translate3d(0, 0, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:1" class="map-pin-tooltip north-america">
+          <h3 class="country">Middle East and Asia<br>6.86% of hash rate</h3>
+          <p class="paragraph-5"><span class="text-span-4">Major energy sources:<br>Fossil fuels</span></p>
+        </div>
+      </a>
+      <a data-w-id="c46239a8-e7b4-6c95-9653-f3bf5156e3dd" href="#" target="_blank" class="map-pin western-europe w-inline-block">
+        <div style="display:none;-webkit-transform:translate3d(0, 0, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:1" class="map-pin-tooltip north-america">
+          <h3 class="country">Europe<br>7.81% of hash rate</h3>
+          <p class="paragraph-5"><span class="text-span-4">Major energy sources:<br>Hydro, natural gas (not excess), fossil fuels</span></p>
+        </div>
+      </a>
+    </div>
+  </div>
+  <section class="section u-padding-bottom-0">
+    <div class="container">
+      <div class="row cc-footer-top mobile-flex">
+        <div class="column col-large-4 col-med-12">
+          <div class="u-display-flex cc-footer-left">
+            <a href="index.html" class="logo-link w-nav-brand"><img src="images/NRGBloom_1.webp" loading="lazy" sizes="100vw" srcset="images/NRGBloom_1NRGBloom.webp 500w, images/NRGBloom_1.webp 622w" alt="" class="logo-image"></a>
+            <div class="u-display-flex cc-footer-nav-links">
+              <a href="insights.html" class="nav-link cc-footer w-inline-block">
+                <div>Insights</div>
+              </a>
+              <a href="https://nrgbloom.com/investor-relations#faq" class="nav-link cc-footer w-inline-block">
+                <div>FAQs</div>
+              </a>
+              <a href="https://www.nrgbloom.com/search" class="nav-link cc-footer w-inline-block">
+                <div>Search</div>
+              </a>
+              <a href="for-investors.html" class="nav-link cc-footer w-inline-block">
+                <div>Investor Insights → </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="column col-large-5 col-med-8 col-small-12"></div>
+        <div class="column col-large-3 col-med-4 col-small-8 col-xsmall-12">
+          <div class="u-display-flex cc-social-icons">
+            <a href="https://twitter.com/nrgbloom" target="_blank" class="w-inline-block"><img src="images/xtwitter-iconneuehome.svg" loading="lazy" alt="x/twitter icon">
+              <div class="u-screen-reader">X/Twitter icon link</div>
+            </a>
+            <a href="https://www.facebook.com" target="_blank" class="w-inline-block">
+              <div class="u-screen-reader">X/Twitter icon link</div>
+            </a>
+            <a href="https://www.linkedin.com/company/nrgbloom/" target="_blank" class="w-inline-block"><img src="images/linkedin-icon.svg" loading="lazy" alt="linkedin icon">
+              <div class="u-screen-reader">Linkedin icon link</div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="row row-justify-between">
+        <div class="column col-large-4 col-small-12">
+          <div class="w-embed">© NRGBloom <span id="year"></span></div>
+        </div>
+        <div class="column col-large-8 col-small-12"></div>
+      </div>
+    </div>
+  </section>
+  <script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=65e9c5a26e8864c80aafb002" type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+  <script src="js/webflow.js" type="text/javascript"></script>
+  <script>
+document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
