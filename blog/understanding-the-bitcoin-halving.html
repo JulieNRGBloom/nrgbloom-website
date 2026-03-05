@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Understanding the Bitcoin Halving | NRG Bloom</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            color: #1a1a2e;
+            line-height: 1.7;
+            background: #fafafa;
+        }
+        /* Navigation */
+        nav {
+            background: #0d1b2a;
+            padding: 1rem 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        nav .logo { color: #fff; font-weight: 700; font-size: 1.2rem; text-decoration: none; }
+        nav .nav-links { display: flex; gap: 1.5rem; }
+        nav .nav-links a { color: #ccc; text-decoration: none; font-size: 0.9rem; }
+        nav .nav-links a:hover { color: #fff; }
+
+        /* Article */
+        .article-header {
+            max-width: 800px;
+            margin: 3rem auto 0;
+            padding: 0 1.5rem;
+        }
+        .article-meta {
+            font-size: 0.85rem;
+            color: #5c6370;
+            margin-bottom: 0.5rem;
+        }
+        .article-header h1 {
+            font-size: 2.2rem;
+            font-weight: 700;
+            color: #1a1a2e;
+            margin-bottom: 0.5rem;
+            line-height: 1.3;
+        }
+        .article-author {
+            font-size: 0.9rem;
+            color: #5c6370;
+            margin-bottom: 1.5rem;
+        }
+        .featured-image {
+            max-width: 800px;
+            margin: 0 auto 2rem;
+            padding: 0 1.5rem;
+        }
+        .featured-image img {
+            width: 100%;
+            border-radius: 8px;
+            object-fit: cover;
+        }
+        .article-body {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 1.5rem 4rem;
+        }
+        .article-body h2 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #1a1a2e;
+            margin: 2rem 0 0.75rem;
+        }
+        .article-body h3 {
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: #2c2c54;
+            margin: 1.5rem 0 0.5rem;
+        }
+        .article-body h4 {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: #2c2c54;
+            margin: 1.2rem 0 0.5rem;
+        }
+        .article-body p {
+            margin-bottom: 1rem;
+            color: #333;
+        }
+        .article-body ul, .article-body ol {
+            margin: 0.5rem 0 1rem 1.5rem;
+        }
+        .article-body li {
+            margin-bottom: 0.4rem;
+            color: #333;
+        }
+        .article-body img {
+            max-width: 100%;
+            border-radius: 6px;
+            margin: 1.5rem 0;
+        }
+        .article-body a {
+            color: #0f7173;
+            text-decoration: underline;
+        }
+        .article-body blockquote {
+            border-left: 4px solid #0f7173;
+            padding: 0.5rem 1rem;
+            margin: 1rem 0;
+            background: #f0f5f5;
+            font-style: italic;
+        }
+        .article-body strong { font-weight: 600; }
+
+        /* Footer */
+        footer {
+            background: #0d1b2a;
+            color: #ccc;
+            text-align: center;
+            padding: 2rem;
+            font-size: 0.85rem;
+        }
+        footer a { color: #0f7173; }
+
+        /* Back link */
+        .back-link {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+        }
+        .back-link a {
+            display: inline-block;
+            margin-top: 2rem;
+            color: #0f7173;
+            text-decoration: none;
+            font-size: 0.9rem;
+        }
+        .back-link a:hover { text-decoration: underline; }
+
+        @media (max-width: 640px) {
+            .article-header h1 { font-size: 1.6rem; }
+            nav .nav-links { gap: 0.8rem; }
+            nav .nav-links a { font-size: 0.8rem; }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="/" class="logo">NRG Bloom</a>
+        <div class="nav-links">
+            <a href="/strategy">Strategy</a>
+            <a href="/about-leadership">About</a>
+            <a href="/energy-partners">Energy Partners</a>
+            <a href="/investor-relations">Investors</a>
+            <a href="/insights">Insights</a>
+        </div>
+    </nav>
+
+    <div class="back-link">
+        <a href="/insights">&larr; Back to Insights</a>
+    </div>
+
+    <header class="article-header">
+        <p class="article-meta">Economics and Finance &middot; Feb 26, 2024</p>
+        <h1>Understanding the Bitcoin Halving</h1>
+        <p class="article-author">by Julie Peeters</p>
+    </header>
+
+    <div class='featured-image'><img src='/blog_images/65f0d757dd91832fb1bba855_featured_20imag_f221666cbaf2.webp' alt='Understanding the Bitcoin Halving'></div>
+
+    <article class="article-body">
+        <p>Welcome to our comprehensive exploration of the Bitcoin Halving – a pivotal event in the world of cryptocurrency. Bitcoin, a trailblazer in the digital currency landscape, has introduced a unique approach to managing its supply: the halving. This blog post delves into what Bitcoin halving is, how it works, and its intricate workings within the Bitcoin network. We'll address critical questions such as "how many more bitcoin halvings are left", "how often does bitcoin halve", and "is bitcoin halving good or bad" while exploring its significant impact on the price of Bitcoin and the global community of Bitcoin miners. Understanding how bitcoin halving affects price and what happens after the last bitcoin halving is essential in grasping its full implications. We'll unravel the technicalities behind the halving process, examine its effects on the market and mining operations, and even venture a glimpse into the future of Bitcoin post-halving. Join us on this enlightening journey to understand one of the most critical aspects of Bitcoin's design and its implications for the future of this pioneering cryptocurrency.</p>
+<h2>What Is The Bitcoin Halving</h2>
+<h3>What Are Mining Rewards?</h3>
+<p>The Bitcoin Network operates in such a way that roughly every ten minutes, miners discover a new block and add it to the blockchain. When a block is successfully mined, the miner receives a block reward, which includes the transaction fees from transactions within the block and a block subsidy. The block subsidy consists of newly created bitcoins, serving not only to reward miners but also to add new bitcoins into circulation.</p>
+<p>However, unlike the traditional fiat financial system where the money supply can be adjusted arbitrarily, Bitcoin's approach to increasing its supply is finite and governed by preset rules in its code. When Bitcoin was created by Satoshi Nakamoto, the total supply was capped at 21 million bitcoins<sup>(1)</sup>. These bitcoins are gradually introduced into the system through block subsidies. To ensure Bitcoin's scarcity, Satoshi implemented halving events, which make the cryptocurrency progressively rarer.</p>
+<h3>What Does The Bitcoin Halving Mean And How Often Does Bitcoin Halve?</h3>
+<p>The Bitcoin halving is an event where the block subsidy is halved, occurring every 210,000 blocks or about every four years. Initially, the block subsidy was 50 bitcoins<sup>(2)</sup>. It then decreased to 25 bitcoins in 2012, halved again to 12.5 bitcoins in 2016, and currently sits at 6.25 bitcoins. The next halving is expected on April 19, 2024<sup>(3)</sup>, reducing the block subsidy further to 3.125 bitcoins.</p>
+<h2>How Does The Bitcoin Halving Work?</h2>
+<p>The Bitcoin halvings are dictated in the Bitcoin code, by this specific code snippet: </p>
+<img src="/blog_images/65f0cb95dc470d3ce0b47d2b_btc_20mining_20_6bd1c341d74e.webp" alt="">
+<p>So let’s dissect this code to unravel how the Bitcoin halving works<sup>(4)</sup>.</p>
+<p><strong><em>Part 1</em></strong></p>
+<img src="/blog_images/65f0cc01f989c1a52365460f_btc_20mining_20_9a51d12c437f.webp" alt="">
+<p>This line is responsible for creating the function and specifying the parameters.</p>
+<img src="/blog_images/65f0cc58537bb6cc2783a0d4_btc_20mining_20_c88a51c50e8d.webp" alt="">
+<p>The initial line of code within the function defines an integer variable named "halvings." Essentially, this variable holds a whole number, rounded down to its nearest integer value. Its value is determined through a calculation involving "nHeight," representing the number of blocks already mined, divided by a parameter established in the consensus rules.<a href="https://github.com/bitcoin/bitcoin/blob/f436bfd126adaa64daba2e78016eb707e37eabce/src/chainparams.cpp" target="_blank">‍</a></p>
+<img src="/blog_images/65f0cc909b651eae06aa79f0_btc_20mining_20_dfe8d2c44039.webp" alt="">
+<p>For instance, consider the scenario when this post was composed, with a total of 806,005 blocks mined. The calculation would appear as follows: int halvings = 806005/210000, resulting in a value of 3.838119048. However, to conform to the requirement of being an integer, "halvings" is rounded down to 3.</p>
+<img src="/blog_images/65f0ccd19cae4a1fcefa8bc7_btc_20mining_20_0b1e2934e517.webp" alt="">
+<p>This line was later added to fix a bug in the code.</p>
+<img src="/blog_images/65f0cd87cf1cde53dbfcc8f6_btc_20mining_20_0b01ffd96550.webp" alt="">
+<p>These lines of code are responsible for determining the block subsidy. To break it down, let's start with the first line where nSubsidy gets defined by multiplying a constant value of 50 with a parameter named “COIN”. This parameter is defined in another part of the case as 100,000,000, signifying the quantity of satoshis in a single bitcoin, as indicated here:<a href="https://github.com/bitcoin/bitcoin/blob/master/src/consensus/amount.h" target="_blank">‍</a>‍</p>
+<img src="/blog_images/65f0cdda01c1393c9747b46a_btc_20mining_20_af3fe0579656.webp" alt="">
+<p>This results in "nSubsidy" initially taking on the value of 50 * 100,000,000, totaling 5,000,000,000. This equates to 50 bitcoins, which aligns with the original block subsidy value mentioned earlier. In binary representation, this "nSubsidy" value can be expressed as 100101010000001011111001000000000.</p>
+<p>The next line of code is where the current halving is taken into account to calculate the block subsidy. The “&gt;&gt;=” element, also called “bitwise right shift”, is a C++ element that drops a defined amount of elements at the end of the binary number. </p>
+<p>To illustrate this better, let’s look at the code applied with the previous halvings. So initially, before the first halving nSubsidy was equal to 100101010000001011111001000000000 in binary terms, like explained above. The second line of code would have read as follows:</p>
+<p><code>nSubsidy &gt;&gt;= 0</code></p>
+<p>Which means that 0 elements at the end of the binary number are dropped and the block subsidy is equal to 100101010000001011111001000000000 in binary, a.k.a 5,000,000,000 satoshis or 50 bitcoins.</p>
+<p>After the first halving, the second line would have read as follows:</p>
+<p><code>nSubsidy &gt;&gt;= 1</code></p>
+<p>This meant that 1 element was dropped, resulting nSubsidy being equal to 10010101000000101111100100000000, a.k.a 2,500,000,000 sats or 25 bitcoins.</p>
+<p>At this moment we are approaching the end of the third halving. Which means the code reads as follow: </p>
+<p><code>nSubsidy &gt;&gt;= 3</code></p>
+<p>This renders the binary number to 100101010000001011111001000000, which is the binary form of 625,000,000 sats or 6.25 bitcoin, the actual block subsidy.</p>
+<img src="/blog_images/65f0ce4cbce07935ce7513b4_btc_20mining_20_82034c699fe7.webp" alt="">
+<p>Given that the binary number representing 50 bitcoins contains only 33 elements, or bits, there's a finite capacity for halvings, 33 to be precise. Once these 33 halvings occur, the last bit will be dropped, signifying the cessation of the block subsidy. This event, marking the last bitcoin halving, is estimated to transpire around August 1, 2137<sup>(3)</sup>. This finite nature of halvings contributes to Bitcoin's hard cap of 21 million coins and answers the critical question of when is the last bitcoin halving. It's this finite nature of halvings that contributes to Bitcoin's hard cap of 21 million coins.</p>
+<h2>What Impact Does The Bitcoin Halving Have?</h2>
+<p>So is the Bitcoin halving good or bad? Well it depends on your perspective, as this opinion will vary widely from investors, who enjoy the impact the Bitcoin halving has on the price action, to miners, who don’t like to see their block reward half.</p>
+<h3>How Bitcoin Halving Affects The Price</h3>
+<p>While it's important to note that correlation does not necessarily mean causation, there's a notable link between Bitcoin halvings, market surges, and record high prices. This pattern has been evident in past halving events, which were typically followed by significant market uptrends and peak prices. The reasons behind this correlation include:</p>
+<h4>Supply Shock</h4>
+<p>Reducing the block subsidy results in a supply shock. As the demand for Bitcoin remains steady or grows, the amount of new bitcoins available from miners decreases. This leads to reduced market liquidity and, consequently, price increases.</p>
+<h4>Increased Scarcity</h4>
+<p>Halving events accentuate Bitcoin's scarcity. Each halving brings Bitcoin closer to its maximum supply limit, emphasizing its scarcity-based value.</p>
+<h4>Anticipation and Speculation</h4>
+<p>Halvings are predictable events, leading to market anticipation. This often results in speculative trading, with investors buying Bitcoin before a halving in expectation of price rises. This speculative behavior can create a self-fulfilling cycle that pushes prices upward.</p>
+<h4>Media Attention and Investor Interest</h4>
+<p>Halvings garner considerable media coverage, drawing new investors' interest. The surge in attention and the influx of new participants in the market can further escalate Bitcoin's price.</p>
+<h3>How Bitcoin Halving Affects Bitcoin Miners</h3>
+<p>Bitcoin miners often approach halving events with a mix of anticipation and concern. While a potential rise in Bitcoin's value can increase the worth of their mined coins, the halving cuts their block subsidy rewards in half, significantly affecting their earnings. This situation compels many miners to either sell their older generation ASIC miners, which become less efficient and costly to operate, or to invest in expensive, high-efficiency new generation ASICs.</p>
+<p>However, for some miners, like us at NRG Bloom, the halving presents an opportunity for this very reason. While numerous miners may find their older generation ASICs unsustainable, <a href="/faq/experience-nrg-bloom-bitcoin-mining" target="_blank">our Bitcoin mining operations</a>, <a href="/blog/stranded-energy-bitcoin-waste-recovery-explained" target="_blank">which utilize stranded power</a>, benefit from exceptionally low operational costs. This efficiency makes it viable for us to acquire these second-hand mining rigs at competitive, affordable prices.</p>
+<img src="/images/65f0d8f7cecfce05e7dcc5c1_halving_20-_20i_d23978d03289.webp" alt="">
+<h2>What Happens After The Last Bitcoin Halving</h2>
+<p>As previously mentioned, the Bitcoin protocol is designed for 33 halving events, and as of the time this post was written, 30 halvings are still to come. After these halvings are completed, the block subsidy will no longer include any new bitcoins, effectively ceasing its existence. Consequently, no new bitcoins will be added to the supply. From that point, miners' rewards will be solely based on transaction fees. Although this event is projected to occur in March 2137, predicting the future of Bitcoin mining is challenging. However, one certainty remains: mining will continue to be vital for the Bitcoin Network, serving as its backbone.</p>
+<p>Let's explore some potential future scenarios. One possibility is that Bitcoin becomes so broadly adopted and used that transaction fees alone are sufficient to compensate for the absence of block subsidies. Another scenario could involve the Bitcoin price escalating so high that even minimal rewards in Bitcoin could represent significant value, keeping mining operations profitable. A third scenario might see many miners exiting the industry due to reduced profitability, leading to a decrease in mining difficulty and potentially making the business model more viable for the remaining miners. However, while this could happen, it's not a preferred outcome, as a reduced global hash rate might compromise the Bitcoin Network's security. It's likely that the future will involve a combination of these scenarios.</p>
+<h2>Conclusion</h2>
+<p>In conclusion, the Bitcoin Halving represents more than just a technical adjustment in the network. It's a pivotal event that encapsulates the innovative spirit of Bitcoin and its underlying philosophy of decentralization and finite supply. As we have explored, halvings impact the price of Bitcoin, shape the mining landscape, and contribute to the broader narrative of Bitcoin's role in the financial world. While the future post-halving remains a subject of speculation and anticipation, one thing is clear: Bitcoin continues to challenge traditional notions of currency and finance, paving the way for a dynamic and evolving digital economy. As we approach future halvings, it is essential to keep an eye on these developments, understanding that each halving marks another chapter in the ongoing story of Bitcoin and its impact on the world.</p>
+<h2>References</h2>
+<ol><li>(1) <a href="https://bitcoin.org/bitcoin.pdf" target="_blank">https://bitcoin.org/bitcoin.pdf</a></li><li>(2) <a href="https://academy.binance.com/en/glossary/block-reward" target="_blank">https://academy.binance.com/en/glossary/block-reward</a></li><li>(3) <a href="https://bitcoin.clarkmoody.com/dashboard/" target="_blank">https://bitcoin.clarkmoody.com/dashboard/</a></li><li>(4) <a href="https://ma.ttias.be/dissecting-code-bitcoin-halving/" target="_blank">https://ma.ttias.be/dissecting-code-bitcoin-halving/</a></li></ol>
+    </article>
+
+    <footer>
+        <p>&copy; NRG Bloom Inc. &middot; <a href="/insights">Insights</a> &middot; <a href="/discuss-partnership">Contact</a></p>
+    </footer>
+</body>
+</html>

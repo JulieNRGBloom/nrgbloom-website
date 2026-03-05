@@ -1,0 +1,13 @@
+# NRG Bloom 301 Redirects
+# Old site structure -> New site structure
+
+/energy              /strategy           301
+/partnership         /energy-partners    301
+/impact/problem-flared-gas-nigeria      /esg-impact    301
+/impact/electricity-opportunity-nigeria  /esg-impact    301
+/impact/bitcoin-mining                  /strategy      301
+/team                /about-leadership   301
+/faq                 /investor-relations 301
+/about               /about-leadership   301
+/for-investors       /investor-relations 301
+/contact             /discuss-partnership 301
