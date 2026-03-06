@@ -60,7 +60,7 @@
     <section class="section u-padding-bottom-1em">
       <div data-animation="default" data-collapse="medium" data-duration="400" data-easing="ease" data-easing2="ease" role="banner" class="navbar-copy w-nav">
         <div class="container cc-navbar w-container">
-          <a href="index.html" class="logo-link w-nav-brand"></a>
+          <a href="index.html" class="logo-link w-nav-brand"><img src="images/NRG-bloom-meta-image_1.webp" loading="lazy" width="100" height="Auto" alt="NRG Bloom Logo" class="logo-image"></a>
           <nav role="navigation" class="nav-links-wrap white w-nav-menu">
             <div class="nav-links-container">
               <div class="div-block-29">
@@ -128,75 +128,150 @@ document.addEventListener("DOMContentLoaded", function() {
         </div>
       </div>
     </section>
-    <section class="container">
+        <section class="container">
       <div class="div-block-22 even-less-margin">
         <div class="col-left">
           <h2 class="heading-4">Our team</h2>
-          <p class="paragraph-1em">Building resilient digital infrastructure at the world’s most underserved energy sites.</p>
-          <div class="u-margin-top-2em">
-            <div role="list" class="row homepage-wrap">
-              <div role="listitem" class="column col-large-3 col-med-6 col-xsmall-12">
-                <div class="card u-bg-background-grey">
-                  <a href="team/makir-volcy.html" class="link-wrap w-inline-block">
-                    <div class="u-aspect-1x1 cc-link-wrap"><img loading="lazy" src="https://cdn.prod.website-files.com/65e9c5a36e8864c80aafb162/668701e0a3b0947f3b0d776f_Makir.webp" alt="Makir Volcy" class="u-image-cover">
-                      <div class="link-image-hover-cover">
-                        <div class="link-icon cc-h3">→</div>
-                      </div>
+          <p class="paragraph-1em">Building resilient digital infrastructure at the world's most underserved energy sites.</p>
+
+          <style>
+            .flip-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.5rem; margin-top: 2rem; }
+            @media (max-width: 991px) { .flip-grid { grid-template-columns: repeat(2, 1fr); } }
+            @media (max-width: 479px) { .flip-grid { grid-template-columns: 1fr; max-width: 320px; margin: 2rem auto 0; } }
+            .flip-card { perspective: 800px; height: 380px; }
+            .flip-card-inner { position: relative; width: 100%; height: 100%; transition: transform 0.6s; transform-style: preserve-3d; border-radius: 8px; }
+            .flip-card.flipped .flip-card-inner { transform: rotateY(180deg); }
+            .flip-card-front, .flip-card-back { position: absolute; width: 100%; height: 100%; backface-visibility: hidden; -webkit-backface-visibility: hidden; border-radius: 8px; overflow: hidden; }
+            .flip-card-front { background: #f5f5f5; display: flex; flex-direction: column; cursor: pointer; }
+            .flip-card-front .card-photo { width: 100%; height: 270px; object-fit: cover; display: block; }
+            .flip-card-front .front-info { padding: 0.7rem 1rem 0.8rem; display: flex; align-items: center; justify-content: space-between; }
+            .flip-card-front .front-text h3 { font-size: 1.1rem; font-weight: 600; margin: 0 0 0.1rem; }
+            .flip-card-front .front-text .role { font-size: 0.85rem; color: #5c6370; margin: 0; }
+            .flip-card-front .front-links { display: flex; gap: 0.5rem; align-items: center; flex-shrink: 0; }
+            .flip-card-front .front-links a { display: inline-flex; opacity: 0.5; transition: opacity 0.2s; padding: 4px; position: relative; cursor: pointer; }
+            .flip-card-front .front-links a:hover { opacity: 1; }
+            .flip-card-front .front-links img { width: 20px; height: 20px; }
+            .email-tooltip { position: absolute; bottom: 100%; left: 50%; transform: translateX(-50%); background: #1a1a2e; color: #fff; font-size: 0.75rem; padding: 0.35rem 0.6rem; border-radius: 4px; white-space: nowrap; pointer-events: none; opacity: 0; transition: opacity 0.3s; margin-bottom: 6px; }
+            .email-tooltip.show { opacity: 1; }
+            .flip-card-back { background: #0d2b3e; color: #fff; transform: rotateY(180deg); display: flex; flex-direction: column; justify-content: center; padding: 1.5rem; cursor: pointer; }
+            .flip-card-back h3 { font-size: 1.1rem; font-weight: 600; margin: 0 0 0.15rem; color: #fff; }
+            .flip-card-back .role { font-size: 0.8rem; color: #8ab4c7; margin-bottom: 0.7rem; }
+            .flip-card-back p { font-size: 0.82rem; line-height: 1.55; color: #d0dde3; margin: 0; }
+            .flip-card-back .back-hint { font-size: 0.75rem; color: #5a8a9c; margin-top: 1rem; }
+          </style>
+
+          <div class="flip-grid">
+            <div class="flip-card" id="fc-makir">
+              <div class="flip-card-inner">
+                <div class="flip-card-front" onclick="flipCard('fc-makir')">
+                  <img class="card-photo" src="https://cdn.prod.website-files.com/65e9c5a36e8864c80aafb162/668701e0a3b0947f3b0d776f_Makir.webp" alt="Makir Volcy">
+                  <div class="front-info">
+                    <div class="front-text">
+                      <h3>Makir Volcy</h3>
+                      <p class="role">Founder</p>
                     </div>
-                    <div class="u-text-black u-margin-top-1em">
-                      <div class="h3 cc-link-title">Makir Volcy</div>
-                      <div class="paragraph-1em">Founder</div>
+                    <div class="front-links" onclick="event.stopPropagation()">
+                      <a onclick="copyEmail(this, 'makir@nrgbloom.com')" title="Copy email"><img src="images/email-icon.svg" alt="Email"><span class="email-tooltip">makir@nrgbloom.com</span></a>
+                      <a href="https://www.linkedin.com/in/makirvolcy/" target="_blank" title="LinkedIn"><img src="images/linkedin-icon.svg" alt="LinkedIn"></a>
                     </div>
-                  </a>
+                  </div>
+                </div>
+                <div class="flip-card-back" onclick="flipCard('fc-makir')">
+                  <h3>Makir Volcy</h3>
+                  <div class="role">Founder</div>
+                  <p>Over a decade in tech and finance. From Bitcoin trader to institutional liquidity provider, then market risk at Binance. Operated his own Bitcoin mine in Quebec as chief mining officer. Founded NRG Bloom to scale from Bitcoin validation into AI inference on stranded energy globally.</p>
                 </div>
               </div>
-              <div role="listitem" class="column col-large-3 col-med-6 col-xsmall-12">
-                <div class="card u-bg-background-grey">
-                  <a href="team/gus-anyim.html" class="link-wrap w-inline-block">
-                    <div class="u-aspect-1x1 cc-link-wrap"><img loading="lazy" src="https://cdn.prod.website-files.com/65e9c5a36e8864c80aafb162/66ee9882437bd4e8ea4d1f12_GusProfile0404~2.jpg" alt="Gus Anyim" class="u-image-cover">
-                      <div class="link-image-hover-cover">
-                        <div class="link-icon cc-h3">→</div>
-                      </div>
+            </div>
+
+            <div class="flip-card" id="fc-gus">
+              <div class="flip-card-inner">
+                <div class="flip-card-front" onclick="flipCard('fc-gus')">
+                  <img class="card-photo" src="https://cdn.prod.website-files.com/65e9c5a36e8864c80aafb162/66ee9882437bd4e8ea4d1f12_GusProfile0404~2.jpg" alt="Gus Anyim">
+                  <div class="front-info">
+                    <div class="front-text">
+                      <h3>Gus Anyim</h3>
+                      <p class="role">Commercial</p>
                     </div>
-                    <div class="u-text-black u-margin-top-1em">
-                      <div class="h3 cc-link-title">Gus Anyim</div>
-                      <div class="paragraph-1em">Commercial</div>
+                    <div class="front-links" onclick="event.stopPropagation()">
+                      <a onclick="copyEmail(this, 'gus@nrgbloom.com')" title="Copy email"><img src="images/email-icon.svg" alt="Email"><span class="email-tooltip">gus@nrgbloom.com</span></a>
+                      <a href="https://www.linkedin.com/in/gus-anyim-76474b188/" target="_blank" title="LinkedIn"><img src="images/linkedin-icon.svg" alt="LinkedIn"></a>
                     </div>
-                  </a>
+                  </div>
+                </div>
+                <div class="flip-card-back" onclick="flipCard('fc-gus')">
+                  <h3>Gus Anyim</h3>
+                  <div class="role">Commercial</div>
+                  <p>Extensive background in financial services and digital assets. Leads commercial development at NRG Bloom, driving business growth and building partnerships across energy and digital infrastructure to scale stranded energy monetization globally.</p>
                 </div>
               </div>
-              <div role="listitem" class="column col-large-3 col-med-6 col-xsmall-12">
-                <div class="card u-bg-background-grey">
-                  <a href="team/jordane-volcy.html" class="link-wrap w-inline-block">
-                    <div class="u-aspect-1x1 cc-link-wrap"><img loading="lazy" src="https://cdn.prod.website-files.com/65e9c5a36e8864c80aafb162/66870214e28e7debfdc57b2d_jordane.webp" alt="Jordane Volcy" class="u-image-cover">
-                      <div class="link-image-hover-cover">
-                        <div class="link-icon cc-h3">→</div>
-                      </div>
+            </div>
+
+            <div class="flip-card" id="fc-jordane">
+              <div class="flip-card-inner">
+                <div class="flip-card-front" onclick="flipCard('fc-jordane')">
+                  <img class="card-photo" src="https://cdn.prod.website-files.com/65e9c5a36e8864c80aafb162/66870214e28e7debfdc57b2d_jordane.webp" alt="Jordane Volcy">
+                  <div class="front-info">
+                    <div class="front-text">
+                      <h3>Jordane Volcy</h3>
+                      <p class="role">Engineering</p>
                     </div>
-                    <div class="u-text-black u-margin-top-1em">
-                      <div class="h3 cc-link-title">Jordane Volcy</div>
-                      <div class="paragraph-1em">Engineering</div>
+                    <div class="front-links" onclick="event.stopPropagation()">
+                      <a href="https://www.linkedin.com/in/jordane-volcy-ing-jr-a0713082/" target="_blank" title="LinkedIn"><img src="images/linkedin-icon.svg" alt="LinkedIn"></a>
                     </div>
-                  </a>
+                  </div>
+                </div>
+                <div class="flip-card-back" onclick="flipCard('fc-jordane')">
+                  <h3>Jordane Volcy</h3>
+                  <div class="role">Engineering</div>
+                  <p>Civil engineer, Concordia University graduate with field experience at Hilti Canada. Ensures NRG Bloom's off-grid compute facilities are designed and built to the highest standards for power, cooling, and structural resilience in remote environments.</p>
                 </div>
               </div>
-              <div role="listitem" class="column col-large-3 col-med-6 col-xsmall-12">
-                <div class="card u-bg-background-grey">
-                  <a href="team/julie-peeters.html" class="link-wrap w-inline-block">
-                    <div class="u-aspect-1x1 cc-link-wrap"><img loading="lazy" src="https://cdn.prod.website-files.com/65e9c5a36e8864c80aafb162/668708a921aa7598bd48aee2_WomanSolar.webp" alt="Julie Peeters" class="u-image-cover">
-                      <div class="link-image-hover-cover">
-                        <div class="link-icon cc-h3">→</div>
-                      </div>
+            </div>
+
+            <div class="flip-card" id="fc-julie">
+              <div class="flip-card-inner">
+                <div class="flip-card-front" onclick="flipCard('fc-julie')">
+                  <img class="card-photo" src="https://cdn.prod.website-files.com/65e9c5a36e8864c80aafb162/668708a921aa7598bd48aee2_WomanSolar.webp" alt="Julie Peeters">
+                  <div class="front-info">
+                    <div class="front-text">
+                      <h3>Julie Peeters</h3>
+                      <p class="role">Co-Founder &amp; Research</p>
                     </div>
-                    <div class="u-text-black u-margin-top-1em">
-                      <div class="h3 cc-link-title">Julie Peeters</div>
-                      <div class="paragraph-1em">Co-Founder & Research</div>
+                    <div class="front-links" onclick="event.stopPropagation()">
+                      <a onclick="copyEmail(this, 'julie@nrgbloom.com')" title="Copy email"><img src="images/email-icon.svg" alt="Email"><span class="email-tooltip">julie@nrgbloom.com</span></a>
+                      <a href="https://www.linkedin.com/in/julie-peeters-39861188/" target="_blank" title="LinkedIn"><img src="images/linkedin-icon.svg" alt="LinkedIn"></a>
                     </div>
-                  </a>
+                  </div>
+                </div>
+                <div class="flip-card-back" onclick="flipCard('fc-julie')">
+                  <h3>Julie Peeters</h3>
+                  <div class="role">Co-Founder &amp; Head of Research</div>
+                  <p>Research and programming specialist. Honed Bitcoin mining expertise maintaining ASICs at the Quebec mine. Python and web development skills drive performance modeling, optimization, and energy integration across NRG Bloom's deployments.</p>
                 </div>
               </div>
             </div>
           </div>
+
+          <script>
+          function flipCard(id) { document.getElementById(id).classList.toggle('flipped'); }
+          function copyEmail(el, email) {
+            navigator.clipboard.writeText(email).then(function() {
+              var tip = el.querySelector('.email-tooltip');
+              tip.textContent = 'Copied!';
+              tip.classList.add('show');
+              setTimeout(function() {
+                tip.classList.remove('show');
+                setTimeout(function() { tip.textContent = email; }, 300);
+              }, 1500);
+            }).catch(function() {
+              var tip = el.querySelector('.email-tooltip');
+              tip.classList.add('show');
+              setTimeout(function() { tip.classList.remove('show'); }, 2500);
+            });
+          }
+          </script>
+
         </div>
       </div>
     </section>

@@ -51,10 +51,22 @@
   <meta name="robots" content="noindex, nofollow">
 </head>
 <body>
-  <div class="page-wrapper">
+  <div id="password-gate" style="display:flex; align-items:center; justify-content:center; min-height:100vh; background:#0d1b2a; font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;">
+    <div style="text-align:center; max-width:400px; padding:2rem;">
+      <img src="images/White.webp" alt="NRG Bloom" style="width:80px; margin-bottom:1.5rem;">
+      <h2 style="color:#fff; font-size:1.4rem; font-weight:600; margin-bottom:0.5rem;">Investor Access</h2>
+      <p style="color:#8ab4c7; font-size:0.9rem; margin-bottom:1.5rem;">This page is restricted. Please enter the password to continue.</p>
+      <div style="display:flex; gap:0.5rem;">
+        <input id="pw-input" type="password" placeholder="Enter password" style="flex:1; padding:0.7rem 1rem; border:1px solid #2a4a5e; border-radius:6px; background:#0a2233; color:#fff; font-size:0.95rem; outline:none;" onkeydown="if(event.key==='Enter')checkPw()">
+        <button onclick="checkPw()" style="padding:0.7rem 1.2rem; background:#0f7173; color:#fff; border:none; border-radius:6px; font-size:0.95rem; cursor:pointer;">Enter</button>
+      </div>
+      <p id="pw-error" style="color:#e15a26; font-size:0.85rem; margin-top:0.75rem; display:none;">Incorrect password. Please try again.</p>
+    </div>
+  </div>
+  <div class="page-wrapper" id="page-content" style="display:none;">
     <div data-animation="default" data-collapse="medium" data-duration="400" data-easing="ease" data-easing2="ease" role="banner" class="navbar-copy w-nav">
       <div class="container cc-navbar w-container">
-        <a href="index.html" class="logo-link w-nav-brand"></a>
+        <a href="index.html" class="logo-link w-nav-brand"><img src="images/NRG-bloom-meta-image_1.webp" loading="lazy" width="100" height="Auto" alt="NRG Bloom Logo" class="logo-image"></a>
         <nav role="navigation" class="nav-links-wrap white w-nav-menu">
           <div class="nav-links-container">
             <div class="div-block-29">
@@ -301,5 +313,24 @@ document.addEventListener("DOMContentLoaded", function() {
   <script>
 document.getElementById("year").textContent = new Date().getFullYear();
 </script>
+  <script>
+  function checkPw() {
+    var input = document.getElementById('pw-input').value;
+    if (input === '5MWpending$') {
+      document.getElementById('password-gate').style.display = 'none';
+      document.getElementById('page-content').style.display = '';
+      sessionStorage.setItem('investor-auth', 'true');
+    } else {
+      document.getElementById('pw-error').style.display = 'block';
+      document.getElementById('pw-input').value = '';
+      document.getElementById('pw-input').focus();
+    }
+  }
+  // Remember within session so refresh doesn't re-prompt
+  if (sessionStorage.getItem('investor-auth') === 'true') {
+    document.getElementById('password-gate').style.display = 'none';
+    document.getElementById('page-content').style.display = '';
+  }
+  </script>
 </body>
 </html>

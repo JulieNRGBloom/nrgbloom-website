@@ -1,176 +1,150 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html><!--  This site was created in Webflow. https://webflow.com  --><!--  Last Published: Tue Mar 03 2026 15:13:55 GMT+0000 (Coordinated Universal Time)  -->
+<html data-wf-page="65eaf156bd7eb019b47410ff" data-wf-site="65e9c5a26e8864c80aafb002" lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Deep Dive Into Bitcoin Mining Pools | NRG Bloom</title>
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-            color: #1a1a2e;
-            line-height: 1.7;
-            background: #fafafa;
-        }
-        /* Navigation */
-        nav {
-            background: #0d1b2a;
-            padding: 1rem 2rem;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            position: sticky;
-            top: 0;
-            z-index: 100;
-        }
-        nav .logo { color: #fff; font-weight: 700; font-size: 1.2rem; text-decoration: none; }
-        nav .nav-links { display: flex; gap: 1.5rem; }
-        nav .nav-links a { color: #ccc; text-decoration: none; font-size: 0.9rem; }
-        nav .nav-links a:hover { color: #fff; }
-
-        /* Article */
-        .article-header {
-            max-width: 800px;
-            margin: 3rem auto 0;
-            padding: 0 1.5rem;
-        }
-        .article-meta {
-            font-size: 0.85rem;
-            color: #5c6370;
-            margin-bottom: 0.5rem;
-        }
-        .article-header h1 {
-            font-size: 2.2rem;
-            font-weight: 700;
-            color: #1a1a2e;
-            margin-bottom: 0.5rem;
-            line-height: 1.3;
-        }
-        .article-author {
-            font-size: 0.9rem;
-            color: #5c6370;
-            margin-bottom: 1.5rem;
-        }
-        .featured-image {
-            max-width: 800px;
-            margin: 0 auto 2rem;
-            padding: 0 1.5rem;
-        }
-        .featured-image img {
-            width: 100%;
-            border-radius: 8px;
-            object-fit: cover;
-        }
-        .article-body {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 0 1.5rem 4rem;
-        }
-        .article-body h2 {
-            font-size: 1.5rem;
-            font-weight: 700;
-            color: #1a1a2e;
-            margin: 2rem 0 0.75rem;
-        }
-        .article-body h3 {
-            font-size: 1.25rem;
-            font-weight: 600;
-            color: #2c2c54;
-            margin: 1.5rem 0 0.5rem;
-        }
-        .article-body h4 {
-            font-size: 1.1rem;
-            font-weight: 600;
-            color: #2c2c54;
-            margin: 1.2rem 0 0.5rem;
-        }
-        .article-body p {
-            margin-bottom: 1rem;
-            color: #333;
-        }
-        .article-body ul, .article-body ol {
-            margin: 0.5rem 0 1rem 1.5rem;
-        }
-        .article-body li {
-            margin-bottom: 0.4rem;
-            color: #333;
-        }
-        .article-body img {
-            max-width: 100%;
-            border-radius: 6px;
-            margin: 1.5rem 0;
-        }
-        .article-body a {
-            color: #0f7173;
-            text-decoration: underline;
-        }
-        .article-body blockquote {
-            border-left: 4px solid #0f7173;
-            padding: 0.5rem 1rem;
-            margin: 1rem 0;
-            background: #f0f5f5;
-            font-style: italic;
-        }
-        .article-body strong { font-weight: 600; }
-
-        /* Footer */
-        footer {
-            background: #0d1b2a;
-            color: #ccc;
-            text-align: center;
-            padding: 2rem;
-            font-size: 0.85rem;
-        }
-        footer a { color: #0f7173; }
-
-        /* Back link */
-        .back-link {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 0 1.5rem;
-        }
-        .back-link a {
-            display: inline-block;
-            margin-top: 2rem;
-            color: #0f7173;
-            text-decoration: none;
-            font-size: 0.9rem;
-        }
-        .back-link a:hover { text-decoration: underline; }
-
-        @media (max-width: 640px) {
-            .article-header h1 { font-size: 1.6rem; }
-            nav .nav-links { gap: 0.8rem; }
-            nav .nav-links a { font-size: 0.8rem; }
-        }
-    </style>
+  <meta charset="utf-8">
+  <title>Deep Dive Into Bitcoin Mining Pools | NRG Bloom</title>
+  <meta content="Deep Dive Into Bitcoin Mining Pools" name="description">
+  <meta content="Deep Dive Into Bitcoin Mining Pools" property="og:description">
+  <meta content="" property="og:image">
+  <meta content="Deep Dive Into Bitcoin Mining Pools" property="twitter:description">
+  <meta content="" property="twitter:image">
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <meta content="google-site-verification=6tTalLzrBXBO4Gy9700TAbpg2QTKzGYEuZ_Ls69jle8" name="google-site-verification">
+  <meta content="Webflow" name="generator">
+  <link href="../css/normalize.css" rel="stylesheet" type="text/css">
+  <link href="../css/webflow.css" rel="stylesheet" type="text/css">
+  <link href="../css/nrg-bloom.webflow.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" type="text/javascript"></script>
+  <script type="text/javascript">WebFont.load({  google: {    families: ["Inconsolata:400,700","Montserrat:100,100italic,200,200italic,300,300italic,400,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic"]  }});</script>
+  <script type="text/javascript">!function(o,c){var n=c.documentElement,t=" w-mod-";n.className+=t+"js",("ontouchstart"in o||o.DocumentTouch&&c instanceof DocumentTouch)&&(n.className+=t+"touch")}(window,document);</script>
+  <link href="../images/favicon.png" rel="shortcut icon" type="image/x-icon">
+  <link href="../images/webclip.png" rel="apple-touch-icon">
+  <style>
+  body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+</style>
+  <style>
+/* Apply this class to your scrollable div */
+.minimal-scroll {
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(0,0,0,0.25) transparent;
+}
+/* Chrome, Edge, Safari */
+.minimal-scroll::-webkit-scrollbar {
+  width: 4px;
+}
+.minimal-scroll::-webkit-scrollbar-track {
+  background: transparent;
+}
+.minimal-scroll::-webkit-scrollbar-thumb {
+  background: rgba(0,0,0,0.25);
+  border-radius: 20px;
+  transition: background 0.3s ease;
+}
+.minimal-scroll::-webkit-scrollbar-thumb:hover {
+  background: rgba(0,0,0,0.45);
+}
+</style>
+<style>
+  .rich-text h2 { font-size: 1.5rem; font-weight: 700; margin: 2rem 0 0.75rem; }
+  .rich-text h3 { font-size: 1.2rem; font-weight: 600; margin: 1.5rem 0 0.5rem; }
+  .rich-text h4 { font-size: 1.05rem; font-weight: 600; margin: 1.2rem 0 0.5rem; }
+  .rich-text img { max-width: 100%; border-radius: 6px; margin: 1.5rem 0; }
+</style>
 </head>
 <body>
-    <nav>
-        <a href="/" class="logo">NRG Bloom</a>
-        <div class="nav-links">
-            <a href="/strategy">Strategy</a>
-            <a href="/about-leadership">About</a>
-            <a href="/energy-partners">Energy Partners</a>
-            <a href="/investor-relations">Investors</a>
-            <a href="/insights">Insights</a>
+  <div class="page-wrapper">
+    <div data-animation="default" data-collapse="medium" data-duration="400" data-easing="ease" data-easing2="ease" role="banner" class="navbar-copy w-nav">
+      <div class="container cc-navbar w-container">
+        <a href="../index.html" class="logo-link w-nav-brand"><img src="../images/NRG-bloom-meta-image_1.webp" loading="lazy" width="100" height="Auto" alt="NRG Bloom Logo" class="logo-image"></a>
+        <nav role="navigation" class="nav-links-wrap white w-nav-menu">
+          <div class="nav-links-container">
+            <div class="div-block-29">
+              <a href="../strategy.html" class="nav-link w-nav-link">Strategy</a>
+              <a href="../about-leadership.html" class="nav-link w-nav-link">About &amp; Leadership</a>
+              <a href="../energy-partners.html" class="nav-link w-nav-link">Energy Partners</a>
+              <a href="../investor-relations.html" class="nav-link w-nav-link">Investor Relations</a>
+              <a href="../insights.html" class="nav-link last w-nav-link">Insights</a>
+            </div>
+            <div class="div-block-6">
+              <div id="btcPrice" class="html-embed-4 w-embed w-script">
+                <script>
+document.addEventListener("DOMContentLoaded", function() {
+    const btcPriceElement = document.getElementById('btcPrice'); 
+    let pauseUpdates = false;
+    function updateBitcoinPrice() {
+        if (!pauseUpdates) {
+            fetch('https://api.binance.com/api/v3/ticker/price?symbol=BTCUSDT')
+                .then(response => {
+                    if (response.status === 429) {
+                        console.warn('Rate limit exceeded. Pausing updates.');
+                        pauseUpdates = true;
+                        setTimeout(() => {
+                            pauseUpdates = false;
+                        }, 60000); // Pause for 1 minute
+                        return;
+                    }
+                    return response.json();
+                })
+                .then(data => {
+                    if (btcPriceElement && data && data.price) {
+                        const formattedPrice = parseFloat(data.price).toLocaleString('en-US', {
+                            minimumFractionDigits: 2,
+                            maximumFractionDigits: 2
+                        });
+                        btcPriceElement.innerHTML = `
+                            <div style="display: flex;"><img src="https://uploads-ssl.webflow.com/65e9c5a26e8864c80aafb002/66047b0e56be8e998c63a278_bitcoin.webp" alt="Bitcoin Logo" style="height: 1.5em; vertical-align: middle; padding-right: 3px;"/>
+                            <span style="font-weight: 600; font-size: 1.5em; font-family: 'Intertight Variablefont Wght', sans-serif; color: black; line-height: 1.1; min-width: 120px;">$${formattedPrice}</span></div>
+                        `;
+                    }
+                })
+                .catch(error => console.error('Error fetching Bitcoin price:', error));
+        }
+    }
+    updateBitcoinPrice();
+    setInterval(updateBitcoinPrice, 30000); // Update every 30 sec
+});
+</script>
+              </div>
+            </div>
+          </div>
+        </nav>
+        <div class="nav-menu-button w-nav-button">
+          <div class="mobil-menu-icon black w-icon-nav-menu"></div>
         </div>
-    </nav>
-
-    <div class="back-link">
-        <a href="/insights">&larr; Back to Insights</a>
+        <a href="../index.html" class="w-inline-block"><img src="../images/NRG-bloom-meta-image_1.webp" loading="lazy" width="100" height="Auto" alt="" srcset="../images/NRG-bloom-meta-image_1NRG-bloom-meta-image.webp 500w, images/NRG-bloom-meta-image_1NRG-bloom-meta-image.webp 800w, images/NRG-bloom-meta-image_1NRG-bloom-meta-image.webp 1080w, images/NRG-bloom-meta-image_1.webp 1350w" sizes="100px" class="logo-image"></a>
+      </div>
     </div>
-
-    <header class="article-header">
-        <p class="article-meta">Economics and Finance &middot; Oct 14, 2023</p>
-        <h1>Deep Dive Into Bitcoin Mining Pools</h1>
-        <p class="article-author">by Julie Peeters</p>
-    </header>
-
-    <div class='featured-image'><img src='/blog_images/65f0d2ca7baf1beff870a62d_featured_20imag_d74e2a31cf59.webp' alt='Deep Dive Into Bitcoin Mining Pools'></div>
-
-    <article class="article-body">
-        <p>Bitcoin mining has evolved dramatically since its inception, with mining difficulty skyrocketing as interest grew. This escalation gave rise to "mining pools" - collectives where miners combine resources to split costs and gain more frequent payouts.</p>
+    <section class="section u-padding-bottom-3">
+      <div class="container cc-blog-article-hero more-upper-margin">
+        <div class="u-display-flex cc-blog-title-label">
+          <div class="u-text-semibold">Economics and Finance</div>
+          <div class="dot-wrap">
+            <div>·</div>
+          </div>
+          <div>Oct 14, 2023</div>
+        </div>
+        <h1 class="h1 less-upper-margin">Deep Dive Into Bitcoin Mining Pools</h1>
+        <div class="line"></div>
+        <div class="u-display-inline-block u-margin-bottom-3em">
+          <div class="u-display-flex">
+            <div class="paragraph-1-1em">by </div>
+            <div class="paragraph-1-1em">Julie Peeters</div>
+          </div>
+        </div>
+        <div class="u-aspect-16x9 u-overflow-hidden"><img alt="Deep Dive Into Bitcoin Mining Pools" loading="lazy" src="../blog_images/65f0d2ca7baf1beff870a62d_featured_20imag_d74e2a31cf59.webp" class="u-image-cover cc-full-width-image"></div>
+      </div>
+    </section>
+    <section class="section cc-blog-text">
+      <div class="container cc-blog-text">
+        <div class="row row-justify-center">
+          <div class="column col-large-8 col-med-12">
+            <div class="rich-text w-richtext"><p>Bitcoin mining has evolved dramatically since its inception, with mining difficulty skyrocketing as interest grew. This escalation gave rise to "mining pools" - collectives where miners combine resources to split costs and gain more frequent payouts.</p>
 <p>Mining pools now control most of Bitcoin's hash rate and have become integral to profitable mining. By pooling computational power, miners can tackle the exponential difficulty growth and gain predictable rewards compared to solo mining.</p>
 <p>This article explores critical mining pool concepts like reward models, top pools, protocols, and best practices for getting started. Whether you're a hobbyist or institution, understanding pools is essential to succeed in today's mining landscape.</p>
 <p>Table of Contents</p>
@@ -197,7 +171,7 @@
 <p>The mining pool server then forwards the block header, including the share target, to the client, utilizing a proxy if one is in use. Subsequently, the client engages in the Bitcoin mining process, striving to achieve a hash that surpasses the share target.</p>
 <p>Whenever a client successfully surpasses the share target with a matching nonce, they transmit the victorious block header, along with the successful nonce, back to the server, accomplished through the proxy if it is part of the setup. This combination of a successful header and nonce is termed a 'share'. By submitting shares to the server, miners can demonstrate their contributed hash rate and their share of the mining effort. It's essential to note that most of the shares received by the pool server will not meet the criteria for blockchain inclusion. However, over time, the pool server will eventually receive a share that surpasses the network's original difficulty target. </p>
 <p>Once this occurs, the pool server proceeds to compile a block by incorporating pending transactions awaiting confirmation. Subsequently, the server broadcasts the completed block to the Bitcoin Network through bitcoind. As a result of this successful mining operation, the mining pool becomes eligible for rewards. The pool then proceeds to distribute rewards to its clients based on the quantity of shares they contributed.</p>
-<img src="/blog_images/65f0d37c309e759af2716a77_pools_20-_20inf_7fd28d3a87e0.webp" alt="">
+<img src="../blog_images/65f0d37c309e759af2716a77_pools_20-_20inf_7fd28d3a87e0.webp" alt="">
 <h2>Pros and Cons of Bitcoin Mining Pools</h2>
 <h3>The Advantages</h3>
 <h4>Stable Income</h4>
@@ -236,7 +210,7 @@
 <p>Mining pools consist of individual miners, often referred to as hashers, who work on behalf of the pool. When a mining pool discovers a new block, it distributes the block header hash to all connected miners, including potential spy miners. Spy mining occurs when these competing miners or even rival mining pools connect to a pool, receive the block header hash, and decide to mine independently. By leveraging the information provided by the mining pool, these spy miners can start mining on top of the new block without the need for the full block data. This clandestine mining, facilitated by the mining pool’s infrastructure, allows competitors to gain an edge by beginning their mining efforts sooner than if they had waited for the entire block data. This practice is widespread and creates an environment where miners compete not just against the broader network but also against each other, with mining pools serving as the focal point of this competition<sup>(39)</sup>.<br/></p>
 <h4>Centralization</h4>
 <p>The widespread adoption of mining pools has played a significant role in the centralization of Bitcoin mining. As mentioned earlier, mining rigs rely on specific mining software or protocols, with pool mining often employing the Stratum protocol. In the initial iteration of this protocol, known as Stratum V1, mining pools possess the authority to arrange pending transactions within a block template. Consequently, individual miners lose the autonomy to select the transactions they validate<sup>(10)</sup>.</p>
-<img src="/blog_images/65f0d41e1c984c9b2f0e53e8_pools_20-_20sha_1b68314c17c0.webp" alt="">
+<img src="../blog_images/65f0d41e1c984c9b2f0e53e8_pools_20-_20sha_1b68314c17c0.webp" alt="">
 <p>This centralization introduces the inherent risk of a 51% attack, wherein a coalition of miners commands over 50% of the total mining hash rate. Such control theoretically grants these entities the power to manipulate the blockchain. Since validated blocks require consensus from other miners, malicious participants can collectively reject these blocks, hindering their confirmation and inclusion in the blockchain. This scenario is sometimes referred to as a 'transaction denial of service.' Additionally, malicious actors can execute nefarious transactions, sending coins to recipients and then leveraging their mining power to backtrack in the blockchain to a point before these transactions occurred. Through blockchain forking, they can establish an alternative version without these malicious transactions and enforce its acceptance. In this alternate blockchain, the fraudulent transactions cease to exist, leading to double-spending where the same coins are used twice.<br/></p>
 <p>However, it's crucial to note that while the potential for a 51% attack on the Bitcoin Blockchain is acknowledged, it remains highly improbable due to the network's immense size. In 2014 one mining pool, Ghash.io briefly controlled 51% of the total hash rate. Luckily they didn’t abuse this power, but this was a wakeup call for many miners that left the mining pool shortly after<sup>(11)</sup>. As the network continues to expand, the feasibility of an individual or entity amassing sufficient computational power to surpass all other participants becomes increasingly implausible<sup>(12)</sup>.</p>
 <h2>Mining Pool Reward Models</h2>
@@ -250,7 +224,7 @@
 <h3>PPLNS</h3>
 <p>Pay Per Last N Shares. Under this model, clients receive rewards based on the number of shares they contributed within a specific time frame, starting from the moment a block is discovered. Consequently, clients only receive rewards when the mining pool successfully mines a block. This approach is particularly beneficial for miners who have stable, long-term connections to a single pool<sup>(14)</sup>.</p>
 <p>Suitable for: Miners who can take a certain risk of low luck.<br/></p>
-<img src="/blog_images/65f0d47ad13d67925b32b5b4_pools_20-_20ppl_60b03b8efbbc.webp" alt="">
+<img src="../blog_images/65f0d47ad13d67925b32b5b4_pools_20-_20ppl_60b03b8efbbc.webp" alt="">
 <h3>PPS+</h3>
 <p>Pay Per Share +. PPS+ combines elements of both PPS and PPLNS. Miners receive a fixed block reward, which includes a portion of the block subsidy, based on the PPS model. Additionally, the transaction fee rewards are distributed using the PPLNS method once a block is successfully mined<sup>(15)</sup>.</p>
 <p>Suitable for: Miners who pursue stable income.</p>
@@ -349,7 +323,7 @@
 <p>One significant advantage of Stratum V1 over the getblocktemplate RPC lies in miners' ability to locally modify the coinbase transaction. Unlike the limited approach of getwork RPC, where miners could only iterate through nonce values to find a valid hash, getblocktemplate offered more information about the block template but still required miners to construct the entire block locally. This process was computationally intensive and made it difficult to modify specific parts of the block, such as the coinbase transaction, without reconstructing the entire block header.</p>
 <p>In contrast, Stratum V1 was specifically designed to enhance miners' flexibility and control in the mining process. By enabling miners to easily alter the coinbase parameter, Stratum V1 empowers them to explore diverse variations of the block header. This flexibility increases the likelihood of finding a valid solution. Importantly, this modification can occur without the need to reconstruct the entire block, leading to a reduction in processing time and latency. It's worth noting that changing the coinbase parameter doesn't impact where the coinbase transaction's block reward is paid out. This enhancement in Stratum V1 significantly streamlines the mining process and optimizes miners' efficiency<sup>(54)</sup>.</p>
 <p>While Stratum V1 does have a significant drawback compared to the getblocktemplate protocol, namely the loss of the decentralization aspect where miners can select transactions for inclusion in their block, due to the preconstructed merkle tree miners receive. Despite this limitation, many mining pools and individual miners have chosen Stratum V1 over other protocols, making it a preferred option in the mining landscape.</p>
-<img src="/blog_images/65f0d5f8d143fef9b1f91c83_pools_20-_20inf_65ce3310f2d5.webp" alt="">
+<img src="../blog_images/65f0d5f8d143fef9b1f91c83_pools_20-_20inf_65ce3310f2d5.webp" alt="">
 <h3>Stratum V2</h3>
 <p>Stratum V2 was developed in response to critical security concerns and the escalating centralization problem observed within Bitcoin mining pools, as well as other issues stemming from the previous Stratum V1 protocol.</p>
 <p>The first major challenge addressed by Stratum V2 is security. Stratum V2 implements AEAD encryption, ensuring that sensitive data remains protected and immune to potential decryption attempts by malicious third parties. This security enhancement helps prevent issues such as hashrate hijacking<sup>(56)</sup>.</p>
@@ -359,7 +333,7 @@
 <p>These are nodes connected to the Bitcoin network, serving as miner-side proxies. They create customized block templates, including a Merkle tree template and a list of transactions. Miners can use these templates to construct the final Merkle tree root. Template Providers utilize the Template Distribution Protocol to fetch information from bitcoind<sup>(57)</sup>.</p>
 <h4>Job Negotiators</h4>
 <p>Operating on the pool side, the Job Negotiator receives and validates custom block templates from Template Providers. The negotiation of block templates between Template Providers and Job Negotiators adheres to the Job Negotiation Protocol<sup>(56)</sup>. Validated templates are then passed to miners through the Job Distribution Protocol<sup>(57)</sup>. </p>
-<img src="/blog_images/65f0d6607bf833470417317d_pools_20-_20tem_468a9b8c586a.webp" alt="">
+<img src="../blog_images/65f0d6607bf833470417317d_pools_20-_20tem_468a9b8c586a.webp" alt="">
 <h2>How to Join a Mining Pool</h2>
 <h3>1. Choose a Mining Pool</h3>
 <p>Research and choose a reputable mining pool. Consider factors like pool fees, payout methods, server locations, and the pool's reputation.</p>
@@ -381,11 +355,125 @@
 <p>For newcomers interested in mining, pools provide the best opportunity to tap into Bitcoin's block rewards. Just be sure to thoroughly research your options, implement security best practices, and monitor mining performance. As pools continue innovating, it will be fascinating to see how they shape the trajectory of the Bitcoin mining industry.</p>
 <h2>References</h2>
 <ol><li>(1) <a href="https://mempool.space/graphs/mining/hashrate-difficulty#all" target="_blank">https://mempool.space/graphs/mining/hashrate-difficulty#all</a></li><li>(2) <a href="https://en.bitcoin.it/wiki/Pooled_mining" target="_blank">https://en.bitcoin.it/wiki/Pooled_mining</a></li><li>(3) <a href="https://foreman.mn/blog/what-is-a-mining-pool-everything-you-need-to-know/" target="_blank">https://foreman.mn/blog/what-is-a-mining-pool-everything-you-need-to-know/</a>   </li><li>(4) <a href="https://braiins.com/farm-proxy" target="_blank">https://braiins.com/farm-proxy</a> </li><li>(5) <a href="https://developer.bitcoin.org/devguide/mining.html" target="_blank">https://developer.bitcoin.org/devguide/mining.html</a> </li><li>(6) <a href="https://bitcoinmagazine.com/guides/what-are-bitcoin-mining-pools" target="_blank">https://bitcoinmagazine.com/guides/what-are-bitcoin-mining-pools</a> </li><li>(7) <a href="https://www.nicehash.com/blog/post/how-is-solo-mining-probability-calculated" target="_blank">https://www.nicehash.com/blog/post/how-is-solo-mining-probability-calculated</a> </li><li>(8) <a href="https://academy.braiins.com/en/braiins-pool/rewards-and-payouts/#payouts-and-fees" target="_blank">https://academy.braiins.com/en/braiins-pool/rewards-and-payouts/#payouts-and-fees</a> </li><li>(9) <a href="https://medium.com/minerstat/how-mining-pool-downtime-can-affect-your-profitability-3e06bd67d0a1" target="_blank">https://medium.com/minerstat/how-mining-pool-downtime-can-affect-your-profitability-3e06bd67d0a1</a> </li><li>(10) <a href="https://braiins.com/stratum-v1" target="_blank">https://braiins.com/stratum-v1</a> </li><li>(11) <a href="https://www.theguardian.com/technology/2014/jun/16/bitcoin-currency-destroyed-51-attack-ghash-io" target="_blank">https://www.theguardian.com/technology/2014/jun/16/bitcoin-currency-destroyed-51-attack-ghash-io</a></li><li>(12) <a href="https://academy.binance.com/en/glossary/51-percent-attack" target="_blank">https://academy.binance.com/en/glossary/51-percent-attack</a></li><li>(13) <a href="https://en.bitcoin.it/wiki/Comparison_of_mining_pools" target="_blank">https://en.bitcoin.it/wiki/Comparison_of_mining_pools</a> </li><li>(14) <a href="https://www.nicehash.com/blog/post/how-mining-pools-distribute-rewards-pps-vs-fpps-vs-pplns" target="_blank">https://www.nicehash.com/blog/post/how-mining-pools-distribute-rewards-pps-vs-fpps-vs-pplns</a> </li><li>(15) <a href="https://f2pool.zendesk.com/hc/en-us/articles/360061042332-Payout-schemes-PPS-PPLNS-FPPS-PPS-#:~:text=The%20PPS%2B%20payment%20method%20is,Last%20N%20Share" target="_blank">https://f2pool.zendesk.com/hc/en-us/articles/360061042332-Payout-schemes-PPS-PPLNS-FPPS-PPS-#:~:text=The%20PPS%2B%20payment%20method%20is,Last%20N%20Share</a>)%20payout%20scheme  </li><li>(16) <a href="https://bitcointalk.org/index.php?topic=4787.0" target="_blank">https://bitcointalk.org/index.php?topic=4787.0</a> </li><li>(17) <a href="https://bitcointalk.org/index.php?topic=39497.0" target="_blank">https://bitcointalk.org/index.php?topic=39497.0</a></li><li>(18) <a href="https://bitcointalk.org/index.php?topic=12181.msg378851#msg378851" target="_blank">https://bitcointalk.org/index.php?topic=12181.msg378851#msg378851</a></li><li>(19) <a href="https://bitcointalk.org/index.php?topic=131376.0" target="_blank">https://bitcointalk.org/index.php?topic=131376.0</a> </li><li>(20) <a href="https://organofcorti.blogspot.com/2012/04/32-risks-of-smpps.html" target="_blank">https://organofcorti.blogspot.com/2012/04/32-risks-of-smpps.html</a> </li><li>(21) <a href="https://en.bitcoin.it/wiki/P2Pool#Payout_logic" target="_blank">https://en.bitcoin.it/wiki/P2Pool#Payout_logic</a> </li><li>(22) <a href="https://miningpoolstats.stream/bitcoin" target="_blank">https://miningpoolstats.stream/bitcoin</a> </li><li>(23) <a href="https://foundrydigital.com/mining-service/foundry-usa-pool/" target="_blank">https://foundrydigital.com/mining-service/foundry-usa-pool/</a> </li><li>(24) <a href="https://btc.com/stats/pool/AntPool" target="_blank">https://btc.com/stats/pool/</a></li><li>(25) <a href="https://cryptoslate.com/companies/antpool/#:~:text=AntPool%20is%20one%20of%20the,is%20headquartered%20in%20Beijing%2C%20China" target="_blank">https://cryptoslate.com/companies/antpool/#:~:text=AntPool%20is%20one%20of%20the,is%20headquartered%20in%20Beijing%2C%20China</a>.</li><li>(26) <a href="https://foreman.mn/blog/antpool-review/" target="_blank">https://foreman.mn/blog/antpool-review/</a> </li><li>(27) <a href="https://foreman.mn/blog/foundry-pool-review/" target="_blank">https://foreman.mn/blog/foundry-pool-review/</a> </li><li>(28) <a href="https://www.binance.com/en/support/faq/frequently-asked-questions-on-binance-pool-f77a002dca084b22ab2e13ccf2f13f18" target="_blank">https://www.binance.com/en/support/faq/frequently-asked-questions-on-binance-pool-f77a002dca084b22ab2e13ccf2f13f18</a></li><li>(29) <a href="https://f2pool.io/mining/support/" target="_blank">https://f2pool.io/mining/support/</a>  </li><li>(30) <a href="https://en.bitcoin.it/wiki/F2Pool" target="_blank">https://en.bitcoin.it/wiki/F2Pool</a></li><li>(31) <a href="https://www.viabtc.com/pricing" target="_blank">https://www.viabtc.com/pricing</a> </li><li>(32) <a href="https://www.nicehash.com/support/mining-help/mining-advanced-topics/why-are-you-getting-rejected-shares" target="_blank">https://www.nicehash.com/support/mining-help/mining-advanced-topics/why-are-you-getting-rejected-shares</a> </li><li>(33) https://www.willuminebtc.com/post/stale-rejected-shares-while-mining </li><li>(34) <a href="https://d-central.tech/a-deep-dive-into-rejected-shares-in-mining/#:~:text=Rejected%20shares%20occur%20when%20the,Internet%20connection%2C%20among%20other%20things" target="_blank">https://d-central.tech/a-deep-dive-into-rejected-shares-in-mining/#:~:text=Rejected%20shares%20occur%20when%20the,Internet%20connection%2C%20among%20other%20things</a>. </li><li>(35) <a href="https://www.mara.com/" target="_blank">https://www.mara.com/</a> </li><li>(36) <a href="https://www.linkedin.com/posts/marathon-digital-holdings_partner-with-us-activity-7099776741702791168-Uz20/" target="_blank">https://www.linkedin.com/posts/marathon-digital-holdings_partner-with-us-activity-7099776741702791168-Uz20/</a> </li><li>(37) <a href="https://www.nasdaq.com/articles/mara-pool-and-bitcoin-mining-censorship-2021-05-07" target="_blank">https://www.nasdaq.com/articles/mara-pool-and-bitcoin-mining-censorship-2021-05-07</a></li><li>(38) <a href="https://www.coindesk.com/tech/2021/05/07/marathon-miners-have-started-censoring-bitcoin-transactions-heres-what-that-means/" target="_blank">https://www.coindesk.com/tech/2021/05/07/marathon-miners-have-started-censoring-bitcoin-transactions-heres-what-that-means/</a></li><li>(39) <a href="https://www.nasdaq.com/articles/why-bitcoin-mining-pools-arent-incentivized-to-broadcast-blocks-quickly-2016-09-30" target="_blank">https://www.nasdaq.com/articles/why-bitcoin-mining-pools-arent-incentivized-to-broadcast-blocks-quickly-2016-09-30</a> </li><li>(40) <a href="https://luxor.tech/mining" target="_blank">https://luxor.tech/mining</a></li><li>(41) <a href="https://cointelegraph.com/news/new-hashprice-based-derivatives-instrument-gives-bitcoin-miners-another-way-to-hedge" target="_blank">https://cointelegraph.com/news/new-hashprice-based-derivatives-instrument-gives-bitcoin-miners-another-way-to-hedge</a> </li><li>(42) https://sbicrypto.atlassian.net/servicedesk/customer/portal/3/article/1221951680</li><li>(43) https://help.pool.btc.com/hc/en-us/articles/360020105152-Settlement-Mode</li><li>(44) https://help.pool.btc.com/hc/en-us/articles/900001116943-The-fee-settlement-mode-and-payment-threshold-in-BTC-com-pool </li><li>(45) <a href="https://braiins.com/stratum-v1" target="_blank">https://braiins.com/stratum-v1</a></li><li>(46) <a href="https://pool.braiins.com/en/news/goodbye-slush-pool/" target="_blank">https://pool.braiins.com/en/news/goodbye-slush-pool/</a></li><li>(47) <a href="https://bitcoinmagazine.com/business/stratum-v2-will-save-bitcoin-mining#:~:text=Stratum%20V2%20is%20already%20implemented,by%20pools%20using%20Stratum%20V1" target="_blank">https://bitcoinmagazine.com/business/stratum-v2-will-save-bitcoin-mining#:~:text=Stratum%20V2%20is%20already%20implemented,by%20pools%20using%20Stratum%20V1</a>. </li><li>(48) <a href="https://academy.braiins.com/en/braiins-pool/rewards-and-payouts/#:~:text=You%20can%20choose%20to%20receive%20payouts%20to%20your%20wallet%20at,threshold%2C%20such%20as%200.1%20BTC" target="_blank">https://academy.braiins.com/en/braiins-pool/rewards-and-payouts/#:~:text=You%20can%20choose%20to%20receive%20payouts%20to%20your%20wallet%20at,threshold%2C%20such%20as%200.1%20BTC</a>. </li><li>(49) <a href="https://en.bitcoin.it/wiki/Slush_Pool" target="_blank">https://en.bitcoin.it/wiki/Slush_Pool</a> </li><li>(50) <a href="https://braiins.com/stratum-v1" target="_blank">https://braiins.com/stratum-v1</a> </li><li>(51) <a href="https://en.bitcoin.it/wiki/Getwork#:~:text=3.9%20switchto-,Protocol,proof%2Dof%2Dwork%20requirements" target="_blank">https://en.bitcoin.it/wiki/Getwork#:~:text=3.9%20switchto-,Protocol,proof%2Dof%2Dwork%20requirements</a>.</li><li>(52) <a href="https://en.bitcoin.it/wiki/Getblocktemplate" target="_blank">https://en.bitcoin.it/wiki/Getblocktemplate</a></li><li>(53) <a href="https://www.geeksforgeeks.org/what-is-long-polling-and-short-polling/" target="_blank">https://www.geeksforgeeks.org/what-is-long-polling-and-short-polling/</a></li><li>(54) <a href="https://braiins.com/stratum-v1/docs" target="_blank">https://braiins.com/stratum-v1/docs</a> </li><li>(55) <a href="https://networkinterview.com/http-vs-tcp-know-the-difference/" target="_blank">https://networkinterview.com/http-vs-tcp-know-the-difference/</a></li><li>(56) <a href="https://braiins.com/stratum-v2" target="_blank">https://braiins.com/stratum-v2</a> </li><li>(57) <a href="https://stratumprotocol.org/docs/" target="_blank">https://stratumprotocol.org/docs/</a> </li></ol>
-<p>‍</p>
-    </article>
-
-    <footer>
-        <p>&copy; NRG Bloom Inc. &middot; <a href="/insights">Insights</a> &middot; <a href="/discuss-partnership">Contact</a></p>
-    </footer>
+<p>‍</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container">
+        <div class="row row-align-end row-justify-between">
+          <div class="column col-large-4 col-small-12">
+            <h2 class="u-margin-bottom-0">Latest news updates</h2>
+          </div>
+          <div class="column col-shrink">
+            <a href="../insights.html" class="button w-button">View all blogs</a>
+          </div>
+        </div>
+        <div class="u-margin-top-2em">
+          <div role="list" class="row">
+            <div role="listitem" class="column col-large-4 col-med-6 col-xsmall-12">
+              <a href="../blog/bitcoin-mining-supply-squeeze.html" class="link-wrap w-inline-block">
+                <div class="u-aspect-16x9 cc-link-wrap"><img loading="lazy" src="https://cdn.prod.website-files.com/65e9c5a36e8864c80aafb162/69256ecacb393d8afd8a3d65_TradingFloor.jpg" alt="Bitcoin mining in 2025. Does the current supply squeeze by institutions threaten to derail the very idea it was built upon?" class="u-image-cover">
+                  <div class="link-image-hover-cover">
+                    <div class="link-icon cc-h3">→</div>
+                  </div>
+                </div>
+                <div class="u-display-flex cc-link-label-wrap">
+                  <div class="u-text-semibold u-text-black">Economics and Finance</div>
+                  <div class="dot-wrap"><div class="u-text-black">·</div></div>
+                  <div class="u-text-black">Nov 25, 2025</div>
+                </div>
+                <div class="h3 cc-link-title">Bitcoin mining in 2025. Does the current supply squeeze by institutions threaten to derail the very idea it was built upon?</div>
+                <p class="paragraph-1em u-text-black">From institutions accumulating, to lost coins from early adopters. Bitcoin's supply is under pressure.</p>
+              </a>
+            </div>
+            <div role="listitem" class="column col-large-4 col-med-6 col-xsmall-12">
+              <a href="../blog/comparative-analysis-of-bitcoin-mining-pools.html" class="link-wrap w-inline-block">
+                <div class="u-aspect-16x9 cc-link-wrap"><img loading="lazy" src="https://cdn.prod.website-files.com/65e9c5a36e8864c80aafb162/680d63e174d687afe2ff49e3_featured_image.png" alt="Comparative Analysis of the Major Bitcoin Mining Pools" class="u-image-cover">
+                  <div class="link-image-hover-cover">
+                    <div class="link-icon cc-h3">→</div>
+                  </div>
+                </div>
+                <div class="u-display-flex cc-link-label-wrap">
+                  <div class="u-text-semibold u-text-black">Technology</div>
+                  <div class="dot-wrap"><div class="u-text-black">·</div></div>
+                  <div class="u-text-black">Apr 26, 2025</div>
+                </div>
+                <div class="h3 cc-link-title">Comparative Analysis of the Major Bitcoin Mining Pools</div>
+                <p class="paragraph-1em u-text-black">An analysis of major Bitcoin mining pools comparing how your mining pool choice affects miner's rewards.</p>
+              </a>
+            </div>
+            <div role="listitem" class="column col-large-4 col-med-6 col-xsmall-12">
+              <a href="../blog/investment-opportunities-with-bitcoin-treasury-management.html" class="link-wrap w-inline-block">
+                <div class="u-aspect-16x9 cc-link-wrap"><img loading="lazy" src="https://cdn.prod.website-files.com/65e9c5a36e8864c80aafb162/6754b4c4002c67bac5af51a2_ft%20image%20bitcoin%20treasury.svg" alt="Unlocking Investment Opportunities with Bitcoin Treasury Management" class="u-image-cover">
+                  <div class="link-image-hover-cover">
+                    <div class="link-icon cc-h3">→</div>
+                  </div>
+                </div>
+                <div class="u-display-flex cc-link-label-wrap">
+                  <div class="u-text-semibold u-text-black">Economics and Finance</div>
+                  <div class="dot-wrap"><div class="u-text-black">·</div></div>
+                  <div class="u-text-black">Dec 8, 2024</div>
+                </div>
+                <div class="h3 cc-link-title">Unlocking Investment Opportunities with Bitcoin Treasury Management</div>
+                <p class="paragraph-1em u-text-black">Explore how businesses leverage Bitcoin in treasury management to balance risk and reward.</p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section u-padding-bottom-0">
+      <div class="container">
+        <div class="row cc-footer-top mobile-flex">
+          <div class="column col-large-4 col-med-12">
+            <div class="u-display-flex cc-footer-left">
+              <a href="../index.html" class="logo-link w-nav-brand"><img src="../images/NRGBloom_1.webp" loading="lazy" sizes="100vw" srcset="../images/NRGBloom_1NRGBloom.webp 500w, images/NRGBloom_1.webp 622w" alt="" class="logo-image"></a>
+              <div class="u-display-flex cc-footer-nav-links">
+                <a href="../insights.html" class="nav-link cc-footer w-inline-block">
+                  <div>Insights</div>
+                </a>
+                <a href="../investor-relations.html" class="nav-link cc-footer w-inline-block">
+                  <div>FAQs</div>
+                </a>
+                <a href="../index.html" class="nav-link cc-footer w-inline-block">
+                  <div>Search</div>
+                </a>
+                <a href="../for-investors.html" class="nav-link cc-footer w-inline-block">
+                  <div>Investor Insights → </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="column col-large-5 col-med-8 col-small-12"></div>
+          <div class="column col-large-3 col-med-4 col-small-8 col-xsmall-12">
+            <div class="u-display-flex cc-social-icons">
+              <a href="https://twitter.com/nrgbloom" target="_blank" class="w-inline-block"><img src="../images/xtwitter-iconneuehome.svg" loading="lazy" alt="x/twitter icon">
+                <div class="u-screen-reader">X/Twitter icon link</div>
+              </a>
+              <a href="https://www.facebook.com" target="_blank" class="w-inline-block">
+                <div class="u-screen-reader">X/Twitter icon link</div>
+              </a>
+              <a href="https://www.linkedin.com/company/nrgbloom/" target="_blank" class="w-inline-block"><img src="../images/linkedin-icon.svg" loading="lazy" alt="linkedin icon">
+                <div class="u-screen-reader">Linkedin icon link</div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="row row-justify-between">
+          <div class="column col-large-4 col-small-12">
+            <div class="w-embed">© NRGBloom <span id="year"></span></div>
+          </div>
+          <div class="column col-large-8 col-small-12"></div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=65e9c5a26e8864c80aafb002" type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+  <script src="../js/webflow.js" type="text/javascript"></script>
+  <script>
+document.getElementById("year").textContent = new Date().getFullYear();
+</script>
 </body>
 </html>
