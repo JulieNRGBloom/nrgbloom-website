@@ -310,9 +310,17 @@ document.addEventListener("DOMContentLoaded", function() {
 document.getElementById("year").textContent = new Date().getFullYear();
 </script>
   <script>
-  function checkPw() {
+  async function hashPassword(pw) {
+    var encoder = new TextEncoder();
+    var data = encoder.encode(pw);
+    var hashBuffer = await crypto.subtle.digest('SHA-256', data);
+    var hashArray = Array.from(new Uint8Array(hashBuffer));
+    return hashArray.map(function(b) { return b.toString(16).padStart(2, '0'); }).join('');
+  }
+  async function checkPw() {
     var input = document.getElementById('pw-input').value;
-    if (input === '5MWpending$') {
+    var hash = await hashPassword(input);
+    if (hash === '0c7a7e7c9b480c9c54dcb0714bf7a3a870d665a92fa4ff7e1f01e7b127f271cf') {
       document.getElementById('password-gate').style.display = 'none';
       document.getElementById('page-content').style.display = '';
       sessionStorage.setItem('investor-auth', 'true');
@@ -322,7 +330,6 @@ document.getElementById("year").textContent = new Date().getFullYear();
       document.getElementById('pw-input').focus();
     }
   }
-  // Remember within session so refresh doesn't re-prompt
   if (sessionStorage.getItem('investor-auth') === 'true') {
     document.getElementById('password-gate').style.display = 'none';
     document.getElementById('page-content').style.display = '';
