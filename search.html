@@ -163,7 +163,7 @@ document.addEventListener("DOMContentLoaded", function() {
       </div>
       <div class="row row-justify-between">
         <div class="column col-large-4 col-small-12">
-          <div class="w-embed">© NRGBloom <span id="year"></span></div>
+          <div class="w-embed">© NRGBloom <span id="year"></span> · <a href="/privacy-policy" style="color: inherit; text-decoration: underline;">Privacy Policy</a> · <a href="/terms-of-service" style="color: inherit; text-decoration: underline;">Terms of Service</a></div>
         </div>
         <div class="column col-large-8 col-small-12"></div>
       </div>
@@ -174,5 +174,10 @@ document.addEventListener("DOMContentLoaded", function() {
   <script>
 document.getElementById("year").textContent = new Date().getFullYear();
 </script>
+<div id="cookie-consent" style="position:fixed;bottom:0;left:0;right:0;background:#1a1a2e;color:#fff;padding:12px 24px;display:flex;align-items:center;justify-content:space-between;z-index:9999;font-size:14px;gap:12px;flex-wrap:wrap;">
+  <span>We use cookies to improve your experience. By continuing to use this site, you agree to our <a href="/privacy-policy" style="color:#4ecdc4;text-decoration:underline;">Privacy Policy</a>.</span>
+  <button onclick="document.getElementById('cookie-consent').style.display='none';localStorage.setItem('cookieConsent','true');" style="background:#4ecdc4;color:#1a1a2e;border:none;padding:8px 20px;cursor:pointer;font-weight:bold;border-radius:4px;white-space:nowrap;">Accept</button>
+</div>
+<script>if(localStorage.getItem('cookieConsent')==='true'){document.getElementById('cookie-consent').style.display='none';}</script>
 </body>
 </html>
