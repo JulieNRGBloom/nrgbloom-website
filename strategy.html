@@ -119,43 +119,374 @@ document.addEventListener("DOMContentLoaded", function() {
         
       </div>
     </div>
-    <section class="section u-padding-bottom-1em">
-      <div class="container">
-        <div class="row">
-          <div class="column more-upper-margin full-width">
-            <p class="h1 less-upper-margin"><strong>Proving Sites with Bitcoin. Scaling Them with AI.</strong></p>
-            <p class="paragraph-1em u-text-dark-grey">We are not just a consumer of energy. We are an Energy Arbitrageur. We deploy Bitcoin mining as an operational Proof of Concept to validate off-grid power and fuel longevity before committing high-value GPU capital.</p>
+    <style>
+      /* Strategy page redesign */
+      .strat-hero {
+        padding: 6rem 0 4rem;
+        text-align: center;
+      }
+      .strat-hero .strat-label {
+        display: inline-block;
+        font-size: 0.75rem;
+        font-weight: 700;
+        letter-spacing: 0.2em;
+        text-transform: uppercase;
+        color: #0f7173;
+        background: #0f71731a;
+        padding: 0.4rem 1.2rem;
+        border-radius: 100px;
+        margin-bottom: 1.5rem;
+      }
+      .strat-hero h1 {
+        font-family: ‘Switzer Variable’, ‘Montserrat’, sans-serif;
+        font-size: 3.2rem;
+        font-weight: 800;
+        line-height: 1.1;
+        margin: 0 auto 1.5rem;
+        max-width: 800px;
+        color: #0d1b2a;
+      }
+      .strat-hero .strat-sub {
+        font-size: 1.15rem;
+        line-height: 1.7;
+        color: #4a5568;
+        max-width: 640px;
+        margin: 0 auto;
+      }
+      @media (max-width: 767px) {
+        .strat-hero { padding: 4rem 0 2.5rem; }
+        .strat-hero h1 { font-size: 2rem; }
+        .strat-hero .strat-sub { font-size: 1rem; }
+      }
+
+      /* Connector line */
+      .strat-timeline {
+        position: relative;
+        padding: 2rem 0 4rem;
+      }
+      .strat-timeline::before {
+        content: ‘’;
+        position: absolute;
+        left: 50%;
+        top: 0;
+        bottom: 0;
+        width: 2px;
+        background: linear-gradient(to bottom, #0f717333, #0f7173, #0f717333);
+        transform: translateX(-50%);
+      }
+      @media (max-width: 767px) {
+        .strat-timeline::before {
+          left: 24px;
+        }
+      }
+
+      /* Stage cards */
+      .strat-stage {
+        display: flex;
+        align-items: flex-start;
+        gap: 3rem;
+        margin-bottom: 4rem;
+        position: relative;
+      }
+      .strat-stage:last-child { margin-bottom: 0; }
+      .strat-stage:nth-child(even) { flex-direction: row-reverse; }
+      .strat-stage:nth-child(even) .strat-card { text-align: left; }
+
+      .strat-number {
+        flex-shrink: 0;
+        width: 56px;
+        height: 56px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: ‘Switzer Variable’, ‘Montserrat’, sans-serif;
+        font-size: 1.3rem;
+        font-weight: 800;
+        color: #fff;
+        position: relative;
+        z-index: 2;
+      }
+      .strat-number.s1 { background: linear-gradient(135deg, #0f7173, #0d2b3e); }
+      .strat-number.s2 { background: linear-gradient(135deg, #0d2b3e, #1a365d); }
+      .strat-number.s3 { background: linear-gradient(135deg, #1a365d, #0f7173); }
+
+      .strat-card {
+        flex: 1;
+        background: #fff;
+        border: 1px solid #e2e8f0;
+        border-radius: 16px;
+        padding: 2.5rem;
+        position: relative;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+      .strat-card:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 12px 40px rgba(13, 43, 62, 0.1);
+      }
+      .strat-card .stage-label {
+        font-size: 0.7rem;
+        font-weight: 700;
+        letter-spacing: 0.15em;
+        text-transform: uppercase;
+        color: #0f7173;
+        margin-bottom: 0.5rem;
+      }
+      .strat-card h2 {
+        font-family: ‘Switzer Variable’, ‘Montserrat’, sans-serif;
+        font-size: 1.6rem;
+        font-weight: 700;
+        color: #0d1b2a;
+        margin: 0 0 0.75rem;
+        line-height: 1.2;
+      }
+      .strat-card .stage-time {
+        display: inline-block;
+        font-size: 0.8rem;
+        font-weight: 600;
+        color: #0f7173;
+        background: #0f71730d;
+        padding: 0.25rem 0.75rem;
+        border-radius: 100px;
+        margin-bottom: 1.25rem;
+      }
+      .strat-card p {
+        font-size: 0.95rem;
+        line-height: 1.75;
+        color: #4a5568;
+        margin: 0 0 1.25rem;
+      }
+      .strat-card p:last-child { margin-bottom: 0; }
+      .strat-card ul {
+        list-style: none;
+        padding: 0;
+        margin: 0 0 1.25rem;
+      }
+      .strat-card ul li {
+        font-size: 0.9rem;
+        line-height: 1.6;
+        color: #4a5568;
+        padding: 0.35rem 0 0.35rem 1.5rem;
+        position: relative;
+      }
+      .strat-card ul li::before {
+        content: ‘’;
+        position: absolute;
+        left: 0;
+        top: 0.7rem;
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background: #0f7173;
+      }
+      .strat-card .stage-outcome {
+        margin-top: 1.25rem;
+        padding: 1rem 1.25rem;
+        background: #f7fafc;
+        border-left: 3px solid #0f7173;
+        border-radius: 0 8px 8px 0;
+        font-size: 0.85rem;
+        font-weight: 600;
+        color: #0d2b3e;
+      }
+
+      @media (max-width: 767px) {
+        .strat-stage, .strat-stage:nth-child(even) {
+          flex-direction: column;
+          gap: 0;
+          padding-left: 56px;
+        }
+        .strat-number {
+          position: absolute;
+          left: 0;
+          top: 0;
+          width: 48px;
+          height: 48px;
+          font-size: 1.1rem;
+        }
+        .strat-card {
+          padding: 1.5rem;
+          margin-top: 0.5rem;
+        }
+        .strat-card h2 { font-size: 1.3rem; }
+      }
+
+      /* Metrics bar */
+      .strat-metrics {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 1.5rem;
+        padding: 3rem 0;
+      }
+      .strat-metric {
+        text-align: center;
+        padding: 2rem 1rem;
+        background: #0d1b2a;
+        border-radius: 12px;
+        color: #fff;
+      }
+      .strat-metric .metric-val {
+        font-family: ‘Switzer Variable’, ‘Montserrat’, sans-serif;
+        font-size: 2rem;
+        font-weight: 800;
+        color: #4ecdc4;
+        line-height: 1;
+        margin-bottom: 0.5rem;
+      }
+      .strat-metric .metric-label {
+        font-size: 0.8rem;
+        color: #8ab4c7;
+        line-height: 1.4;
+      }
+      @media (max-width: 767px) {
+        .strat-metrics { grid-template-columns: repeat(2, 1fr); gap: 1rem; }
+        .strat-metric { padding: 1.25rem 0.75rem; }
+        .strat-metric .metric-val { font-size: 1.5rem; }
+      }
+
+      /* CTA section */
+      .strat-cta {
+        text-align: center;
+        padding: 4rem 0;
+      }
+      .strat-cta h2 {
+        font-family: ‘Switzer Variable’, ‘Montserrat’, sans-serif;
+        font-size: 2rem;
+        font-weight: 700;
+        color: #0d1b2a;
+        margin-bottom: 1rem;
+      }
+      .strat-cta p {
+        font-size: 1.05rem;
+        color: #4a5568;
+        margin-bottom: 2rem;
+        max-width: 500px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .strat-cta-btn {
+        display: inline-block;
+        padding: 1rem 2.5rem;
+        background: linear-gradient(135deg, #0f7173, #0d2b3e);
+        color: #fff;
+        font-size: 1rem;
+        font-weight: 700;
+        text-decoration: none;
+        border-radius: 8px;
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+      }
+      .strat-cta-btn:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 8px 24px rgba(15, 113, 115, 0.3);
+        color: #fff;
+      }
+    </style>
+
+    <!-- HERO -->
+    <section class=”strat-hero”>
+      <div class=”container”>
+        <div class=”strat-label”>The Pathfinder Strategy</div>
+        <h1>Proving Sites with Bitcoin.<br>Scaling Them with AI.</h1>
+        <p class=”strat-sub”>We don’t guess which sites will work. We deploy Bitcoin miners as a 24/7 stress test, then scale only the sites that prove themselves. Every megawatt is earned, not assumed.</p>
+      </div>
+    </section>
+
+    <!-- METRICS -->
+    <section>
+      <div class=”container”>
+        <div class=”strat-metrics”>
+          <div class=”strat-metric”>
+            <div class=”metric-val”>60-90d</div>
+            <div class=”metric-label”>Site validation<br>timeline</div>
+          </div>
+          <div class=”strat-metric”>
+            <div class=”metric-val”>$0.02</div>
+            <div class=”metric-label”>Energy cost<br>per kWh</div>
+          </div>
+          <div class=”strat-metric”>
+            <div class=”metric-val”>95%</div>
+            <div class=”metric-label”>Operational<br>uptime</div>
+          </div>
+          <div class=”strat-metric”>
+            <div class=”metric-val”>&lt;1.2</div>
+            <div class=”metric-label”>PUE<br>target</div>
           </div>
         </div>
       </div>
     </section>
-    <section class="container">
-      <div class="div-block-22 flex-veritcal-on-phone">
-        <div class="col-left middle-align">
-          <h2 class="heading-8">VALIDATION</h2>
-        </div>
-        <div class="col-right middle-aling">
-          <p class="paragraph-1em u-text-dark-grey">We deploy containerized ASIC mining units to candidate sites within 60-90 days. These units act as a 24/7 operational stress test: validating gas quality and flow consistency, generator uptime and thermal performance, connectivity and remote monitoring stability, and regulatory and community alignment. Bitcoin mining is the ideal validation tool because it is the only high-value compute workload with zero customer SLA risk, zero latency sensitivity, and immediate revenue from day one. If a site can sustain ASIC miners, we move to stage 2. Sites that prove stable but fall short of AI-grade requirements remain optimized for Bitcoin mining, ensuring every location delivers immediate, long-term value.</p>
+
+    <!-- 3-STAGE TIMELINE -->
+    <section>
+      <div class=”container”>
+        <div class=”strat-timeline”>
+
+          <!-- STAGE 1 -->
+          <div class=”strat-stage”>
+            <div class=”strat-number s1”>01</div>
+            <div class=”strat-card”>
+              <div class=”stage-label”>Stage One</div>
+              <h2>Validate</h2>
+              <div class=”stage-time”>60-90 day deployment</div>
+              <p>We deploy containerized ASIC mining units to candidate sites. These units act as a 24/7 operational stress test — proving whether the site can sustain high-value compute before we commit significant capital.</p>
+              <ul>
+                <li>Gas quality and flow consistency verification</li>
+                <li>Generator uptime and thermal performance testing</li>
+                <li>Connectivity and remote monitoring stability</li>
+                <li>Regulatory and community alignment</li>
+              </ul>
+              <p>Bitcoin mining is the ideal validation tool: zero customer SLA risk, zero latency sensitivity, and immediate revenue from day one.</p>
+              <div class=”stage-outcome”>Outcome: Sites that pass move to Stage 2. Sites that don’t are optimized for long-term Bitcoin mining — every location delivers value.</div>
+            </div>
+          </div>
+
+          <!-- STAGE 2 -->
+          <div class=”strat-stage”>
+            <div class=”strat-number s2”>02</div>
+            <div class=”strat-card”>
+              <div class=”stage-label”>Stage Two</div>
+              <h2>Harden</h2>
+              <div class=”stage-time”>Infrastructure upgrade phase</div>
+              <p>Validated sites receive permanent infrastructure upgrades, transforming them from mining camps into certified compute facilities.</p>
+              <ul>
+                <li>High-bandwidth connectivity via microwave links or fiber backhaul</li>
+                <li>Tier III-ready liquid or immersion cooling systems</li>
+                <li>Redundant power conditioning and UPS systems</li>
+                <li>Physical security and environmental monitoring</li>
+              </ul>
+              <p>Bitcoin mining continues during this phase, generating revenue that partially offsets the CapEx of infrastructure hardening.</p>
+              <div class=”stage-outcome”>Outcome: A certified compute facility — not a temporary mining camp.</div>
+            </div>
+          </div>
+
+          <!-- STAGE 3 -->
+          <div class=”strat-stage”>
+            <div class=”strat-number s3”>03</div>
+            <div class=”strat-card”>
+              <div class=”stage-label”>Stage Three</div>
+              <h2>Scale to AI</h2>
+              <div class=”stage-time”>GPU inference deployment</div>
+              <p>The hardened site receives GPU cluster deployments for AI inference workloads. Our Dynamic Load Orchestration system continuously allocates power between:</p>
+              <ul>
+                <li><strong>AI inference</strong> — high-margin, latency-sensitive, priority power allocation</li>
+                <li><strong>Bitcoin mining</strong> — high-floor, always-on, absorbs 100% of off-peak capacity</li>
+              </ul>
+              <p>Generators never idle. The PPA is always maximized. Bitcoin mining becomes the site’s “thermal battery” — absorbing excess energy, generating baseline revenue, and keeping cooling systems at optimal efficiency.</p>
+              <div class=”stage-outcome”>Outcome: A dual-revenue compute facility powered by energy that would otherwise be wasted.</div>
+            </div>
+          </div>
+
         </div>
       </div>
-      <div class="div-block-22 flex-veritcal-on-phone">
-        <div class="col-left middle-align">
-          <h2 class="heading-8"><strong>INFRASTRUCTURE HARDENING</strong></h2>
+    </section>
+
+    <!-- CTA -->
+    <section>
+      <div class=”container”>
+        <div class=”strat-cta”>
+          <h2>Ready to Deploy?</h2>
+          <p>If you have stranded energy and want to turn it into compute infrastructure, let’s talk.</p>
+          <a href=”discuss-partnership.html” class=”strat-cta-btn”>Discuss a Partnership</a>
         </div>
-        <div class="col-right middle-aling">
-          <p class="paragraph-1em u-text-dark-grey">Once a site passes the validation stage, we invest in permanent infrastructure upgrades: high-bandwidth connectivity via microwave links or fiber backhaul, Tier III-ready liquid or immersion cooling systems, redundant power conditioning and UPS systems, and physical security and environmental monitoring. BTC mining continues during this phase, generating revenue that partially offsets the CapEx of infrastructure hardening. The site is now a certified compute facility—not a temporary mining camp.</p>
-        </div>
-      </div>
-      <div class="div-block-22 flex-veritcal-on-phone">
-        <div class="col-left middle-align">
-          <h2 class="heading-8"><strong>AI INFERENCE </strong></h2>
-        </div>
-        <div class="col-right middle-aling">
-          <p class="paragraph-1em u-text-dark-grey">The hardened site now receives GPU cluster deployments for AI inference workloads. Our Dynamic Load Orchestration system continuously allocates available power between AI inference jobs (high-margin, latency-sensitive) and Bitcoin mining (high-floor, always-on). When AI demand is high, GPUs receive priority power allocation. During off-peak periods, Bitcoin mining absorbs 100% of available capacity, ensuring the generators never idle and the PPA is always maximized. BTC mining becomes the site’s “thermal battery”: absorbing excess energy, generating baseline revenue, and providing thermal load that keeps cooling systems operating at optimal efficiency.</p>
-        </div>
-      </div>
-      <div class="div-block-28">
-        <a href="discuss-partnership.html" class="button more-padding w-button"><strong>Discuss a Partnership</strong></a>
       </div>
     </section>
     <section class="section u-padding-bottom-0">
