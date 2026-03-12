@@ -1,0 +1,55 @@
+{
+  "schema_version": "1.0",
+  "name": "NRG Bloom",
+  "description": "AI-ready compute infrastructure on stranded energy. We deploy modular data centers on flared gas sites, validating with Bitcoin mining before scaling to AI inference.",
+  "url": "https://www.nrgbloom.com",
+  "logo": "https://www.nrgbloom.com/images/webclip.png",
+  "industry": "Energy & Technology",
+  "capabilities": [
+    "energy-partnership-inquiry",
+    "investor-information",
+    "technical-specifications",
+    "esg-impact-data",
+    "company-information"
+  ],
+  "agent_status": "discovery",
+  "agent_version": "0.1.0",
+  "supported_protocols": ["https", "web-form"],
+  "endpoints": {
+    "discovery": {
+      "llms_txt": "https://www.nrgbloom.com/llms.txt",
+      "llms_full_txt": "https://www.nrgbloom.com/llms-full.txt",
+      "sitemap": "https://www.nrgbloom.com/sitemap.xml"
+    },
+    "contact": {
+      "partnership": "https://www.nrgbloom.com/discuss-partnership.html",
+      "general": "https://www.nrgbloom.com/contact.html",
+      "investor": "https://www.nrgbloom.com/investor-relations.html"
+    }
+  },
+  "structured_data": {
+    "format": "JSON-LD",
+    "types": ["Organization", "Article", "Person", "FAQPage"]
+  },
+  "partnership_criteria": {
+    "minimum_power": "5 MW",
+    "energy_sources": ["stranded gas", "flared gas", "associated gas", "renewables"],
+    "deployment_timeline": "60-90 days",
+    "model": "shared-revenue",
+    "regions_of_interest": ["Sub-Saharan Africa", "Middle East", "Central Asia", "Latin America"]
+  },
+  "key_metrics": {
+    "developed_capacity": "1.5 MW",
+    "pipeline_capacity": "5 MW",
+    "energy_cost_range": "$0.02-$0.032/kWh",
+    "co2_mitigated": "300+ tonnes CO2e",
+    "uptime": "95%",
+    "pue_target": "<1.2",
+    "jobs_per_site": "5-10"
+  },
+  "social": {
+    "linkedin": "https://www.linkedin.com/company/nrgbloom",
+    "twitter": "https://x.com/nrgbloom"
+  },
+  "last_updated": "2026-03-11"
+}

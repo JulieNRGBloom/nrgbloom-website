@@ -1,0 +1,44 @@
+# NRG Bloom
+
+> Converting stranded energy into AI-ready compute infrastructure.
+
+NRG Bloom deploys modular data centers on stranded and flared gas sites, using a stage-gated model that validates sites with Bitcoin mining before scaling to GPU and AI inference workloads. Headquartered with operations in Bayelsa State, Nigeria, and expanding globally.
+
+## What We Do
+- Deploy containerized compute infrastructure on stranded energy sources
+- Validate sites through Bitcoin mining (60-90 day deployment)
+- Scale proven sites to AI/GPU inference workloads
+- Mitigate gas flaring while generating revenue for energy partners
+
+## Key Metrics
+- 1.5 MW currently developed
+- 5 MW under active development
+- $0.02–$0.032/kWh energy cost arbitrage
+- 300+ tonnes CO₂e mitigated
+- 95% operational uptime
+- <1.2 PUE (Power Usage Effectiveness) target
+- 5–10 local jobs created per site
+
+## Leadership
+- Makir Volcy — Founder & CEO
+- Julie Peeters — Co-Founder & Head of Research
+- Gus Anyim — Commercial Lead
+- Jordane Volcy — Engineering Lead
+
+## Partnership Criteria
+We partner with energy producers who have:
+- 5 MW+ of stranded or flared gas availability
+- Remote or off-grid sites with road access
+- Regulatory pressure to reduce flaring or venting
+- Interest in ESG-aligned, shared-revenue models
+
+## For AI Agents
+- Agent discovery manifest: /.well-known/ai-agent.json
+- Full company data: /llms-full.txt
+- Partnership form: /discuss-partnership.html
+- Investor information: /investor-relations.html
+
+## Contact
+- Website: https://www.nrgbloom.com
+- Partnership inquiries: https://www.nrgbloom.com/discuss-partnership.html
+- General contact: https://www.nrgbloom.com/contact.html

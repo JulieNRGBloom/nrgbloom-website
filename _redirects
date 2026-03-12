@@ -1,3 +1,5 @@
+/.well-known/*  /.well-known/:splat  200
+
 # NRG Bloom 301 Redirects
 # Old site structure -> New site structure
 

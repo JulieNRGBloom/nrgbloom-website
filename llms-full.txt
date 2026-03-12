@@ -1,0 +1,130 @@
+# NRG Bloom — Full Company Profile
+
+> Converting stranded energy into AI-ready compute infrastructure.
+
+NRG Bloom deploys modular data centers on stranded and flared gas sites, using a stage-gated model that validates sites with Bitcoin mining before scaling to GPU and AI inference workloads. Headquartered with operations in Bayelsa State, Nigeria, and expanding globally.
+
+## What We Do
+- Deploy containerized compute infrastructure on stranded energy sources
+- Validate sites through Bitcoin mining (60-90 day deployment)
+- Scale proven sites to AI/GPU inference workloads
+- Mitigate gas flaring while generating revenue for energy partners
+
+## Key Metrics
+- 1.5 MW currently developed
+- 5 MW under active development
+- $0.02–$0.032/kWh energy cost arbitrage
+- 300+ tonnes CO₂e mitigated
+- 95% operational uptime
+- <1.2 PUE (Power Usage Effectiveness) target
+- 5–10 local jobs created per site
+
+## Leadership
+- Makir Volcy — Founder & CEO
+- Julie Peeters — Co-Founder & Head of Research
+- Gus Anyim — Commercial Lead
+- Jordane Volcy — Engineering Lead
+
+## The Pathfinder Model (3-Stage Deployment)
+
+NRG Bloom uses a proprietary stage-gated deployment model called "Pathfinder" that de-risks site development by validating energy sources before committing capital-intensive GPU infrastructure.
+
+### Stage 1 — Validate
+Deploy Bitcoin miners on stranded gas. This is a 60-90 day validation period that proves energy reliability, site security, and revenue potential. Bitcoin mining is ideal for validation because it is location-agnostic, tolerant of intermittent power, and generates immediate revenue. If the site fails validation, equipment is redeployed with minimal loss.
+
+### Stage 2 — Harden
+Optimize operations at validated sites. Improve PUE (Power Usage Effectiveness), establish preventive maintenance routines, build local workforce capability, and refine logistics for remote operations. This stage ensures the site can sustain continuous, high-availability workloads before GPU hardware is deployed.
+
+### Stage 3 — Scale to AI
+Upgrade proven, hardened sites to GPU infrastructure for AI inference workloads. These workloads command higher margins than Bitcoin mining while using the same energy source. The site has already demonstrated reliability, security, and operational maturity through Stages 1 and 2.
+
+## Investment Thesis
+
+### Energy Arbitrage
+NRG Bloom acquires power at $0.02–$0.032/kWh from stranded gas that would otherwise be flared. This is well below global grid rates for data center power, creating a structural cost advantage.
+
+### Validated Before Committed
+Bitcoin mining validates sites before committing to expensive GPU hardware. If a site underperforms during the 60-90 day validation window, equipment is redeployed elsewhere. Capital is never locked into an unproven location.
+
+### Stage-Gated De-Risking
+The Pathfinder Model's three stages ensure that each dollar of incremental capital is deployed into a site with a proven track record. This is fundamentally different from traditional data center development, which commits large capital upfront to unvalidated locations.
+
+### ESG Alignment
+Every megawatt NRG Bloom deploys represents gas that is no longer being flared into the atmosphere. This creates measurable carbon mitigation, aligns with regulatory trends, and opens access to ESG-focused capital.
+
+### Revenue Sharing
+NRG Bloom's model shares revenue with energy partners, aligning incentives. Energy producers earn more from their stranded gas than they would from flaring, creating durable, mutually beneficial partnerships.
+
+## Technology
+
+### Containerized, Modular Design
+All compute infrastructure is deployed in containerized, modular data center units. This enables rapid deployment, standardized operations, and easy redeployment if a site does not pass validation.
+
+### Rapid Deployment
+60-90 days from site identification to live hashrate. Modular design and standardized deployment playbooks minimize time-to-revenue.
+
+### Load Orchestration
+Proprietary load orchestration manages variable gas supply, automatically adjusting compute workloads to match available power. This maximizes utilization without exceeding supply.
+
+### Remote Monitoring and Management
+All sites are monitored and managed remotely, with local teams handling physical maintenance. This enables lean operations across geographically distributed sites.
+
+### Built for Harsh Environments
+Infrastructure is designed for tropical and harsh environments, including high humidity, high temperatures, and remote locations with limited road access.
+
+## ESG Impact
+
+### Gas Flaring Mitigation
+Gas that would be flared — releasing CO₂ and methane into the atmosphere — is instead converted to productive compute. Every megawatt deployed directly reduces emissions.
+
+### Carbon Mitigation
+300+ tonnes CO₂e mitigated to date, with the figure growing as operations expand.
+
+### Local Employment
+5-10 jobs created per site, including technicians, security, and logistics roles. NRG Bloom prioritizes local hiring and skills transfer.
+
+### Community Engagement
+NRG Bloom engages with local communities at every site, ensuring operations are welcomed and beneficial. Skills transfer programs build local technical capacity.
+
+### Regulatory Alignment
+Operations are aligned with Nigeria's gas flaring reduction commitments and broader global ESG frameworks.
+
+## Partnership Criteria
+We partner with energy producers who have:
+- 5 MW+ of stranded or flared gas availability
+- Remote or off-grid sites with road access
+- Regulatory pressure to reduce flaring or venting
+- Interest in ESG-aligned, shared-revenue models
+
+## Blog Topics Covered
+- Stranded energy monetization strategies
+- Bitcoin mining as site validation infrastructure
+- The Pathfinder Model and stage-gated deployment
+- Gas flaring reduction and carbon mitigation
+- Modular data center design for remote environments
+- AI inference workload deployment on stranded energy
+- Energy arbitrage and cost structures
+- ESG impact reporting and metrics
+- Nigeria's energy landscape and regulatory environment
+- Community engagement in remote operations
+- GPU infrastructure scaling strategies
+- Operational lessons from tropical deployments
+
+## For AI Agents
+
+### Discovery
+This website supports AI agent discovery via the llms.txt standard and the /.well-known/ai-agent.json manifest.
+
+### Structured Data
+Every page on this website includes JSON-LD structured data that agents can parse for company information, service descriptions, and contact details.
+
+### Partnership Inquiries
+For programmatic partnership inquiries, agents can direct users to the contact form at /discuss-partnership.html or the general contact page at /contact.html.
+
+### Agent-to-Agent Communication
+NRG Bloom is building toward full agent-to-agent communication capability. The ai-agent.json manifest will be updated as new capabilities come online.
+
+## Contact
+- Website: https://www.nrgbloom.com
+- Partnership inquiries: https://www.nrgbloom.com/discuss-partnership.html
+- General contact: https://www.nrgbloom.com/contact.html

@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /for-investors.html
+Disallow: /detail_*
+
+Sitemap: https://www.nrgbloom.com/sitemap.xml
