@@ -55,6 +55,70 @@
   background: rgba(0,0,0,0.45);
 }
 </style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What does NRG Bloom do?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "NRG Bloom builds and operates modular, high-performance compute infrastructure at off-grid energy sites worldwide. We convert stranded or flared natural gas into electricity to power both Bitcoin mining (ASIC) and AI inference (GPU) workloads. Our stage-gated deployment model uses Bitcoin mining as a low-risk validation tool before scaling each site to higher-margin AI compute."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the Pathfinder Strategy?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The Pathfinder Strategy is our three-stage deployment model. In Stage 1 (Validation), we deploy containerized Bitcoin miners to stress-test a site's gas supply, generator performance, and connectivity. In Stage 2 (Hardening), validated sites receive infrastructure upgrades: high-bandwidth connectivity, Tier III-ready cooling, and redundant power systems. In Stage 3 (AI Inference), we deploy GPU clusters for commercial AI workloads. Bitcoin mining continues at every stage as a baseline load and revenue floor."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How does NRG Bloom make money?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "We generate revenue from two compute workloads: Bitcoin mining (which provides a 24/7 revenue floor regardless of customer contracts) and AI inference services (which command higher margins when demand is present). Our Dynamic Load Orchestration system allocates power between these workloads in real time to maximize revenue per megawatt. On the cost side, we purchase gas at a steep discount to grid electricity through long-term Power Purchase Agreements, creating a structural energy arbitrage."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How does NRG Bloom de-risk site selection?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Every site goes through our Pathfinder validation before we commit significant capital. During a 6\u201312 month Bitcoin mining phase, we gather hard data on gas quality and flow consistency, generator uptime and thermal performance, connectivity reliability, and regulatory and community dynamics. Only sites that pass these benchmarks advance to infrastructure hardening and GPU deployment. Sites that prove stable but fall short of AI-grade requirements continue as optimized Bitcoin mining operations, ensuring every validated location generates value."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does NRG Bloom only work with stranded natural gas?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Stranded and flared natural gas is our primary focus because it represents the most abundant, lowest-cost, and most ESG-impactful energy source for off-grid compute. However, we are not limited to gas. Our deployment model is energy-source agnostic and can be adapted to other stranded or curtailed power sources, including hydroelectric overproduction, behind-the-meter solar, and other scenarios where energy is available but lacks a buyer. If you have an underutilized energy asset, we're interested in a conversation."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How does the revenue-sharing model work for energy partners?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "We structure each partnership as a Power Purchase Agreement (PPA) or Gas Purchase Agreement (GPA), where NRG Bloom purchases power or gas at an agreed rate per unit volume (e.g., $/kWh, $/MCF, or $/MMBtu). The producer receives predictable, 24/7 gas offtake revenue with zero infrastructure CapEx on their side. Optionally, we offer Joint-Venture structures where the producer can participate in compute revenue through a hashrate-share arrangement (receiving a percentage of Bitcoin mined) or a blended model that adjusts based on market conditions. Every arrangement is tailored to the site and the partner's preferences."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the ESG impact of NRG Bloom's operations?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Every cubic meter of gas we consume is gas that would otherwise be flared, releasing methane (80x more potent than CO\u2082 as a greenhouse gas), black carbon, and particulates. By converting this gas to electricity for compute, we eliminate those emissions at the source. We meter and report all gas consumption, providing producers with audit-ready documentation for their ESG disclosures. Our Nigeria operations alone have mitigated an estimated 300 tonnes of CO\u2082e. As we scale, this impact scales proportionally."
+      }
+    }
+  ]
+}
+</script>
 </head>
 <body>
   <div class="page-wrapper">
@@ -356,11 +420,7 @@ document.addEventListener("DOMContentLoaded", function() {
             <div class="u-display-flex cc-social-icons">
               <a href="https://twitter.com/nrgbloom" target="_blank" class="w-inline-block"><img src="images/xtwitter-iconneuehome.svg" loading="lazy" alt="x/twitter icon">
                 <div class="u-screen-reader">X/Twitter icon link</div>
-              </a>
-              <a href="https://www.facebook.com" target="_blank" class="w-inline-block">
-                <div class="u-screen-reader">X/Twitter icon link</div>
-              </a>
-              <a href="https://www.linkedin.com/company/nrgbloom/" target="_blank" class="w-inline-block"><img src="images/linkedin-icon.svg" loading="lazy" alt="linkedin icon">
+              </a>              <a href="https://www.linkedin.com/company/nrgbloom/" target="_blank" class="w-inline-block"><img src="images/linkedin-icon.svg" loading="lazy" alt="linkedin icon">
                 <div class="u-screen-reader">Linkedin icon link</div>
               </a>
             </div>
