@@ -54,6 +54,32 @@
 .minimal-scroll::-webkit-scrollbar-thumb:hover {
   background: rgba(0,0,0,0.45);
 }
+.strat-list {
+  list-style: none;
+  padding: 0;
+  margin: 1em 0 1.5em;
+}
+.strat-list li {
+  padding: 0.6em 0 0.6em 1.5em;
+  position: relative;
+  color: var(--dark-grey);
+  font-family: 'Switzer Variable', sans-serif;
+  font-size: 1em;
+  line-height: 1.4;
+  border-bottom: 1px solid var(--background-grey);
+}
+.strat-list li:last-child {
+  border-bottom: none;
+}
+.strat-list li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 1.1em;
+  width: 8px;
+  height: 2px;
+  background: var(--nrg-blue);
+}
 </style>
 </head>
 <body>
@@ -119,43 +145,155 @@ document.addEventListener("DOMContentLoaded", function() {
         
       </div>
     </div>
-    <section class="section u-padding-bottom-1em">
-      <div class="container">
-        <div class="row">
-          <div class="column more-upper-margin full-width">
-            <p class="h1 less-upper-margin"><strong>Proving Sites with Bitcoin. Scaling Them with AI.</strong></p>
-            <p class="paragraph-1em u-text-dark-grey">We are not just a consumer of energy. We are an Energy Arbitrageur. We deploy Bitcoin mining as an operational Proof of Concept to validate off-grid power and fuel longevity before committing high-value GPU capital.</p>
+    <section class=”section u-padding-bottom-1em”>
+      <div class=”container”>
+        <div class=”row”>
+          <div class=”column more-upper-margin full-width”>
+            <p class=”h1 less-upper-margin”><strong>From Energy Validation to AI-Ready Infrastructure</strong></p>
+            <p class=”paragraph-1-25em u-text-dark-grey” style=”max-width: 740px;”>We prove energy sites with Bitcoin. We scale them with AI. Every site earns revenue from day one — and every stage is designed to de-risk the next.</p>
           </div>
         </div>
       </div>
     </section>
-    <section class="container">
-      <div class="div-block-22 flex-veritcal-on-phone">
-        <div class="col-left middle-align">
-          <h2 class="heading-8">VALIDATION</h2>
+    <section class=”container”>
+      <div class=”div-block-22 veritcal-flex-on-smaller-screens”>
+        <div class=”col-left”>
+          <div class=”learn_wrapper”>
+            <h2 class=”heading-4”>The Pathfinder Model</h2>
+            <p class=”paragraph-1em u-text-dark-grey”>A stage-gated deployment framework that converts stranded energy into AI-ready compute — with zero idle capital and built-in revenue at every phase.</p>
+          </div>
         </div>
-        <div class="col-right middle-aling">
-          <p class="paragraph-1em u-text-dark-grey">We deploy containerized ASIC mining units to candidate sites within 60-90 days. These units act as a 24/7 operational stress test: validating gas quality and flow consistency, generator uptime and thermal performance, connectivity and remote monitoring stability, and regulatory and community alignment. Bitcoin mining is the ideal validation tool because it is the only high-value compute workload with zero customer SLA risk, zero latency sensitivity, and immediate revenue from day one. If a site can sustain ASIC miners, we move to stage 2. Sites that prove stable but fall short of AI-grade requirements remain optimized for Bitcoin mining, ensuring every location delivers immediate, long-term value.</p>
+        <div class=”col-right”>
+          <div class=”block-wrapper”>
+            <div tabindex=”0” class=”block _1”>
+              <div class=”div-block-23”>
+                <div class=”block-title”><strong class=”bold-text”>Stage 1 — Validate</strong></div>
+                <div class=”block-text”>Deploy containerized ASIC miners to stress-test gas supply, power stability, and site conditions. Zero SLA risk. Immediate BTC revenue from day one.</div>
+              </div>
+            </div>
+            <div tabindex=”0” class=”block _2”>
+              <div class=”div-block-23”>
+                <div class=”block-title”><strong class=”bold-text-2”>Stage 2 — Harden</strong></div>
+                <div class=”block-text”>Install high-bandwidth connectivity, Tier III-ready cooling, redundant power conditioning, and physical security. BTC mining continues, offsetting CapEx.</div>
+              </div>
+            </div>
+            <div tabindex=”0” class=”block _3”>
+              <div class=”div-block-23”>
+                <div class=”block-title”><strong class=”bold-text-3”>Stage 3 — Scale to AI</strong></div>
+                <div class=”block-text”>Deploy GPU clusters for AI inference. Dynamic Load Orchestration allocates power between high-margin AI jobs and always-on Bitcoin mining.</div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="div-block-22 flex-veritcal-on-phone">
-        <div class="col-left middle-align">
-          <h2 class="heading-8"><strong>INFRASTRUCTURE HARDENING</strong></h2>
+    </section>
+    <section class=”container”>
+      <div class=”div-block-22 flex-veritcal-on-phone”>
+        <div class=”col-left”>
+          <h2 class=”heading-4”>Why Bitcoin First</h2>
+          <p class=”paragraph-1em u-text-dark-grey” style=”margin-top: 0.5em;”>The ideal validation tool for remote energy sites.</p>
         </div>
-        <div class="col-right middle-aling">
-          <p class="paragraph-1em u-text-dark-grey">Once a site passes the validation stage, we invest in permanent infrastructure upgrades: high-bandwidth connectivity via microwave links or fiber backhaul, Tier III-ready liquid or immersion cooling systems, redundant power conditioning and UPS systems, and physical security and environmental monitoring. BTC mining continues during this phase, generating revenue that partially offsets the CapEx of infrastructure hardening. The site is now a certified compute facility—not a temporary mining camp.</p>
+        <div class=”col-right”>
+          <p class=”paragraph-1em u-text-dark-grey”>We deploy containerized ASIC mining units to candidate sites within 60–90 days. These units act as a 24/7 operational stress test, validating:</p>
+          <ul class=”strat-list”>
+            <li>Gas quality and flow consistency</li>
+            <li>Generator uptime and thermal performance</li>
+            <li>Connectivity and remote monitoring stability</li>
+            <li>Regulatory and community alignment</li>
+          </ul>
+          <p class=”paragraph-1em u-text-dark-grey”>Bitcoin mining is the only high-value compute workload with zero customer SLA risk, zero latency sensitivity, and immediate revenue from day one. If a site can sustain ASIC miners, we advance to Stage 2. Sites that fall short remain optimized for Bitcoin mining — ensuring every location delivers long-term value.</p>
         </div>
       </div>
-      <div class="div-block-22 flex-veritcal-on-phone">
-        <div class="col-left middle-align">
-          <h2 class="heading-8"><strong>AI INFERENCE </strong></h2>
+    </section>
+    <section class=”container”>
+      <div class=”div-block-22 flex-veritcal-on-phone”>
+        <div class=”col-left”>
+          <h2 class=”heading-4”>Infrastructure Hardening</h2>
+          <p class=”paragraph-1em u-text-dark-grey” style=”margin-top: 0.5em;”>From mining camp to certified compute facility.</p>
         </div>
-        <div class="col-right middle-aling">
-          <p class="paragraph-1em u-text-dark-grey">The hardened site now receives GPU cluster deployments for AI inference workloads. Our Dynamic Load Orchestration system continuously allocates available power between AI inference jobs (high-margin, latency-sensitive) and Bitcoin mining (high-floor, always-on). When AI demand is high, GPUs receive priority power allocation. During off-peak periods, Bitcoin mining absorbs 100% of available capacity, ensuring the generators never idle and the PPA is always maximized. BTC mining becomes the site’s “thermal battery”: absorbing excess energy, generating baseline revenue, and providing thermal load that keeps cooling systems operating at optimal efficiency.</p>
+        <div class=”col-right”>
+          <p class=”paragraph-1em u-text-dark-grey”>Once a site passes validation, we invest in permanent infrastructure upgrades:</p>
+          <ul class=”strat-list”>
+            <li>High-bandwidth connectivity via microwave links or fiber backhaul</li>
+            <li>Tier III-ready liquid or immersion cooling systems</li>
+            <li>Redundant power conditioning and UPS systems</li>
+            <li>Physical security and environmental monitoring</li>
+          </ul>
+          <p class=”paragraph-1em u-text-dark-grey”>BTC mining continues during this phase, generating revenue that partially offsets infrastructure CapEx. The site is now a certified compute facility — not a temporary mining camp.</p>
         </div>
       </div>
-      <div class="div-block-28">
-        <a href="discuss-partnership.html" class="button more-padding w-button"><strong>Discuss a Partnership</strong></a>
+    </section>
+    <section class=”container”>
+      <div class=”div-block-22 flex-veritcal-on-phone”>
+        <div class=”col-left”>
+          <h2 class=”heading-4”>Dynamic Load Orchestration</h2>
+          <p class=”paragraph-1em u-text-dark-grey” style=”margin-top: 0.5em;”>Maximum utilization. Zero wasted energy.</p>
+        </div>
+        <div class=”col-right”>
+          <p class=”paragraph-1em u-text-dark-grey”>The hardened site receives GPU cluster deployments for AI inference workloads. Our orchestration system continuously allocates available power:</p>
+          <ul class=”strat-list”>
+            <li><strong>AI demand high</strong> — GPUs receive priority power allocation for latency-sensitive inference jobs</li>
+            <li><strong>Off-peak periods</strong> — Bitcoin mining absorbs 100% of available capacity, ensuring generators never idle</li>
+            <li><strong>Always-on economics</strong> — The PPA is always maximized; no energy goes to waste</li>
+          </ul>
+          <p class=”paragraph-1em u-text-dark-grey”>BTC mining becomes the site’s “thermal battery” — absorbing excess energy, generating baseline revenue, and providing thermal load that keeps cooling systems at optimal efficiency.</p>
+        </div>
+      </div>
+    </section>
+    <section class=”container”>
+      <div class=”div-block-22”>
+        <div class=”col-left”>
+          <h2 class=”heading-4”>By The Numbers</h2>
+          <div class=”div-block-26”>
+            <div class=”div-block-27”>
+              <div class=”code-embed w-embed”><svg xmlns=”http://www.w3.org/2000/svg” fill=”none” viewbox=”0 0 24 24” height=”35” width=”35”>
+                  <path stroke=”#000000” stroke-linecap=”round” stroke-linejoin=”round” stroke-miterlimit=”10” d=”m19.5 4.5 3 9H0.5l3.5 -9h15.5Z” stroke-width=”2”></path>
+                  <path stroke=”#000000” stroke-linecap=”round” stroke-linejoin=”round” stroke-miterlimit=”10” d=”M0.5 13.5v7h22v-7” stroke-width=”2”></path>
+                  <path stroke=”#000000” stroke-linecap=”round” stroke-linejoin=”round” stroke-miterlimit=”10” d=”M2.5 15.5v3” stroke-width=”2”></path>
+                  <path stroke=”#000000” stroke-linecap=”round” stroke-linejoin=”round” stroke-miterlimit=”10” d=”M4.5 15.5v3” stroke-width=”2”></path>
+                  <path stroke=”#000000” stroke-linecap=”round” stroke-linejoin=”round” stroke-miterlimit=”10” d=”M6.5 15.5v3” stroke-width=”2”></path>
+                  <path stroke=”#000000” stroke-linecap=”round” stroke-linejoin=”round” stroke-miterlimit=”10” d=”m18.499 15.5 -1.5 1.5 1.5 1.5 1.5 -1.5 -1.5 -1.5Z” stroke-width=”2”></path>
+                </svg></div>
+              <p>MW Developed: 1.5 MW</p>
+            </div>
+            <div class=”div-block-27”>
+              <div class=”code-embed w-embed”><svg xmlns=”http://www.w3.org/2000/svg” fill=”none” viewbox=”0 0 24 24” height=”40” width=”40”>
+                  <path fill=”#000000” d=”m8.00781 1.60205 3.92479 3.92578 0.707 0.70703 -1.7167 1.71582 1.2841 1.28418 1.1397 -1.13965c-0.093 -0.35548 -0.1514 -0.72487 -0.1699 -1.10449l-0.0069 -0.26562c0.0002 -2.99107 2.425 -5.41589 5.416 -5.41602l0.3252 0.00977c0.7537 0.04512 1.4668 0.2454 2.1065 0.56738l1.2363 0.62207 -3.2353 3.23535 0.5478 0.54785 2.2578 -2.25683 0.9776 -0.97852 0.623 1.23535c0.3686 0.73178 0.5771 1.55939 0.5772 2.4336 0 2.89777 -2.2762 5.264 -5.1377 5.4092l-0.2784 0.0068c-0.474 0 -0.9338 -0.0637 -1.372 -0.1787l-1.1397 1.1397 5.4278 5.4277 0.707 0.708 -3.8672 3.8672 -0.708 -0.7071 -5.4277 -5.4277 -5.42583 5.4277 -0.70703 0.7071 -3.86719 -3.8672 0.70704 -0.707 5.42578 -5.4287 -1.28321 -1.2833 -1.71777 1.7178 -0.70703 -0.707L0.705078 8.90479l-0.70703112 -0.70801L7.2998 0.89502zM18.5859 3.30908c-1.8865 0.00011 -3.4159 1.52951 -3.416 3.41602l0.0039 0.16797c0.0189 0.38893 0.1033 0.75984 0.2412 1.10351l0.2461 0.61328 -0.4668 0.4668L5.0332 19.2368l1.03907 1.0391L16.2334 10.1157l0.4668 -0.46677 0.6133 0.24609c0.3936 0.15818 0.8223 0.24608 1.2724 0.24608l0.1758 -0.0049c1.8048 -0.0918 3.2403 -1.58372 3.2403 -3.4111 -0.0001 -0.01304 -0.0019 -0.02607 -0.002 -0.03906l-1.7256 1.72753 -0.707 0.70704 -3.377 -3.37696 0.7071 -0.70703 1.7255 -1.72656zM13.6201 15.5552l4.7207 4.7207 1.0391 -1.0391 -4.7207 -4.7207zm-5.15037 -5.1504 1.2832 1.2832 1.03907 -1.0391 -1.28321 -1.28318zM2.82617 8.19678l2.51172 2.51172 4.47363 -4.47364L7.2998 3.72314z” stroke-width=”1”></path>
+                </svg></div>
+              <p>MW Under Development: 5 MW</p>
+            </div>
+            <div class=”div-block-27”>
+              <div class=”code-embed w-embed”><svg xmlns=”http://www.w3.org/2000/svg” fill=”none” viewbox=”0 0 24 24” height=”40” width=”40”>
+                  <path fill=”#000000” d=”M10.9999 14.8499c-0.24085 0 -0.44275 -0.0814 -0.60575 -0.24425 -0.16285 -0.163 -0.24425 -0.3649 -0.24425 -0.60575v-4c0 -0.24085 0.0814 -0.44265 0.24425 -0.6055 0.163 -0.163 0.3649 -0.2445 0.60575 -0.2445h3c0.24085 0 0.44265 0.0815 0.6055 0.2445 0.163 0.16285 0.2445 0.36465 0.2445 0.6055v4c0 0.24085 -0.0815 0.44275 -0.2445 0.60575 -0.16285 0.16285 -0.36465 0.24425 -0.6055 0.24425h-3Zm0.35 -1.2h2.3v-3.3h-2.3v3.3Zm-7.35 1.2c-0.24083 0 -0.44275 -0.0814 -0.60575 -0.24425 -0.16283 -0.163 -0.24425 -0.3649 -0.24425 -0.60575v-4c0 -0.24085 0.08142 -0.44265 0.24425 -0.6055 0.163 -0.163 0.36492 -0.2445 0.60575 -0.2445h3c0.24085 0 0.44275 0.0815 0.60575 0.2445 0.16285 0.16285 0.24425 0.36465 0.24425 0.6055v0.85h-1.2v-0.5h-2.3v3.3h2.3v-0.5h1.2v0.842c0 0.23865 -0.0814 0.44135 -0.24425 0.608 -0.163 0.16665 -0.3649 0.25 -0.60575 0.25h-3Zm13.15 3v-2.35c0 -0.24085 0.0815 -0.44275 0.2445 -0.60575 0.16285 -0.16285 0.36465 -0.24425 0.6055 -0.24425h2.15v-1.3h-3v-1.2h3.35c0.24085 0 0.44265 0.0814 0.6055 0.24425 0.163 0.163 0.2445 0.3649 0.2445 0.60575v1.5c0 0.24085 -0.0815 0.44275 -0.2445 0.60575 -0.16285 0.16285 -0.36465 0.24425 -0.6055 0.24425h-2.15v1.3h3v1.2h-4.2Z” stroke-width=”2”></path>
+                </svg></div>
+              <p>Methane Mitigated: 300 tonnes CO₂e</p>
+            </div>
+            <div class=”div-block-27”>
+              <div class=”code-embed w-embed”><svg xmlns=”http://www.w3.org/2000/svg” fill=”none” viewbox=”0 0 24 24” height=”40” width=”40”>
+                  <path fill=”#000000” d=”M13.7969 2.00781c0.7144 0.07882 1.2436 0.7304 1.1524 1.46192L14.1329 10h1.7051c1.7044 0.0003 2.6272 1.9961 1.5234 3.2949l-7.0068 8.2442c-0.2488 0.2924 -0.6141 0.4609 -0.99809 0.4609 -0.7967 -0.0002 -1.40858 -0.7064 -1.2959 -1.4951L8.84674 15H7.03619c-1.66112 -0.0003 -2.59771 -1.9081 -1.58203 -3.2227l7.16214 -9.26949 0.0986 -0.11328c0.2446 -0.2508 0.582 -0.39453 0.9365 -0.39453zM4.04303 18.543c0.39053 -0.3905 1.02355 -0.3905 1.41406 0 0.39048 0.3905 0.39048 1.0235 0 1.414l-1.5 1.5c-0.39051 0.3905 -1.02353 0.3905 -1.41406 0 -0.39052 -0.3905 -0.39052 -1.0235 0 -1.414zm14.49997 0c0.3906 -0.3905 1.0236 -0.3905 1.4141 0l1.5 1.5c0.3905 0.3905 0.3905 1.0235 0 1.414s-1.0235 0.3905 -1.4141 0l-1.5 -1.5c-0.3905 -0.3905 -0.3905 -1.0235 0 -1.414M2.54303 2.54297c0.39053 -0.39049 1.02355 -0.39051 1.41406 0l1.5 1.5c0.39048 0.39051 0.39048 1.02355 0 1.41406 -0.39051 0.39051 -1.02353 0.39049 -1.41406 0l-1.5 -1.5c-0.39052 -0.39052 -0.39052 -1.02354 0 -1.41406m17.49997 0c0.3906 -0.39049 1.0236 -0.39051 1.4141 0s0.3905 1.02355 0 1.41406l-1.5 1.5c-0.3905 0.39051 -1.0235 0.39049 -1.4141 0 -0.3905 -0.39052 -0.3905 -1.02354 0 -1.41406z” stroke-width=”2”></path>
+                </svg></div>
+              <p>Energy Arbitrage: $0.02–$0.032/kWh below grid average</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class=”section reduce-top-and-bottom-margin”>
+      <div class=”container”>
+        <div class=”card cc-faq-get-in-touch”>
+          <div class=”row row-justify-center”>
+            <div class=”column col-large-10 col-med-9 col-small-12”>
+              <div class=”u-max-width-800px”>
+                <h2 class=”h1”>Turn Environmental Liability into Digital Asset.</h2>
+                <p class=”paragraph-1-25em u-margin-bottom-2em”><br></p>
+                <a href=”discuss-partnership.html” class=”button cc-large-white w-button”>Discuss a Partnership</a>
+              </div>
+            </div>
+          </div>
+          <div class=”image-fill cc-image-bg”>
+            <div class=”u-opacity-20”><img src=”images/nrg_bloom_bitcoin_container_1.avif” loading=”lazy” alt=”NRG Bloom modular compute container at an off-grid energy site” sizes=”(max-width: 1280px) 100vw, 1280px” srcset=”images/nrg_bloom_bitcoin_container_1nrg_bloom_bitcoin_container.avif 500w, images/nrg_bloom_bitcoin_container_1nrg_bloom_bitcoin_container.avif 800w, images/nrg_bloom_bitcoin_container_1nrg_bloom_bitcoin_container.avif 1080w, images/nrg_bloom_bitcoin_container_1.avif 1280w” class=”u-image-cover cc-full-width-image”></div>
+          </div>
+        </div>
       </div>
     </section>
     <section class="section u-padding-bottom-0">
