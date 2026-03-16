@@ -1,15 +1,15 @@
-<!DOCTYPE html><!--  This site was created in Webflow. https://webflow.com  --><!--  Last Published: Tue Mar 03 2026 15:13:55 GMT+0000 (Coordinated Universal Time)  -->
+<!DOCTYPE html>
 <html data-wf-page="6994c44f8c77ad4cbb330701" data-wf-site="65e9c5a26e8864c80aafb002" lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Energy Partners | NRG Bloom — Monetize Stranded Gas</title>
+  <title>Energy Partners | NRG Bloom — Monetize Your Stranded Energy Asset</title>
   <link rel="canonical" href="https://www.nrgbloom.com/energy-partners">
-  <meta content="Oil and gas operators: NRG Bloom buys your stranded gas under a long-term PPA and deploys compute infrastructure on-site. Zero CapEx, quantified ESG impact." name="description">
-  <meta content="Energy Partners | NRG Bloom — Monetize Stranded Gas" property="og:title">
-  <meta content="Oil and gas operators: NRG Bloom buys your stranded gas under a long-term PPA and deploys compute infrastructure on-site. Zero CapEx, quantified ESG impact." property="og:description">
+  <meta content="NRG Bloom converts stranded gas, curtailed renewables, and off-grid power into compute revenue — at zero CapEx to the energy producer." name="description">
+  <meta content="Energy Partners | NRG Bloom — Monetize Your Stranded Energy Asset" property="og:title">
+  <meta content="NRG Bloom converts stranded gas, curtailed renewables, and off-grid power into compute revenue — at zero CapEx to the energy producer." property="og:description">
   <meta content="https://uploads-ssl.webflow.com/65e9c5a26e8864c80aafb002/66861d19c0b77bdc9c335fb8_NRG%20bloom%20meta%20image.webp" property="og:image">
-  <meta content="Energy Partners | NRG Bloom — Monetize Stranded Gas" property="twitter:title">
-  <meta content="Oil and gas operators: NRG Bloom buys your stranded gas under a long-term PPA and deploys compute infrastructure on-site. Zero CapEx, quantified ESG impact." property="twitter:description">
+  <meta content="Energy Partners | NRG Bloom — Monetize Your Stranded Energy Asset" property="twitter:title">
+  <meta content="NRG Bloom converts stranded gas, curtailed renewables, and off-grid power into compute revenue — at zero CapEx to the energy producer." property="twitter:description">
   <meta content="https://uploads-ssl.webflow.com/65e9c5a26e8864c80aafb002/66861d19c0b77bdc9c335fb8_NRG%20bloom%20meta%20image.webp" property="twitter:image">
   <meta property="og:type" content="website">
   <meta content="summary_large_image" name="twitter:card">
@@ -19,6 +19,7 @@
   <link href="css/normalize.css" rel="stylesheet" type="text/css">
   <link href="css/webflow.css" rel="stylesheet" type="text/css">
   <link href="css/nrg-bloom.webflow.css" rel="stylesheet" type="text/css">
+  <link href="css/redesign.css" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin="anonymous">
   <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" type="text/javascript"></script>
@@ -27,90 +28,29 @@
   <link href="images/favicon.png" rel="shortcut icon" type="image/x-icon">
   <link href="images/webclip.png" rel="apple-touch-icon">
   <style>
-  body {
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-  }
-</style>
-  <style>
-/* Apply this class to your scrollable div */
-.minimal-scroll {
-  overflow-y: auto;
-  scrollbar-width: thin;
-  scrollbar-color: rgba(0,0,0,0.25) transparent;
-}
-/* Chrome, Edge, Safari */
-.minimal-scroll::-webkit-scrollbar {
-  width: 4px;
-}
-.minimal-scroll::-webkit-scrollbar-track {
-  background: transparent;
-}
-.minimal-scroll::-webkit-scrollbar-thumb {
-  background: rgba(0,0,0,0.25);
-  border-radius: 20px;
-  transition: background 0.3s ease;
-}
-.minimal-scroll::-webkit-scrollbar-thumb:hover {
-  background: rgba(0,0,0,0.45);
-}
-</style>
+    body { -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+  </style>
 </head>
-<body>
+<body class="body">
   <div class="page-wrapper">
-    <div data-animation="default" data-collapse="medium" data-duration="400" data-easing="ease" data-easing2="ease" role="banner" class="navbar-copy w-nav">
+
+    <!-- ========== NAVIGATION ========== -->
+    <div data-animation="default" data-collapse="medium" data-duration="400" data-easing="ease" data-easing2="ease" role="banner" class="navbar-2 w-nav">
       <div class="container cc-navbar w-container">
-        <a href="index.html" class="logo-link w-nav-brand"><img src="images/NRG-bloom-meta-image_1.webp" loading="lazy" width="100" height="Auto" alt="NRG Bloom Logo" class="logo-image"></a>
-        <nav role="navigation" class="nav-links-wrap white w-nav-menu">
-          <div class="nav-links-container">
-            <div class="div-block-29">
-              <a href="strategy.html" class="nav-link w-nav-link">Strategy</a>
-              <a href="about-leadership.html" class="nav-link w-nav-link">About &amp; Leadership</a>
-              <a href="energy-partners.html" aria-current="page" class="nav-link w-nav-link w--current">Energy Partners</a>
-              <a href="investor-relations.html" class="nav-link w-nav-link">Investor Relations</a>
-              <a href="insights.html" class="nav-link last w-nav-link">Insights</a>
+        <a href="index.html" class="logo-link w-nav-brand">
+          <img src="images/White.webp" loading="lazy" alt="NRG Bloom Logo" class="logo-image logo-white">
+          <img src="images/NRGBloom_logo.webp" loading="lazy" alt="NRG Bloom Logo" class="logo-image logo-color">
+        </a>
+        <nav role="navigation" class="nav-links-wrap w-nav-menu">
+          <div class="nav-right-stack">
+            <div class="nav-links-container">
+              <a href="strategy.html" class="nav-link u-text-white margin w-nav-link">Strategy</a>
+              <a href="about-leadership.html" class="nav-link u-text-white margin w-nav-link">About &amp; Leadership</a>
+              <a href="energy-partners.html" aria-current="page" class="nav-link u-text-white margin w-nav-link w--current">Energy Partners</a>
+              <a href="investor-relations.html" class="nav-link u-text-white margin w-nav-link">Investor Relations</a>
+              <a href="insights.html" class="nav-link u-text-white margin w-nav-link">Insights</a>
             </div>
-            <div class="div-block-6">
-              <div id="btcPrice" class="html-embed-4 w-embed w-script">
-                <script>
-document.addEventListener("DOMContentLoaded", function() {
-    const btcPriceElement = document.getElementById('btcPrice'); 
-    let pauseUpdates = false;
-    function updateBitcoinPrice() {
-        if (!pauseUpdates) {
-            fetch('https://api.binance.com/api/v3/ticker/price?symbol=BTCUSDT')
-                .then(response => {
-                    if (response.status === 429) {
-                        console.warn('Rate limit exceeded. Pausing updates.');
-                        pauseUpdates = true;
-                        setTimeout(() => {
-                            pauseUpdates = false;
-                        }, 60000); // Pause for 1 minute
-                        return;
-                    }
-                    return response.json();
-                })
-                .then(data => {
-                    if (btcPriceElement && data && data.price) {
-                        const formattedPrice = parseFloat(data.price).toLocaleString('en-US', {
-                            minimumFractionDigits: 2,
-                            maximumFractionDigits: 2
-                        });
-                        btcPriceElement.innerHTML = `
-                            <div style="display: flex;"><img src="https://uploads-ssl.webflow.com/65e9c5a26e8864c80aafb002/66047b0e56be8e998c63a278_bitcoin.webp" alt="Bitcoin Logo" style="height: 1.5em; vertical-align: middle; padding-right: 3px;"/>
-                            <span style="font-weight: 600; font-size: 1.5em; font-family: 'Intertight Variablefont Wght', sans-serif; color: black; line-height: 1.1; min-width: 120px;">$${formattedPrice}</span></div>
-                        `;
-                    }
-                })
-                .catch(error => console.error('Error fetching Bitcoin price:', error));
-        }
-    }
-    updateBitcoinPrice();
-    setInterval(updateBitcoinPrice, 30000); // Update every 30 sec
-});
-</script>
-              </div>
-            </div>
+            <div id="btcPrice" class="btc-price-row"></div>
           </div>
         </nav>
         <div class="nav-menu-button w-nav-button">
@@ -118,141 +58,198 @@ document.addEventListener("DOMContentLoaded", function() {
         </div>
       </div>
     </div>
-    <section class="section u-padding-bottom-1em">
-      <div class="container">
-        <div class="row">
-          <div class="column more-upper-margin full-width">
-            <p class="h1 less-upper-margin"><strong>Your Stranded Gas. Our Compute Infrastructure. A Shared Revenue Model.</strong></p>
-            <p class="paragraph-1em u-text-dark-grey">NRG Bloom provides oil and gas operators with a turnkey, zero-CapEx solution for monetizing stranded, associated, or penalized gas at the wellhead. We deploy our own infrastructure, purchase gas under a long-term Power Purchase Agreement, and convert it into high-performance compute, eliminating flaring liabilities while creating a new revenue stream from your existing operations.</p>
+
+    <!-- ========== HERO ========== -->
+    <section class="inner-hero">
+      <div class="hero-bg">
+        <img src="images/GasFlareNigeria_1.webp" alt="Gas flare at energy production site" loading="eager">
+      </div>
+      <div class="hero-content">
+        <div class="hero-eyebrow">
+          <span class="hero-eyebrow-dot"></span>
+          For Energy Producers
+        </div>
+        <h1 class="hero-title">Your Stranded Gas. Our Compute Infrastructure. A Shared Revenue Model.</h1>
+        <p class="hero-subtitle">NRG Bloom deploys modular data centers at your energy site — converting flared gas, curtailed renewables, or off-grid power into productive compute revenue. Zero CapEx to you.</p>
+        <div class="hero-ctas">
+          <a href="discuss-partnership.html" class="btn-primary">Discuss a Partnership <span class="btn-arrow">&rarr;</span></a>
+          <a href="strategy.html" class="btn-secondary">View Our Strategy <span class="btn-arrow">&rarr;</span></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== VALUE PROPOSITION ========== -->
+    <section class="rd-section rd-section-darker">
+      <div class="rd-container">
+        <div class="opportunity-grid">
+          <div class="opportunity-text reveal">
+            <span class="rd-eyebrow">The Partnership Model</span>
+            <h3>We Buy Your Gas. You Reduce Flaring. Both Sides Earn.</h3>
+            <p>NRG Bloom enters a long-term Gas Purchase Agreement (GPA) with the energy producer. We deploy, own, and operate all compute infrastructure on-site. The energy producer sells gas that would otherwise be flared — generating revenue from a stranded asset while earning quantified ESG impact.</p>
+            <p>Our current deployment in Nigeria operates under a GPA with Oando Energy Resources at Ogboinbiri, Bayelsa State — live since February 2025.</p>
+            <div class="opportunity-stat-highlight">
+              <span class="big-num">~$0.02/kWh</span>
+              <span class="stat-desc">All-in energy cost — approximately 1/3 of mining industry breakeven</span>
+            </div>
+          </div>
+          <div class="opportunity-image reveal reveal-delay-2">
+            <img src="images/flare.avif" alt="Gas flare at wellhead site" loading="lazy">
           </div>
         </div>
       </div>
     </section>
-    <section class="container">
-      <div class="div-block-22 add-gap">
-        <div class="col-left">
-          <h2>What We Offer Producers</h2>
-          <div class="w-richtext">
-            <ul role="list">
-              <li><strong>24/7 Gas Offtake: </strong>We are the buyer of last resort. If you have gas, we have demand. Guaranteed, around the clock.</li>
-              <li><strong>Zero CapEx to You: </strong>NRG Bloom finances, deploys, and maintains all compute infrastructure on your site.</li>
-              <li><strong>Quantified ESG Impact: </strong>Every cubic meter of gas we consume is metered and reported as methane mitigated. We provide audit-ready documentation for your ESG disclosures and regulatory compliance.</li>
-              <li><strong>Revenue Sharing: </strong>Structured PPA with transparent pricing, volume commitments, and optional revenue participation for the producer.</li>
-              <li><strong>Rapid Deployment: </strong>Containerized units deployed in 45–90 days</li>
-            </ul>
-          </div>
+
+    <!-- ========== HOW IT WORKS ========== -->
+    <section class="rd-section">
+      <div class="rd-container">
+        <div class="rd-section-header reveal" style="text-align: center;">
+          <span class="rd-eyebrow">How It Works</span>
+          <h2 class="rd-heading" style="margin: 0 auto; text-align: center;">From First Call to First Watt in Under 90 Days</h2>
         </div>
-        <div class="col-right change-size">
-          <div data-w-id="1068ab26-9609-2417-47c9-939de4e0b785" class="block-wrapper"><img src="images/flare.avif" loading="lazy" alt="" class="image-10"></div>
-        </div>
-      </div>
-      <div class="div-block-22 less-margin">
-        <div class="col-left">
-          <h2 class="heading-4">Ideal Partner Profile</h2>
-          <div class="div-block-26">
-            <div class="div-block-27">
-              <div class="code-embed w-embed"><svg viewbox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" id="Flame--Streamline-Solar" height="40" width="40">
-                  <desc>
-                    Flame Streamline Icon: https://streamlinehq.com
-                  </desc>
-                  <path d="M33.333333333333336 25.000333333333334c0 7.090833333333334 -4.3635 10.202333333333334 -7.735333333333334 11.251666666666667 -0.7190000000000001 0.2236666666666667 -1.1916666666666667 -0.6145 -0.7615 -1.2326666666666668 1.4673333333333334 -2.108666666666667 3.1635 -5.325833333333334 3.1635 -8.352333333333334 0 -3.251 -2.7401666666666666 -7.089166666666666 -4.879833333333334 -9.4565 -0.48916666666666664 -0.5411666666666667 -1.3423333333333334 -0.18316666666666667 -1.369 0.546 -0.08850000000000001 2.4153333333333333 -0.4696666666666667 5.646833333333333 -2.113166666666667 8.1795 -0.2645 0.4076666666666667 -0.826 0.4413333333333333 -1.1275 0.06016666666666667 -0.5135 -0.6495 -1.027 -1.4516666666666667 -1.5405 -2.0855 -0.27666666666666667 -0.3413333333333334 -0.7766 -0.34600000000000003 -1.09565 -0.044000000000000004 -1.2439333333333333 1.1778333333333333 -2.985466666666667 3.014666666666667 -2.985466666666667 5.300333333333334 0 1.5498333333333334 0.60045 3.174666666666667 1.2779 4.481833333333333 0.37268333333333337 0.7191666666666667 -0.29 1.5848333333333333 -1.0072333333333334 1.2085C10.18845 33.29816666666667 6.666666666666667 30.139666666666667 6.666666666666667 25.000333333333334c0 -5.244 7.183816666666667 -12.508616666666667 9.92675 -19.3718 0.43275 -1.0829833333333334 1.76675 -1.5918833333333335 2.6944166666666667 -0.88515C24.9065 9.023483333333333 33.333333333333336 17.297166666666666 33.333333333333336 25.000333333333334Z" fill="#000000" stroke-width="1.6667"></path>
-                </svg></div>
-              <p>Stranded, associated, or flared gas with no current offtake agreement</p>
-            </div>
-            <div class="div-block-27">
-              <div class="code-embed w-embed"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="-1.43 -1.43 40 40" id="Map-Location--Streamline-Flex" height="40" width="40">
-                  <desc>
-                    Map Location Streamline Icon: https://streamlinehq.com
-                  </desc>
-                  <g id="map-location--map-location-pin-navigation-gps-travel">
-                    <g id="Group 5507">
-                      <path id="Vector" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" d="M34.71502328571429 15.092953200000002c0.015651857142857144 -3.1129156285714283 -0.2533478571428572 -6.2270781 -0.8091214285714287 -9.289430271428571 -0.24645042857142857 -1.3576527 -0.4422312857142857 -2.8361165142857145 -1.4134422857142859 -3.816217238571429 -0.27642771428571433 -0.2787463114285714 -0.5966275714285715 -0.46696917857142856 -0.9473352857142857 -0.43449820714285714 -1.2930025714285716 0.1197154842857143 -2.6756717142857145 0.4765778271428572 -3.6612081428571432 0.7483099842857144 -1.1462995714285715 0.31606670571428575 -2.4597822000000003 0.9614988900000001 -3.7424386285714286 1.5755822614285715 -0.5527227857142858 0.26462250000000004 -1.1810254714285715 0.3208365428571429 -1.7742839142857143 0.16728917142857144L13.033460614285714 1.6285598185714287c-1.6229118857142857 -0.3793055142857143 -4.118242371428572 0.24970283142857144 -5.651779500000001 0.6725576485714286 -0.9578936571428572 0.2641343742857143 -2.0326456714285714 0.7582900328571429 -3.1085649428571434 1.271936232857143 -0.3871049142857143 0.18482455714285714 -0.7159530857142857 0.6605349 -0.9655073571428572 1.1442038142857145 -0.43074441428571425 0.8348806714285715 -0.6078756857142857 1.7700658714285715 -0.7728170785714286 2.6949049285714284l-0.13143846 0.7370433000000001c-1.0801134385714286 6.0567646714285726 -1.0801134385714286 12.256836685714287 0 18.313601357142858 0.25223631 1.4144769000000001 0.4170052671428572 3.0008854714285715 1.4922613242857143 3.9537917571428576 0.25950248571428575 0.2300027142857143 0.5542349142857143 0.3671554285714286 0.8729491714285715 0.30640500000000004 0.9764901857142857 -0.18623057142857144 1.9773070714285714 -0.5868120000000001 3.044843314285714 -0.9515798571428572 1.5680242714285715 -0.5358771428571429 3.1357567285714287 -1.142055 4.587187928571429 -1.5399835714285717 0.4137661285714286 -0.11327700000000002 0.8498427857142858 -0.10505314285714287 1.2652006285714288 0.0023875714285714286l3.0807364714285717 0.7974488571428572" stroke-width="2.86"></path>
-                      <path id="Intersect" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" d="M13.43319312857143 28.214992714285717c-0.18920177142857142 -0.04748614285714286 -0.3824624142857143 -0.07295357142857144 -0.5756434714285714 -0.07428000000000001V1.9658069357142858c0 -0.11187629142857144 0.006738257142857144 -0.22263838285714288 0.019869900000000003 -0.33173448l9.746782842857144 2.438673415714286c0.2753135142857143 0.0688947 0.5578958571428572 0.08998491428571428 0.8360744571428572 0.06327064285714286v10.293430585714287" stroke-width="2.86"></path>
-                      <g id="Group 5402">
-                        <path id="Ellipse 45" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" d="M35.54748985714286 25.815854828571428c0 5.258917885714286 -6.088041857142858 9.812547171428571 -6.743828142857144 9.812547171428571 -0.6557862857142858 0 -6.744013842857143 -4.553629285714286 -6.744013842857143 -9.812547171428571 0 -3.7245583714285715 3.019349357142857 -6.743907728571428 6.744013842857143 -6.743907728571428 3.7243461428571427 0 6.743828142857144 3.019349357142857 6.743828142857144 6.743907728571428Z" stroke-width="2.86"></path>
-                        <path id="Vector_2" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" d="m28.803131142857143 25.94974452857143 0 -0.40174868571428574" stroke-width="2.86"></path>
-                      </g>
-                    </g>
-                  </g>
-                </svg></div>
-              <p>Remote or off-grid well sites with 5 MW+ of recoverable gas energy</p>
-            </div>
-            <div class="div-block-27">
-              <div class="code-embed w-embed"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 40 40" id="Problem--Streamline-Sharp-Material" height="40" width="40">
-                  <desc>
-                    Problem Streamline Icon: https://streamlinehq.com
-                  </desc>
-                  <path fill="#000000" d="M10.875083333333334 26.583333333333332c0.33333333333333337 0 0.625 -0.125 0.8750000000000001 -0.375 0.25 -0.25 0.375 -0.5416666666666667 0.375 -0.8750000000000001s-0.125 -0.625 -0.375 -0.8750000000000001c-0.25 -0.25 -0.5416666666666667 -0.375 -0.8750000000000001 -0.375s-0.625 0.125 -0.8750000000000001 0.375c-0.25 0.25 -0.375 0.5416666666666667 -0.375 0.8750000000000001s0.125 0.625 0.375 0.8750000000000001c0.25 0.25 0.5416666666666667 0.375 0.8750000000000001 0.375Zm-1.25 -5.416666666666667h2.5v-7.958333333333334h-2.5v7.958333333333334Zm7.458333333333333 3.3333333333333335h13.291666666666666v-2.5h-13.291666666666666v2.5Zm0 -7.125000000000001h13.291666666666666v-2.5h-13.291666666666666v2.5ZM3.0000833333333334 33.333333333333336V6.666666666666667h34v26.666666666666668h-34Zm2.5 -2.5h29V9.166666666666668h-29v21.666666666666668Z" stroke-width="0.8333"></path>
-                </svg></div>
-              <p>Regulatory pressure to reduce flaring or venting emissions</p>
-            </div>
-            <div class="div-block-27">
-              <div class="code-embed w-embed"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 40 40" id="Energy-Savings-Leaf--Streamline-Sharp-Material" height="40" width="40">
-                  <desc>
-                    Energy Savings Leaf Streamline Icon: https://streamlinehq.com
-                  </desc>
-                  <path fill="#000000" d="M20 32.5c3.47225 0 6.423583333333334 -1.21525 8.854166666666668 -3.6458333333333335C31.28475 26.423583333333337 32.5 23.47225 32.5 20V7.5H20c-3.47225 0 -6.423583333333334 1.21525 -8.854166666666668 3.6458333333333335C8.71525 13.576416666666667 7.499991666666667 16.52775 7.499991666666667 20s1.2152583333333333 6.423583333333334 3.6458416666666666 8.854166666666668C13.576416666666667 31.28475 16.52775 32.5 20 32.5Zm-2.666666666666667 -3.916666666666667 9.083333333333334 -8.166666666666668 -0.5 -1.5 -6.75 -0.6666666666666667 4.375 -5.958333333333334 -0.8333333333333334 -0.9166666666666667 -9.083333333333334 8.166666666666668 0.5 1.5 6.75 0.6666666666666667 -4.458333333333333 5.958333333333334 0.9166666666666667 0.9166666666666667ZM20 35c-1.8610833333333332 0 -3.6110833333333336 -0.3125 -5.25 -0.9375 -1.6389166666666666 -0.625 -3.125 -1.4930833333333335 -4.458333333333333 -2.604166666666667L6.249991666666667 35.5l-1.7500000000000002 -1.7500000000000002L8.541666666666668 29.708333333333332c-1.1111166666666668 -1.3333333333333335 -1.9791750000000001 -2.819416666666667 -2.604175 -4.458333333333333 -0.625 -1.6389166666666666 -0.9375 -3.388916666666667 -0.9375 -5.25 0 -4.166666666666667 1.4583333333333335 -7.708333333333334 4.375008333333334 -10.625C12.291666666666668 6.458333333333334 15.833333333333334 5 20 5h15v15c0 4.166666666666667 -1.4583333333333335 7.708333333333334 -4.375 10.625S24.166666666666668 35 20 35Z" stroke-width="0.8333"></path>
-                </svg></div>
-              <p>Interest in ESG-positive revenue diversification</p>
-            </div>
+        <div class="process-flow reveal">
+          <div class="process-step">
+            <div class="process-step-number">1</div>
+            <h4>Site Assessment</h4>
+            <p>We evaluate your gas supply, location, connectivity, and regulatory environment.</p>
           </div>
-        </div>
-      </div>
-      <div class="div-block-28">
-        <a href="discuss-partnership.html" class="button more-padding w-button"><strong>Discuss a Partnership</strong></a>
-      </div>
-    </section>
-    <section class="section u-padding-bottom-0">
-      <div class="container">
-        <div class="row cc-footer-top mobile-flex">
-          <div class="column col-large-4 col-med-12">
-            <div class="u-display-flex cc-footer-left">
-              <a href="index.html" class="logo-link w-nav-brand"><img src="images/NRGBloom_1.webp" loading="lazy" sizes="100vw" srcset="images/NRGBloom_1NRGBloom.webp 500w, images/NRGBloom_1.webp 622w" alt="" class="logo-image"></a>
-              <div class="u-display-flex cc-footer-nav-links">
-                <a href="insights.html" class="nav-link cc-footer w-inline-block">
-                  <div>Insights</div>
-                </a>
-                <a href="https://nrgbloom.com/investor-relations#faq" class="nav-link cc-footer w-inline-block">
-                  <div>FAQs</div>
-                </a>
-                <a href="https://www.nrgbloom.com/search" class="nav-link cc-footer w-inline-block">
-                  <div>Search</div>
-                </a>
-                <a href="for-investors.html" class="nav-link cc-footer w-inline-block">
-                  <div>Investor Insights → </div>
-                </a>
-              </div>
-            </div>
+          <div class="process-arrow">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
           </div>
-          <div class="column col-large-5 col-med-8 col-small-12"></div>
-          <div class="column col-large-3 col-med-4 col-small-8 col-xsmall-12">
-            <div class="u-display-flex cc-social-icons">
-              <a href="https://twitter.com/nrgbloom" target="_blank" class="w-inline-block"><img src="images/xtwitter-iconneuehome.svg" loading="lazy" alt="x/twitter icon">
-                <div class="u-screen-reader">X/Twitter icon link</div>
-              </a>              <a href="https://www.linkedin.com/company/nrgbloom/" target="_blank" class="w-inline-block"><img src="images/linkedin-icon.svg" loading="lazy" alt="linkedin icon">
-                <div class="u-screen-reader">Linkedin icon link</div>
-              </a>
-            </div>
+          <div class="process-step">
+            <div class="process-step-number">2</div>
+            <h4>Agreement &amp; Deploy</h4>
+            <p>Sign a GPA, ship a containerized compute unit, and connect to your gas supply.</p>
           </div>
-        </div>
-        <div class="row row-justify-between">
-          <div class="column col-large-4 col-small-12">
-            <div class="w-embed">© NRGBloom <span id="year"></span> · <a href="/privacy-policy" style="color: inherit; text-decoration: underline;">Privacy Policy</a> · <a href="/terms-of-service" style="color: inherit; text-decoration: underline;">Terms of Service</a></div>
+          <div class="process-arrow">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
           </div>
-          <div class="column col-large-8 col-small-12"></div>
+          <div class="process-step">
+            <div class="process-step-number">3</div>
+            <h4>Operate &amp; Earn</h4>
+            <p>NRG Bloom operates the facility. You earn gas revenue and carbon credits.</p>
+          </div>
         </div>
       </div>
     </section>
+
+    <!-- ========== IDEAL PARTNER PROFILE ========== -->
+    <section class="rd-section rd-section-darker">
+      <div class="rd-container">
+        <div class="rd-section-header reveal" style="text-align: center;">
+          <span class="rd-eyebrow">Who We Work With</span>
+          <h2 class="rd-heading" style="margin: 0 auto; text-align: center;">Ideal Partner Profile</h2>
+        </div>
+        <div class="advantage-grid">
+          <div class="advantage-card reveal reveal-delay-1">
+            <div class="advantage-card-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2c1 3 2.5 3.5 3.5 4.5A5 5 0 0112 18a5 5 0 01-3.5-11.5C9.5 5.5 11 5 12 2z"/></svg>
+            </div>
+            <h3>Stranded or Flared Gas</h3>
+            <p>You have associated gas with no pipeline access or an uneconomic flaring penalty.</p>
+          </div>
+          <div class="advantage-card reveal reveal-delay-2">
+            <div class="advantage-card-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            </div>
+            <h3>Remote or Off-Grid Sites</h3>
+            <p>Your production site is far from grid infrastructure, making traditional monetization impractical.</p>
+          </div>
+          <div class="advantage-card reveal reveal-delay-3">
+            <div class="advantage-card-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+            </div>
+            <h3>Regulatory Pressure</h3>
+            <p>You face flaring penalties, ESG reporting requirements, or carbon reduction mandates.</p>
+          </div>
+          <div class="advantage-card reveal reveal-delay-4">
+            <div class="advantage-card-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 00-3-3.87"/><path d="M7 21v-2a4 4 0 013-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/><path d="M8 3.13a4 4 0 000 7.75"/><circle cx="12" cy="7" r="4"/></svg>
+            </div>
+            <h3>Long-Term Vision</h3>
+            <p>You want a 5-10 year revenue partner, not a one-time equipment sale.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== CTA BANNER ========== -->
+    <section class="rd-section">
+      <div class="cta-banner reveal">
+        <div class="cta-banner-bg">
+          <img src="images/nrg_bloom_bitcoin_container_1.avif" alt="NRG Bloom modular compute container" loading="lazy">
+        </div>
+        <div class="cta-banner-content">
+          <h2>Have Stranded Energy? Let's Talk.</h2>
+          <p>Whether you operate a gas field, a wind farm, or a hydro plant — if you have power going to waste, we can turn it into revenue.</p>
+          <div class="cta-banner-buttons">
+            <a href="discuss-partnership.html" class="btn-primary">Discuss a Partnership <span class="btn-arrow">&rarr;</span></a>
+            <a href="strategy.html" class="btn-secondary">View Our Strategy <span class="btn-arrow">&rarr;</span></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="footer-redesign">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html"><img src="images/NRGBloom_1.webp" alt="NRG Bloom" width="140" loading="lazy"></a>
+          <p>Converting stranded energy into AI-ready compute infrastructure. Modular data centers deployed at off-grid sites worldwide.</p>
+        </div>
+        <div class="footer-col"><h4>Company</h4><a href="strategy.html">Strategy</a><a href="about-leadership.html">About &amp; Leadership</a><a href="insights.html">Insights</a><a href="contact.html">Contact</a></div>
+        <div class="footer-col"><h4>Investors</h4><a href="investor-relations.html">Investor Relations</a><a href="for-investors.html">Investor Updates</a><a href="investor-relations.html#faq">FAQs</a></div>
+        <div class="footer-col"><h4>Partners</h4><a href="energy-partners.html">Energy Partners</a><a href="discuss-partnership.html">Discuss Partnership</a><a href="nrg-hash.html">NRG Hash</a><a href="live-mining-pool-data.html">Live Mining Data</a></div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; <span id="year"></span> NRG Bloom Inc. &middot; <a href="privacy-policy.html">Privacy Policy</a> &middot; <a href="terms-of-service.html">Terms of Service</a></p>
+        <div class="footer-socials">
+          <a href="https://twitter.com/nrgbloom" target="_blank" rel="noopener" class="footer-social-link"><img src="images/xtwitter-iconneuehome.svg" alt="X/Twitter"></a>
+          <a href="https://www.linkedin.com/company/nrgbloom/" target="_blank" rel="noopener" class="footer-social-link"><img src="images/linkedin-icon.svg" alt="LinkedIn"></a>
+        </div>
+      </div>
+    </footer>
+
   </div>
+
+  <!-- Scripts -->
   <script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=65e9c5a26e8864c80aafb002" type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous" defer></script>
   <script src="js/webflow.js" type="text/javascript" defer></script>
   <script>
-document.getElementById("year").textContent = new Date().getFullYear();
-</script>
-<div id="cookie-consent" style="position:fixed;bottom:0;left:0;right:0;background:#1a1a2e;color:#fff;padding:12px 24px;display:flex;align-items:center;justify-content:space-between;z-index:9999;font-size:14px;gap:12px;flex-wrap:wrap;">
-  <span>We use cookies to improve your experience. By continuing to use this site, you agree to our <a href="/privacy-policy" style="color:#4ecdc4;text-decoration:underline;">Privacy Policy</a>.</span>
-  <button onclick="document.getElementById('cookie-consent').style.display='none';localStorage.setItem('cookieConsent','true');" style="background:#4ecdc4;color:#1a1a2e;border:none;padding:8px 20px;cursor:pointer;font-weight:bold;border-radius:4px;white-space:nowrap;">Accept</button>
-</div>
-<script>if(localStorage.getItem('cookieConsent')==='true'){document.getElementById('cookie-consent').style.display='none';}</script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+    (function() {
+      const btcEl = document.getElementById('btcPrice');
+      let paused = false;
+      function updateBTC() {
+        if (paused) return;
+        fetch('https://api.binance.com/api/v3/ticker/price?symbol=BTCUSDT')
+          .then(r => { if (r.status === 429) { paused = true; setTimeout(() => paused = false, 60000); return; } return r.json(); })
+          .then(data => { if (btcEl && data && data.price) { const price = parseFloat(data.price).toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 }); btcEl.innerHTML = '<div class="btc-price-widget"><img src="https://uploads-ssl.webflow.com/65e9c5a26e8864c80aafb002/66047b0e56be8e998c63a278_bitcoin.webp" alt="BTC" class="btc-icon"><span class="btc-value">$' + price + '</span></div>'; } })
+          .catch(() => {});
+      }
+      updateBTC(); setInterval(updateBTC, 30000);
+    })();
+    const observer = new IntersectionObserver((entries) => { entries.forEach(entry => { if (entry.isIntersecting) entry.target.classList.add('visible'); }); }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+    const navbar = document.querySelector('.navbar-2');
+    const heroSection = document.querySelector('.inner-hero');
+    let ticking = false;
+    function updateNavbar() {
+      const heroBottom = heroSection ? heroSection.offsetHeight * 0.35 : 300;
+      const scrollY = window.scrollY;
+      const progress = Math.min(scrollY / heroBottom, 1);
+      if (progress > 0.15) { navbar.classList.add('scrolled'); } else { navbar.classList.remove('scrolled'); }
+      const navContainer = navbar.querySelector('.container.cc-navbar');
+      if (navContainer && navbar.classList.contains('scrolled')) { navContainer.style.background = `rgba(255, 255, 255, ${Math.min(0.55 + progress * 0.2, 0.75)})`; } else if (navContainer) { navContainer.style.background = 'transparent'; }
+      ticking = false;
+    }
+    window.addEventListener('scroll', () => { if (!ticking) { requestAnimationFrame(updateNavbar); ticking = true; } }, { passive: true });
+    updateNavbar();
+  </script>
+  <div id="cookie-consent" style="position:fixed;bottom:0;left:0;right:0;background:rgba(255,255,255,0.97);backdrop-filter:blur(10px);color:#0f172a;padding:14px 24px;display:flex;align-items:center;justify-content:space-between;z-index:9999;font-size:13px;gap:12px;flex-wrap:wrap;border-top:1px solid rgba(0,0,0,0.08);box-shadow:0 -2px 12px rgba(0,0,0,0.04);">
+    <span>We use cookies to improve your experience. By continuing, you agree to our <a href="/privacy-policy" style="color:#14489b;text-decoration:underline;">Privacy Policy</a>.</span>
+    <button onclick="document.getElementById('cookie-consent').style.display='none';localStorage.setItem('cookieConsent','true');" style="background:#14489b;color:#fff;border:none;padding:8px 20px;cursor:pointer;font-weight:600;border-radius:6px;white-space:nowrap;font-family:'Intertight Variablefont Wght',sans-serif;font-size:13px;">Accept</button>
+  </div>
+  <script>if(localStorage.getItem('cookieConsent')==='true'){document.getElementById('cookie-consent').style.display='none';}</script>
+
 </body>
 </html>
