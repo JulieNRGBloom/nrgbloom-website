@@ -1378,13 +1378,13 @@ body {
    ============================================ */
 .stage-detail {
   display: grid;
-  grid-template-columns: 1fr 280px;
+  grid-template-columns: 1fr 560px;
   gap: 3rem;
   align-items: start;
 }
 
 .stage-detail.reversed {
-  grid-template-columns: 280px 1fr;
+  grid-template-columns: 560px 1fr;
 }
 
 .stage-detail.reversed .stage-detail-image {
@@ -1685,12 +1685,12 @@ body {
    ============================================ */
 @media screen and (max-width: 991px) {
   .stage-detail {
-    grid-template-columns: 1fr 220px;
+    grid-template-columns: 1fr 400px;
     gap: 2rem;
   }
 
   .stage-detail.reversed {
-    grid-template-columns: 220px 1fr;
+    grid-template-columns: 400px 1fr;
   }
 
   .advantage-grid {
