@@ -146,7 +146,7 @@ document.addEventListener("DOMContentLoaded", function() {
       <div class="container cc-blog-text">
         <div class="row row-justify-center">
           <div class="column col-large-8 col-med-12">
-            <div class="rich-text w-richtext"><p>Bitcoin mining has evolved dramatically since its inception, with mining difficulty skyrocketing as interest grew. This escalation gave rise to <strong>mining pools</strong>: <a href="../blog/bitcoin-mining-pools-explained">collectives where miners combine resources to lower variance, split costs, and secure more frequent payouts.</a> Today, pools control the majority of Bitcoin’s hash rate and are integral to profitable mining. By pooling computational power, miners can tackle exponential difficulty growth and gain predictable rewards compared to solo efforts.</p>
+            <div class="rich-text w-richtext"><p>Bitcoin mining has evolved dramatically since its inception, with mining difficulty skyrocketing as interest grew. This escalation gave rise to <strong>mining pools</strong>: <a href="../blog/bitcoin-mining-pools-explained.html">collectives where miners combine resources to lower variance, split costs, and secure more frequent payouts.</a> Today, pools control the majority of Bitcoin’s hash rate and are integral to profitable mining. By pooling computational power, miners can tackle exponential difficulty growth and gain predictable rewards compared to solo efforts.</p>
 <p>The purpose of this post is to <strong>compare the biggest and most frequently used mining pools</strong> over an eight-week period, from February 5 to April 2, 2025, and to examine how their fees, reward methods, and block-building strategies impact miner yields. We’ll also introduce <strong>volatility metrics</strong> (standard deviation and variance) to quantify reward stability, helping hobbyist and institutional miners choose the right pool for their risk tolerance.</p>
 <h2>Methodology</h2>
 <ol><li><strong>Gathering Hashrate Data<br/></strong>We created a python script that pulled average weekly hashrate snapshots for every pool from the mempool.space API. That tells us how many terahashes per second (TH/s) each operation contributed.<br/><br/></li><li><strong>Collecting Block Rewards<br/></strong>We paginated through each pool’s block history, again via mempool.space, to record every block’s ID, timestamp and <strong>block reward</strong> (3.125 BTC subsidy plus transaction fees).<br/><br/></li><li><strong>Matching Rewards to Hashrate<br/></strong>By matching each block’s timestamp to the nearest weekly hashrate snapshot, we could turn raw BTC into a normalized “BTC per TH” figure, so we’re always comparing apples to apples, regardless of pool size.<br/><br/></li><li><strong>Calculating Key Metrics</strong><br/><ul><li><strong>Subsidy per TH</strong> = (total block subsidies) ÷ (average TH/s)<br/></li><li><strong>Fees per TH</strong> = (total transaction fees) ÷ (average TH/s)<br/></li><li><strong>Total per TH</strong> = (subsidies + fees) ÷ (average TH/s)</li></ul></li></ol>
@@ -269,7 +269,7 @@ document.addEventListener("DOMContentLoaded", function() {
         </div>
         <div class="row row-justify-between">
           <div class="column col-large-4 col-small-12">
-            <div class="w-embed">© NRGBloom <span id="year"></span> · <a href="/privacy-policy" style="color: inherit; text-decoration: underline;">Privacy Policy</a> · <a href="/terms-of-service" style="color: inherit; text-decoration: underline;">Terms of Service</a></div>
+            <div class="w-embed">© NRGBloom <span id="year"></span> · <a href="/privacy-policy.html" style="color: inherit; text-decoration: underline;">Privacy Policy</a> · <a href="/terms-of-service.html" style="color: inherit; text-decoration: underline;">Terms of Service</a></div>
           </div>
           <div class="column col-large-8 col-small-12"></div>
         </div>
@@ -282,7 +282,7 @@ document.addEventListener("DOMContentLoaded", function() {
 document.getElementById("year").textContent = new Date().getFullYear();
 </script>
 <div id="cookie-consent" style="position:fixed;bottom:0;left:0;right:0;background:#1a1a2e;color:#fff;padding:12px 24px;display:flex;align-items:center;justify-content:space-between;z-index:9999;font-size:14px;gap:12px;flex-wrap:wrap;">
-  <span>We use cookies to improve your experience. By continuing to use this site, you agree to our <a href="/privacy-policy" style="color:#4ecdc4;text-decoration:underline;">Privacy Policy</a>.</span>
+  <span>We use cookies to improve your experience. By continuing to use this site, you agree to our <a href="/privacy-policy.html" style="color:#4ecdc4;text-decoration:underline;">Privacy Policy</a>.</span>
   <button onclick="document.getElementById('cookie-consent').style.display='none';localStorage.setItem('cookieConsent','true');" style="background:#4ecdc4;color:#1a1a2e;border:none;padding:8px 20px;cursor:pointer;font-weight:bold;border-radius:4px;white-space:nowrap;">Accept</button>
 </div>
 <script>if(localStorage.getItem('cookieConsent')==='true'){document.getElementById('cookie-consent').style.display='none';}</script>
