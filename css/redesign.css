@@ -316,11 +316,11 @@ body {
   background:
     linear-gradient(
       180deg,
-      rgba(8, 28, 60, 0.5) 0%,
-      rgba(8, 28, 60, 0.3) 35%,
-      rgba(8, 28, 60, 0.15) 60%,
-      rgba(255, 255, 255, 0.0) 70%,
-      rgba(255, 255, 255, 0.5) 88%,
+      rgba(8, 28, 60, 0.6) 0%,
+      rgba(8, 28, 60, 0.5) 40%,
+      rgba(8, 28, 60, 0.45) 65%,
+      rgba(8, 28, 60, 0.4) 85%,
+      rgba(255, 255, 255, 0.5) 95%,
       rgba(255, 255, 255, 1) 100%
     );
 }
@@ -364,7 +364,7 @@ body {
 
 .hero-title {
   font-family: 'Intertight Variablefont Wght', sans-serif;
-  font-size: clamp(2.5rem, 6vw, 5.5rem);
+  font-size: clamp(2.5rem, 5vw, 4.5rem);
   font-weight: 700;
   line-height: 1.05;
   letter-spacing: -0.02em;
@@ -384,8 +384,8 @@ body {
 
 .hero-subtitle {
   font-family: 'Switzer Variable', sans-serif;
-  font-size: clamp(1rem, 1.5vw, 1.25rem);
-  line-height: 1.6;
+  font-size: clamp(1rem, 1.3vw, 1.15rem);
+  line-height: 1.55;
   color: rgba(255, 255, 255, 0.85);
   text-shadow: 0 1px 8px rgba(0, 0, 0, 0.2);
   max-width: 640px;
@@ -432,14 +432,16 @@ body {
   background: rgba(255, 255, 255, 0.15);
   backdrop-filter: blur(8px);
   color: #ffffff;
+  text-shadow: 0 1px 6px rgba(0, 0, 0, 0.4);
   font-family: 'Intertight Variablefont Wght', sans-serif;
   font-size: 0.95rem;
   font-weight: 600;
-  border: 1px solid rgba(255, 255, 255, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.6);
   border-radius: 8px;
   text-decoration: none;
   transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
   cursor: pointer;
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.15);
 }
 
 .btn-secondary:hover {
@@ -481,7 +483,7 @@ body {
   position: relative;
   z-index: 2;
   padding: 0;
-  margin-top: -80px;
+  margin-top: 0;
 }
 
 .stats-bar-inner {
@@ -1225,19 +1227,155 @@ body {
    RESPONSIVE
    ============================================ */
 @media screen and (max-width: 991px) {
+  /* Force flex layout — overrides Webflow's display:block at 991px */
   .navbar-2 .container.cc-navbar {
+    display: flex !important;
+    align-items: center;
+    justify-content: space-between;
     margin: 8px auto;
     padding: 12px 16px;
     width: 96%;
+    border-radius: 12px;
   }
 
   .navbar-2.scrolled .container.cc-navbar {
     padding: 10px 16px;
-    border-radius: 12px;
+    margin-bottom: 0;
   }
 
   .navbar-2.scrolled .logo-image.logo-color {
     width: 120px;
+  }
+
+  /* Kill clearfix pseudo-elements — they become ghost flex items */
+  .navbar-2 .container.cc-navbar::before,
+  .navbar-2 .container.cc-navbar::after {
+    display: none;
+  }
+
+  /* ---- Mobile menu fixes ---- */
+
+  /* When fixed menu is open: keep navbar as-is (transparent stays transparent) */
+
+  /* Pill: keep its own bg, just flatten bottom + kill shadow */
+  .navbar-2.scrolled:has([data-nav-menu-open]) .container.cc-navbar {
+    border-radius: 12px 12px 0 0;
+    box-shadow: none;
+    border-bottom-color: transparent;
+  }
+
+  /* Hamburger icon */
+  .mobil-menu-icon {
+    top: 0;
+    color: #ffffff;
+    font-size: 28px;
+    text-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);
+  }
+
+  .navbar-2.scrolled .mobil-menu-icon {
+    color: #334155;
+    text-shadow: none;
+  }
+
+  /* Remove black box on open state */
+  .nav-menu-button.w--open,
+  .w-nav-button.w--open {
+    background-color: transparent !important;
+    color: inherit;
+  }
+
+  /* Close icon (X) */
+  .nav-menu-button.w--open .mobil-menu-icon {
+    color: #ffffff;
+    text-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);
+  }
+
+  .navbar-2.scrolled .nav-menu-button.w--open .mobil-menu-icon {
+    color: #334155;
+  }
+
+  /*
+     Dropdown panel — flush against the navbar container.
+     Positioned relative to .container.cc-navbar (position:relative),
+     so left:0 / right:0 aligns perfectly with the container edges.
+  */
+
+  /*
+     Dropdown lives inside .w-nav-overlay (overflow:hidden, absolute).
+     Style the overlay itself for alignment + shape,
+     and the menu inside it for background.
+  */
+
+  /* Overlay: full width by default (for fixed navbar) */
+  .navbar-2 .w-nav-overlay {
+    width: 100% !important;
+    left: 0 !important;
+    right: 0 !important;
+    overflow: visible;
+  }
+
+  /* Overlay: match pill width when scrolled */
+  .navbar-2.scrolled .w-nav-overlay {
+    width: 96% !important;
+    left: 50% !important;
+    right: auto !important;
+    transform: translateX(-50%);
+    border-radius: 0 0 12px 12px;
+  }
+
+  /* Fixed/transparent navbar: full-width, transparent-to-dark gradient */
+  .navbar-2 [data-nav-menu-open] {
+    position: relative;
+    padding: 0.75rem 16px 1.5rem;
+    text-align: left;
+    background: linear-gradient(
+      to bottom,
+      transparent 0%,
+      rgba(10, 14, 26, 0.88) 30%,
+      rgba(10, 14, 26, 0.88) 70%,
+      transparent 100%
+    ) !important;
+  }
+
+  /* Graduated blur — fades in with the gradient via mask */
+  .navbar-2:not(.scrolled) [data-nav-menu-open]::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    -webkit-mask-image: linear-gradient(to bottom, transparent 0%, black 30%, black 70%, transparent 100%);
+    mask-image: linear-gradient(to bottom, transparent 0%, black 30%, black 70%, transparent 100%);
+    z-index: -1;
+    border-radius: inherit;
+  }
+
+  /* Scrolled/pill navbar: match the pill's exact background */
+  .navbar-2.scrolled [data-nav-menu-open] {
+    background: rgba(255, 255, 255, 0.72) !important;
+    backdrop-filter: blur(24px) saturate(1.4);
+    -webkit-backdrop-filter: blur(24px) saturate(1.4);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-top: none;
+    border-radius: 0 0 12px 12px !important;
+  }
+
+  /* Stack nav links vertically */
+  .nav-links-container {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.25rem;
+  }
+
+  .nav-links-container .nav-link {
+    padding: 0.6rem 0.5rem;
+    width: 100%;
+    font-size: 1rem;
+  }
+
+  /* Scrolled state: dark text on light dropdown */
+  .navbar-2.scrolled [data-nav-menu-open] .nav-link {
+    color: #334155 !important;
   }
 
   .stats-bar-inner {
@@ -1272,10 +1410,6 @@ body {
 @media screen and (max-width: 767px) {
   .hero-title {
     font-size: 2.5rem;
-  }
-
-  .stats-bar {
-    margin-top: -40px;
   }
 
   .stats-bar-inner {
