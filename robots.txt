@@ -1,6 +1,38 @@
 User-agent: *
 Allow: /
-Disallow: /for-investors.html
+
+# AI Crawlers — explicitly allowed
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Bytespider
+Allow: /
+
+User-agent: Googlebot
+Allow: /
+
+# Disallow deleted/internal pages
 Disallow: /detail_*
+Disallow: /pools-test.html
+
+# Machine-readable resources
+# LLM-optimized: /llms.txt
+# Full profile: /llms-full.txt
+# Agent manifest: /.well-known/ai-agent.json
 
 Sitemap: https://www.nrgbloom.com/sitemap.xml

@@ -29,6 +29,55 @@
   <link href="images/webclip.png" rel="apple-touch-icon">
   <style>
     body { -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+
+    /* Navbar overrides — dark text on light hero */
+    .navbar-2 .nav-link.u-text-white {
+      color: #1e293b !important;
+      text-shadow: none;
+    }
+    .navbar-2 .nav-link.u-text-white:hover {
+      color: #14489b !important;
+    }
+    .navbar-2 .logo-image.logo-white { display: none; }
+    .navbar-2 .logo-image.logo-color { display: block; width: 180px; }
+    .navbar-2 .mobil-menu-icon { color: #1e293b; text-shadow: none; }
+    .navbar-2 .btc-value { color: #334155; text-shadow: none; }
+    .navbar-2 .btc-icon { filter: none; }
+
+    /* Page-specific hero overrides for light background image */
+    .inner-hero .hero-bg::after {
+      background:
+        linear-gradient(
+          to bottom,
+          transparent 0%,
+          transparent 50%,
+          rgba(255, 255, 255, 0.4) 65%,
+          rgba(255, 255, 255, 0.85) 80%,
+          rgba(255, 255, 255, 1) 100%
+        );
+    }
+    .inner-hero .hero-content {
+      padding: 3rem 0 2rem;
+    }
+    .inner-hero .hero-title {
+      color: #0a1628;
+      text-shadow: none;
+    }
+    .inner-hero .hero-subtitle {
+      color: #334155;
+      text-shadow: none;
+    }
+    .inner-hero .hero-eyebrow {
+      color: #14489b;
+      background: rgba(255, 255, 255, 0.7);
+      padding: 4px 14px;
+      border-radius: 20px;
+      backdrop-filter: blur(4px);
+    }
+    .inner-hero .hero-eyebrow-dot {
+      background: #14489b;
+      box-shadow: 0 0 6px rgba(20, 72, 155, 0.5);
+    }
   </style>
 </head>
 <body class="body">
@@ -64,7 +113,7 @@
     <!-- ========== HERO ========== -->
     <section class="inner-hero">
       <div class="hero-bg">
-        <img src="images/flare.avif" alt="Gas flare at energy production site" loading="eager">
+        <img src="images/datacenter-modules.png" alt="NRG Bloom modular data center containers" loading="eager">
       </div>
       <div class="hero-content">
         <div class="hero-eyebrow">
@@ -149,13 +198,13 @@
     <footer class="footer-redesign">
       <div class="footer-grid">
         <div class="footer-brand">
-          <a href="index.html"><img src="images/NRGBloom_1.webp" alt="NRG Bloom" width="140" loading="lazy"></a>
+          <a href="index.html"><img src="images/NRGBloom_logo.webp" alt="NRG Bloom" width="140" loading="lazy"></a>
           <p>Converting stranded energy into AI-ready compute infrastructure. Modular data centers deployed at off-grid sites worldwide.</p>
         </div>
         <div class="footer-col"><h4>Company</h4><a href="strategy.html">Strategy</a><a href="about-leadership.html">About &amp; Leadership</a><a href="insights.html">Insights</a>
           <a href="esg-impact.html">ESG &amp; Impact</a><a href="contact.html">Contact</a></div>
-        <div class="footer-col"><h4>Investors</h4><a href="investor-relations.html">Investor Relations</a><a href="for-investors.html">Investor Updates</a><a href="investor-relations.html#faq">FAQs</a></div>
-        <div class="footer-col"><h4>Partners</h4><a href="energy-partners.html">Energy Partners</a><a href="discuss-partnership.html">Discuss Partnership</a><a href="nrg-hash.html">NRG Hash</a><a href="live-mining-pool-data.html">Live Mining Data</a></div>
+        <div class="footer-col"><h4>Investors</h4><a href="investor-relations.html">Investor Relations</a><a href="facts-and-numbers.html">Facts &amp; Numbers</a><a href="esg-impact.html">ESG &amp; Impact</a></div>
+        <div class="footer-col"><h4>Partners</h4><a href="energy-partners.html">Energy Partners</a><a href="discuss-partnership.html">Discuss Partnership</a></div>
       </div>
       <div class="footer-bottom">
         <p>&copy; <span id="year"></span> NRG Bloom Inc. &middot; <a href="privacy-policy.html">Privacy Policy</a> &middot; <a href="terms-of-service.html">Terms of Service</a></p>

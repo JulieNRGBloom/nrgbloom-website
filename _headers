@@ -6,7 +6,12 @@
   X-Content-Type-Options: nosniff
   X-XSS-Protection: 1; mode=block
   Referrer-Policy: strict-origin-when-cross-origin
-  Permissions-Policy: camera=(), microphone=(), geolocation=()
+  Permissions-Policy: camera=(), microphone=(), geolocation=(), payment=(), usb=(), magnetometer=(), gyroscope=(), accelerometer=()
+  Strict-Transport-Security: max-age=63072000; includeSubDomains; preload
+  Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://ajax.googleapis.com https://d3e54v103j8qbb.cloudfront.net https://api.binance.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https://cdn.prod.website-files.com https://uploads-ssl.webflow.com https://www.nrgbloom.com; connect-src 'self' https://api.binance.com; frame-ancestors 'self'; base-uri 'self'; form-action 'self' https://webflow.com
+  X-DNS-Prefetch-Control: on
+  Cross-Origin-Opener-Policy: same-origin
+  Cross-Origin-Resource-Policy: same-site
 
 # Long-lived cache for static assets
 /images/*
@@ -42,3 +47,15 @@
 
 /.well-known/*
   Cache-Control: public, max-age=86400
+
+# Prevent MIME sniffing on all downloadable resources
+/nrg-bloom-investor-presentation-2026-03.pdf
+  Content-Type: application/pdf
+  Content-Disposition: inline
+  X-Content-Type-Options: nosniff
+
+# Data endpoints — CORS enabled for embedding
+/data/*
+  Access-Control-Allow-Origin: *
+  Cache-Control: public, max-age=86400
+  Content-Type: application/json; charset=utf-8

@@ -1,0 +1,76 @@
+{
+  "schema": "https://schema.org/Dataset",
+  "name": "NRG Bloom Operational Impact Data",
+  "description": "Key operational, environmental, and financial metrics from NRG Bloom's modular data center deployments on stranded energy sources.",
+  "publisher": {
+    "name": "NRG Bloom Inc.",
+    "url": "https://www.nrgbloom.com"
+  },
+  "license": "Data may be cited with attribution to NRG Bloom Inc. (https://www.nrgbloom.com)",
+  "last_updated": "2026-03-18",
+  "data": {
+    "company": {
+      "name": "NRG Bloom Inc.",
+      "founded": "2023",
+      "headquarters": "Quebec, Canada",
+      "incorporation": "Quebec, Canada",
+      "website": "https://www.nrgbloom.com"
+    },
+    "operations": {
+      "operational_capacity_mw": 1.5,
+      "under_development_mw": 5,
+      "total_pipeline_mw": 6.5,
+      "first_deployment_date": "2025-02",
+      "first_deployment_location": "Ogboinbiri, Bayelsa State, Nigeria",
+      "operational_months": 13,
+      "deployment_speed_days": "60-90",
+      "pue_target": 1.2,
+      "uptime_percent": 95
+    },
+    "energy": {
+      "cost_per_kwh_usd_low": 0.02,
+      "cost_per_kwh_usd_high": 0.032,
+      "energy_sources": ["Associated gas (flare)", "Geothermal", "Hydroelectric", "Curtailed renewables"],
+      "power_agreement_type": "Community based power purchase agreement"
+    },
+    "environmental": {
+      "co2e_mitigated_tonnes": 300,
+      "methodology": "Displacement of methane flaring through productive combustion in gas generators powering compute infrastructure",
+      "carbon_position": "Carbon-negative",
+      "verification_standard": "Aligned with Verra VCS AM0009 methodology"
+    },
+    "employment": {
+      "jobs_per_site": "5-10",
+      "hiring_policy": "Local-first",
+      "skills_transfer": true
+    },
+    "markets": {
+      "active": [
+        {
+          "country": "Nigeria",
+          "region": "Bayelsa State",
+          "site": "Ogboinbiri",
+          "energy_source": "Associated gas (flare)",
+          "status": "Operational",
+          "capacity_mw": 1.5
+        }
+      ],
+      "pipeline": [
+        {
+          "country": "Kenya",
+          "energy_source": "Geothermal + Hydroelectric",
+          "status": "Market analysis"
+        },
+        {
+          "country": "Colombia",
+          "energy_source": "Diversified",
+          "status": "Regulatory feasibility"
+        }
+      ]
+    }
+  },
+  "citation": {
+    "preferred": "NRG Bloom Inc. (2026). NRG Bloom Operational Impact Data. Retrieved from https://www.nrgbloom.com/data/impact.json",
+    "bibtex": "@misc{nrgbloom2026impact, title={NRG Bloom Operational Impact Data}, author={{NRG Bloom Inc.}}, year={2026}, url={https://www.nrgbloom.com/data/impact.json}}"
+  }
+}
