@@ -1974,3 +1974,107 @@ body {
     filter: blur(0);
   }
 }
+
+/* About & Leadership inner-hero: left-side curtain over the team photo */
+.inner-hero .hero-curtain {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 30%;
+  z-index: 1;
+  background: linear-gradient(
+    90deg,
+    rgba(8, 14, 32, 0.94) 0%,
+    rgba(8, 14, 32, 0.88) 35%,
+    rgba(8, 14, 32, 0.55) 70%,
+    rgba(8, 14, 32, 0) 100%
+  );
+  display: flex;
+  align-items: center;
+  pointer-events: none;
+}
+
+.inner-hero .hero-stamp {
+  padding-left: 8%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+  color: rgba(255, 255, 255, 0.92);
+  font-family: 'Intertight Variablefont Wght', sans-serif;
+  font-size: 0.82rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  font-weight: 600;
+  text-shadow: 0 1px 6px rgba(0, 0, 0, 0.4);
+  animation: proofFadeIn 1.2s ease 0.2s both;
+  position: relative;
+  z-index: 2;
+}
+
+.inner-hero .hero-curtain-map {
+  position: absolute;
+  inset: 0;
+  background-image: url('../images/svg/world-map.svg');
+  background-size: 240% auto;
+  background-position: 37% 100%;
+  background-repeat: no-repeat;
+  -webkit-mask-image:
+    linear-gradient(90deg, #000 0%, #000 55%, transparent 90%),
+    linear-gradient(180deg, transparent 0%, transparent 15%, #000 25%);
+  mask-image:
+    linear-gradient(90deg, #000 0%, #000 55%, transparent 90%),
+    linear-gradient(180deg, transparent 0%, transparent 15%, #000 25%);
+  -webkit-mask-composite: source-in;
+  mask-composite: intersect;
+  -webkit-mask-repeat: no-repeat, no-repeat;
+  mask-repeat: no-repeat, no-repeat;
+  pointer-events: none;
+}
+
+.inner-hero .hero-stamp-flags {
+  display: flex;
+  gap: 6px;
+  margin-bottom: 0.65rem;
+}
+
+.inner-hero .hero-stamp-flags img {
+  width: 28px;
+  height: auto;
+  border-radius: 2px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.35);
+}
+
+.inner-hero .hero-stamp-rule {
+  display: block;
+  width: 28px;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.45);
+  margin-bottom: 0.3rem;
+}
+
+.inner-hero .hero-stamp-date {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.78rem;
+  margin-top: 0.15rem;
+}
+
+@media (max-width: 768px) {
+  .inner-hero .hero-curtain {
+    width: 45%;
+    background: linear-gradient(
+      90deg,
+      rgba(8, 14, 32, 0.95) 0%,
+      rgba(8, 14, 32, 0.85) 60%,
+      rgba(8, 14, 32, 0) 100%
+    );
+  }
+  .inner-hero .hero-stamp {
+    padding-left: 6%;
+    font-size: 0.72rem;
+    gap: 0.35rem;
+  }
+  .inner-hero .hero-stamp-flags img {
+    width: 22px;
+  }
+}
