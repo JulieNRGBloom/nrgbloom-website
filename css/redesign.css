@@ -669,18 +669,18 @@ body {
 }
 
 /* ============================================
-   PATHFINDER MODEL
+   STAGE-GATED MODEL
    ============================================ */
 /* ============================================
-   PATHFINDER — TIMELINE LAYOUT
+   STAGE TIMELINE LAYOUT
    ============================================ */
-.pathfinder-timeline {
+.stage-timeline {
   position: relative;
   margin-top: 3rem;
 }
 
 /* Vertical connector line */
-.pathfinder-timeline-line {
+.stage-timeline-line {
   position: absolute;
   left: 39px;
   top: 40px;
@@ -860,7 +860,7 @@ body {
     gap: 12px;
   }
 
-  .pathfinder-timeline-line {
+  .stage-timeline-line {
     display: none;
   }
 
@@ -1387,7 +1387,7 @@ body {
     gap: 2rem;
   }
 
-  .pathfinder-grid {
+  .stage-grid {
     grid-template-columns: 1fr;
     gap: 16px;
   }

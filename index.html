@@ -69,7 +69,7 @@
       "jobTitle": "Founder & CEO"
     },
     "employee": [
-      { "@type": "Person", "name": "Julie Peeters", "jobTitle": "Director of Finance & Operations" },
+      { "@type": "Person", "name": "Julie Peeters", "jobTitle": "Co-Founder & Director of Operations" },
       { "@type": "Person", "name": "Gus Anyim", "jobTitle": "Head of Commercial" },
       { "@type": "Person", "name": "Jordane Volcy", "jobTitle": "Head of Engineering" }
     ],
@@ -216,7 +216,7 @@
       </div>
     </section>
 
-    <!-- ========== PATHFINDER MODEL ========== -->
+    <!-- ========== STAGE-GATED MODEL ========== -->
     <section class="rd-section rd-section-darker">
       <div class="rd-container">
         <div class="rd-section-header reveal" style="text-align:center; max-width:700px; margin-left:auto; margin-right:auto;">
@@ -226,8 +226,8 @@
         </div>
 
         <!-- Timeline connector line -->
-        <div class="pathfinder-timeline reveal">
-          <div class="pathfinder-timeline-line"></div>
+        <div class="stage-timeline reveal">
+          <div class="stage-timeline-line"></div>
 
           <!-- Stage 1 -->
           <div class="pf-stage-row">
@@ -485,7 +485,7 @@
 
     document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
 
-    // Staggered reveal for pathfinder stage rows
+    // Staggered reveal for stage timeline rows
     const stageObserver = new IntersectionObserver((entries) => {
       entries.forEach((entry, i) => {
         if (entry.isIntersecting) {

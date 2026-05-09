@@ -16,11 +16,25 @@
       "Gas flare monetization through compute infrastructure",
       "Carbon-negative AI and Bitcoin compute operations",
       "Energy partner revenue sharing models",
-      "Site validation through stage-gated Pathfinder Model"
+      "Stage-gated site validation"
     ],
-    "markets": ["Nigeria", "Kenya", "Colombia"],
-    "energy_sources": ["Flare gas", "Geothermal", "Hydroelectric", "Curtailed renewables"],
-    "partnership_types": ["Energy producers", "Infrastructure investors", "Compute buyers", "Government bodies"]
+    "markets": [
+      "Nigeria",
+      "Kenya",
+      "Colombia"
+    ],
+    "energy_sources": [
+      "Flare gas",
+      "Geothermal",
+      "Hydroelectric",
+      "Curtailed renewables"
+    ],
+    "partnership_types": [
+      "Energy producers",
+      "Infrastructure investors",
+      "Compute buyers",
+      "Government bodies"
+    ]
   },
   "metrics": {
     "operational_capacity_mw": 1.5,
@@ -31,10 +45,22 @@
     "founded": "2023"
   },
   "team": [
-    {"name": "Makir Volcy", "role": "Founder & CEO"},
-    {"name": "Julie Peeters", "role": "Director of Finance & Operations"},
-    {"name": "Gus Anyim", "role": "Head of Commercial"},
-    {"name": "Jordane Volcy", "role": "Head of Engineering"}
+    {
+      "name": "Makir Volcy",
+      "role": "Founder & CEO"
+    },
+    {
+      "name": "Julie Peeters",
+      "role": "Co-Founder & Director of Operations"
+    },
+    {
+      "name": "Gus Anyim",
+      "role": "Head of Commercial"
+    },
+    {
+      "name": "Jordane Volcy",
+      "role": "Head of Engineering"
+    }
   ],
   "machine_readable_resources": {
     "llms_txt": "https://nrgbloom.com/llms.txt",
@@ -44,8 +70,18 @@
     "structured_data": "JSON-LD on every page"
   },
   "interaction_protocols": {
-    "supported": ["llms.txt", "JSON-LD", "Schema.org", "OpenGraph", "sitemap"],
-    "coming_soon": ["MCP server", "API endpoints", "Agent-to-agent negotiation"]
+    "supported": [
+      "llms.txt",
+      "JSON-LD",
+      "Schema.org",
+      "OpenGraph",
+      "sitemap"
+    ],
+    "coming_soon": [
+      "MCP server",
+      "API endpoints",
+      "Agent-to-agent negotiation"
+    ]
   },
   "citation_policy": {
     "preferred_name": "NRG Bloom",
