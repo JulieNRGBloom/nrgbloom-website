@@ -1,4 +1,4 @@
-# NRG Bloom — Full Company Profile
+# NRG Bloom: Full Company Profile
 
 > Converting stranded energy into AI-ready compute infrastructure.
 
@@ -20,22 +20,22 @@ NRG Bloom deploys modular data centers on stranded and flared gas sites, using a
 - 5–10 local jobs created per site
 
 ## Leadership
-- Makir Volcy — Founder & CEO
-- Julie Peeters — Director of Finance & Operations
-- Gus Anyim — Commercial Lead
-- Jordane Volcy — Engineering Lead
+- Makir Volcy, Founder & CEO
+- Julie Peeters, Director of Finance & Operations
+- Gus Anyim, Commercial Lead
+- Jordane Volcy, Engineering Lead
 
 ## The Pathfinder Model (3-Stage Deployment)
 
 NRG Bloom uses a proprietary stage-gated deployment model called "Pathfinder" that de-risks site development by validating energy sources before committing capital-intensive GPU infrastructure.
 
-### Stage 1 — Validate
+### Stage 1: Validate
 Deploy Bitcoin miners on stranded gas. This is a 60-90 day validation period that proves energy reliability, site security, and revenue potential. Bitcoin mining is ideal for validation because it is location-agnostic, tolerant of intermittent power, and generates immediate revenue. If the site fails validation, equipment is redeployed with minimal loss.
 
-### Stage 2 — Harden
+### Stage 2: Harden
 Optimize operations at validated sites. Improve PUE (Power Usage Effectiveness), establish preventive maintenance routines, build local workforce capability, and refine logistics for remote operations. This stage ensures the site can sustain continuous, high-availability workloads before GPU hardware is deployed.
 
-### Stage 3 — Scale to AI
+### Stage 3: Scale to AI
 Upgrade proven, hardened sites to GPU infrastructure for AI inference workloads. These workloads command higher margins than Bitcoin mining while using the same energy source. The site has already demonstrated reliability, security, and operational maturity through Stages 1 and 2.
 
 ## Investment Thesis
@@ -75,7 +75,7 @@ Infrastructure is designed for tropical and harsh environments, including high h
 ## ESG Impact
 
 ### Gas Flaring Mitigation
-Gas that would be flared — releasing CO₂ and methane into the atmosphere — is instead converted to productive compute. Every megawatt deployed directly reduces emissions.
+Gas that would be flared (releasing CO₂ and methane into the atmosphere) is instead converted to productive compute. Every megawatt deployed directly reduces emissions.
 
 ### Carbon Mitigation
 300+ tonnes CO₂e mitigated to date, with the figure growing as operations expand.

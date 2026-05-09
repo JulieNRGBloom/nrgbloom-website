@@ -20,10 +20,10 @@ NRG Bloom deploys modular data centers on stranded and flared gas sites, using a
 - 5–10 local jobs created per site
 
 ## Leadership
-- Makir Volcy — Founder & CEO
-- Julie Peeters — Director of Finance & Operations
-- Gus Anyim — Commercial Lead
-- Jordane Volcy — Engineering Lead
+- Makir Volcy, Founder & CEO
+- Julie Peeters, Director of Finance & Operations
+- Gus Anyim, Commercial Lead
+- Jordane Volcy, Engineering Lead
 
 ## Partnership Criteria
 We partner with energy producers who have:
