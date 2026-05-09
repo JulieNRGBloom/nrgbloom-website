@@ -3,7 +3,7 @@
 
   <!-- Homepage -->
   <url>
-    <loc>https://www.nrgbloom.com/</loc>
+    <loc>https://nrgbloom.com/</loc>
     <lastmod>2026-03-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
@@ -11,25 +11,25 @@
 
   <!-- Core Pages -->
   <url>
-    <loc>https://www.nrgbloom.com/strategy</loc>
+    <loc>https://nrgbloom.com/strategy</loc>
     <lastmod>2026-03-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.nrgbloom.com/about-leadership</loc>
+    <loc>https://nrgbloom.com/about-leadership</loc>
     <lastmod>2026-03-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.nrgbloom.com/energy-partners</loc>
+    <loc>https://nrgbloom.com/energy-partners</loc>
     <lastmod>2026-03-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.nrgbloom.com/investor-relations</loc>
+    <loc>https://nrgbloom.com/investor-relations</loc>
     <lastmod>2026-03-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -37,43 +37,43 @@
 
   <!-- Site Pages -->
   <url>
-    <loc>https://www.nrgbloom.com/team</loc>
+    <loc>https://nrgbloom.com/team</loc>
     <lastmod>2026-03-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.nrgbloom.com/insights</loc>
+    <loc>https://nrgbloom.com/insights</loc>
     <lastmod>2026-03-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.nrgbloom.com/partnership</loc>
+    <loc>https://nrgbloom.com/partnership</loc>
     <lastmod>2026-03-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.nrgbloom.com/contact</loc>
+    <loc>https://nrgbloom.com/contact</loc>
     <lastmod>2026-03-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.nrgbloom.com/discuss-partnership</loc>
+    <loc>https://nrgbloom.com/discuss-partnership</loc>
     <lastmod>2026-03-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.nrgbloom.com/esg-impact</loc>
+    <loc>https://nrgbloom.com/esg-impact</loc>
     <lastmod>2026-03-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.nrgbloom.com/facts-and-numbers</loc>
+    <loc>https://nrgbloom.com/facts-and-numbers</loc>
     <lastmod>2026-03-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -81,25 +81,25 @@
 
   <!-- Team Member Pages -->
   <url>
-    <loc>https://www.nrgbloom.com/makir-volcy</loc>
+    <loc>https://nrgbloom.com/makir-volcy</loc>
     <lastmod>2026-03-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://www.nrgbloom.com/jordane-volcy</loc>
+    <loc>https://nrgbloom.com/jordane-volcy</loc>
     <lastmod>2026-03-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://www.nrgbloom.com/julie-peeters</loc>
+    <loc>https://nrgbloom.com/julie-peeters</loc>
     <lastmod>2026-03-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://www.nrgbloom.com/gus-anyim</loc>
+    <loc>https://nrgbloom.com/gus-anyim</loc>
     <lastmod>2026-03-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -107,115 +107,115 @@
 
   <!-- Blog Posts -->
   <url>
-    <loc>https://www.nrgbloom.com/blog/bitcoin---helping-the-oil-industry-to-end-gas-flaring</loc>
+    <loc>https://nrgbloom.com/blog/bitcoin---helping-the-oil-industry-to-end-gas-flaring</loc>
     <lastmod>2026-03-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.nrgbloom.com/blog/bitcoin-economic-impact-developing-countries-rural-areas</loc>
+    <loc>https://nrgbloom.com/blog/bitcoin-economic-impact-developing-countries-rural-areas</loc>
     <lastmod>2026-03-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.nrgbloom.com/blog/bitcoin-for-good-how-mining-can-help</loc>
+    <loc>https://nrgbloom.com/blog/bitcoin-for-good-how-mining-can-help</loc>
     <lastmod>2026-03-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.nrgbloom.com/blog/bitcoin-mining-pools-explained</loc>
+    <loc>https://nrgbloom.com/blog/bitcoin-mining-pools-explained</loc>
     <lastmod>2026-03-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.nrgbloom.com/blog/bitcoin-mining-supply-squeeze</loc>
+    <loc>https://nrgbloom.com/blog/bitcoin-mining-supply-squeeze</loc>
     <lastmod>2026-03-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.nrgbloom.com/blog/breaking-barriers-the-power-of-decentralized-bitcoin-mining</loc>
+    <loc>https://nrgbloom.com/blog/breaking-barriers-the-power-of-decentralized-bitcoin-mining</loc>
     <lastmod>2026-03-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.nrgbloom.com/blog/building-wealth-with-bitcoin-how-mining-can-create-passive-income-opportunities</loc>
+    <loc>https://nrgbloom.com/blog/building-wealth-with-bitcoin-how-mining-can-create-passive-income-opportunities</loc>
     <lastmod>2026-03-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.nrgbloom.com/blog/carbon-footprint-and-environmental-impact-of-bitcoin-mining</loc>
+    <loc>https://nrgbloom.com/blog/carbon-footprint-and-environmental-impact-of-bitcoin-mining</loc>
     <lastmod>2026-03-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.nrgbloom.com/blog/comparative-analysis-of-bitcoin-mining-pools</loc>
+    <loc>https://nrgbloom.com/blog/comparative-analysis-of-bitcoin-mining-pools</loc>
     <lastmod>2026-03-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.nrgbloom.com/blog/digital-gold-mine-bitcoin-mining-for-energy-innovators</loc>
+    <loc>https://nrgbloom.com/blog/digital-gold-mine-bitcoin-mining-for-energy-innovators</loc>
     <lastmod>2026-03-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.nrgbloom.com/blog/energy-storage-solutions-for-stranded-energy</loc>
+    <loc>https://nrgbloom.com/blog/energy-storage-solutions-for-stranded-energy</loc>
     <lastmod>2026-03-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.nrgbloom.com/blog/investment-opportunities-with-bitcoin-treasury-management</loc>
+    <loc>https://nrgbloom.com/blog/investment-opportunities-with-bitcoin-treasury-management</loc>
     <lastmod>2026-03-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.nrgbloom.com/blog/nrg-bloom-setting-up-in-africa</loc>
+    <loc>https://nrgbloom.com/blog/nrg-bloom-setting-up-in-africa</loc>
     <lastmod>2026-03-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.nrgbloom.com/blog/stranded-energy-bitcoin-waste-recovery-explained</loc>
+    <loc>https://nrgbloom.com/blog/stranded-energy-bitcoin-waste-recovery-explained</loc>
     <lastmod>2026-03-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.nrgbloom.com/blog/the-evolution-of-bitcoin-mining-hardware</loc>
+    <loc>https://nrgbloom.com/blog/the-evolution-of-bitcoin-mining-hardware</loc>
     <lastmod>2026-03-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.nrgbloom.com/blog/understanding-the-bitcoin-halving</loc>
+    <loc>https://nrgbloom.com/blog/understanding-the-bitcoin-halving</loc>
     <lastmod>2026-03-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.nrgbloom.com/blog/why-africa-is-the-future-of-bitcoin-mining</loc>
+    <loc>https://nrgbloom.com/blog/why-africa-is-the-future-of-bitcoin-mining</loc>
     <lastmod>2026-03-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.nrgbloom.com/blog/ai-infrastructure-stranded-energy-2026</loc>
+    <loc>https://nrgbloom.com/blog/ai-infrastructure-stranded-energy-2026</loc>
     <lastmod>2026-03-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.nrgbloom.com/blog/builders-not-theorists-operational-know-how</loc>
+    <loc>https://nrgbloom.com/blog/builders-not-theorists-operational-know-how</loc>
     <lastmod>2026-04-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -223,19 +223,19 @@
 
   <!-- New Pages -->
   <url>
-    <loc>https://www.nrgbloom.com/ai-agent</loc>
+    <loc>https://nrgbloom.com/ai-agent</loc>
     <lastmod>2026-03-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.nrgbloom.com/privacy-policy</loc>
+    <loc>https://nrgbloom.com/privacy-policy</loc>
     <lastmod>2026-03-18</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
-    <loc>https://www.nrgbloom.com/terms-of-service</loc>
+    <loc>https://nrgbloom.com/terms-of-service</loc>
     <lastmod>2026-03-18</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
@@ -243,7 +243,7 @@
 
   <!-- Data Endpoints -->
   <url>
-    <loc>https://www.nrgbloom.com/data/impact.json</loc>
+    <loc>https://nrgbloom.com/data/impact.json</loc>
     <lastmod>2026-03-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>

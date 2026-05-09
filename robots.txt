@@ -35,4 +35,4 @@ Disallow: /pools-test.html
 # Full profile: /llms-full.txt
 # Agent manifest: /.well-known/ai-agent.json
 
-Sitemap: https://www.nrgbloom.com/sitemap.xml
+Sitemap: https://nrgbloom.com/sitemap.xml

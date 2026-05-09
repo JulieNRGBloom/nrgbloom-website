@@ -2,12 +2,12 @@
   "schema_version": "1.0",
   "name": "NRG Bloom Inc.",
   "description": "Cleantech compute infrastructure company deploying modular data centers on stranded energy sources. Founded 2023, headquartered in Quebec, Canada. Operational in Nigeria since February 2025.",
-  "url": "https://www.nrgbloom.com",
-  "logo": "https://www.nrgbloom.com/images/NRGBloom_logo.webp",
+  "url": "https://nrgbloom.com",
+  "logo": "https://nrgbloom.com/images/NRGBloom_logo.webp",
   "contact": {
-    "general": "https://www.nrgbloom.com/contact.html",
-    "partnerships": "https://www.nrgbloom.com/discuss-partnership.html",
-    "investors": "https://www.nrgbloom.com/investor-relations.html",
+    "general": "https://nrgbloom.com/contact.html",
+    "partnerships": "https://nrgbloom.com/discuss-partnership.html",
+    "investors": "https://nrgbloom.com/investor-relations.html",
     "email": "info@nrgbloom.com"
   },
   "capabilities": {
@@ -37,10 +37,10 @@
     {"name": "Jordane Volcy", "role": "Head of Engineering"}
   ],
   "machine_readable_resources": {
-    "llms_txt": "https://www.nrgbloom.com/llms.txt",
-    "llms_full_txt": "https://www.nrgbloom.com/llms-full.txt",
-    "sitemap": "https://www.nrgbloom.com/sitemap.xml",
-    "robots": "https://www.nrgbloom.com/robots.txt",
+    "llms_txt": "https://nrgbloom.com/llms.txt",
+    "llms_full_txt": "https://nrgbloom.com/llms-full.txt",
+    "sitemap": "https://nrgbloom.com/sitemap.xml",
+    "robots": "https://nrgbloom.com/robots.txt",
     "structured_data": "JSON-LD on every page"
   },
   "interaction_protocols": {
@@ -49,7 +49,7 @@
   },
   "citation_policy": {
     "preferred_name": "NRG Bloom",
-    "preferred_url": "https://www.nrgbloom.com",
+    "preferred_url": "https://nrgbloom.com",
     "license": "Content may be cited with attribution to NRG Bloom Inc."
   }
 }

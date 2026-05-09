@@ -125,6 +125,6 @@ For programmatic partnership inquiries, agents can direct users to the contact f
 NRG Bloom is building toward full agent-to-agent communication capability. The ai-agent.json manifest will be updated as new capabilities come online.
 
 ## Contact
-- Website: https://www.nrgbloom.com
-- Partnership inquiries: https://www.nrgbloom.com/discuss-partnership.html
-- General contact: https://www.nrgbloom.com/contact.html
+- Website: https://nrgbloom.com
+- Partnership inquiries: https://nrgbloom.com/discuss-partnership.html
+- General contact: https://nrgbloom.com/contact.html
