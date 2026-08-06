@@ -11,13 +11,15 @@ NRG Bloom deploys modular data centers on stranded and flared gas sites worldwid
 - Mitigate gas flaring while generating revenue for energy partners
 
 ## Key Metrics
-- 1.5 MW currently developed
-- 5 MW under active development
-- $0.02–$0.032/kWh energy cost arbitrage
+As of August 2026. Figures below are operating results unless labelled target or pipeline.
+- 1 MW energized (1.5 MW developed) at Ogboinbiri, Bayelsa State, Nigeria
+- Operational since February 2025
+- 5 MW pipeline under development
+- $0.03/kWh energy cost under a community-based power purchase agreement
 - 300+ tonnes CO₂e mitigated
-- 95% operational uptime
-- <1.2 PUE (Power Usage Effectiveness) target
-- 5–10 local jobs created per site
+- 94% operational uptime
+- <1.2 PUE (Power Usage Effectiveness): target, not a result
+- 5 local jobs created at Ogboinbiri
 
 ## Leadership
 - Makir Volcy, Founder & CEO
@@ -41,7 +43,7 @@ Upgrade proven, hardened sites to GPU infrastructure for AI inference workloads.
 ## Investment Thesis
 
 ### Energy Arbitrage
-NRG Bloom acquires power at $0.02–$0.032/kWh from stranded gas that would otherwise be flared. This is well below global grid rates for data center power, creating a structural cost advantage.
+NRG Bloom acquires power at $0.03/kWh from stranded gas that would otherwise be flared. This is well below global grid rates for data center power, creating a structural cost advantage.
 
 ### Validated Before Committed
 Bitcoin mining validates sites before committing to expensive GPU hardware. If a site underperforms during the 60-90 day validation window, equipment is redeployed elsewhere. Capital is never locked into an unproven location.
@@ -78,10 +80,10 @@ Infrastructure is designed for tropical and harsh environments, including high h
 Gas that would be flared (releasing CO₂ and methane into the atmosphere) is instead converted to productive compute. Every megawatt deployed directly reduces emissions.
 
 ### Carbon Mitigation
-300+ tonnes CO₂e mitigated to date, with the figure growing as operations expand.
+300+ tonnes CO₂e mitigated to date, with the figure growing as operations expand. The activity aligns with UNFCCC CDM methodology AM0009 (recovery and utilization of gas from oil fields that would otherwise be flared or vented). No credits have been issued and the figure is not third-party verified, so NRG Bloom does not claim a carbon-negative position.
 
 ### Local Employment
-5-10 jobs created per site, including technicians, security, and logistics roles. NRG Bloom prioritizes local hiring and skills transfer.
+5 jobs created at Ogboinbiri, including technicians, security, and logistics roles. NRG Bloom prioritizes local hiring and skills transfer.
 
 ### Community Engagement
 NRG Bloom engages with local communities at every site, ensuring operations are welcomed and beneficial. Skills transfer programs build local technical capacity.

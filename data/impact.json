@@ -7,7 +7,7 @@
     "url": "https://nrgbloom.com"
   },
   "license": "Data may be cited with attribution to NRG Bloom Inc. (https://nrgbloom.com)",
-  "last_updated": "2026-03-18",
+  "last_updated": "2026-08-06",
   "data": {
     "company": {
       "name": "NRG Bloom Inc.",
@@ -17,30 +17,31 @@
       "website": "https://nrgbloom.com"
     },
     "operations": {
-      "operational_capacity_mw": 1.5,
-      "under_development_mw": 5,
-      "total_pipeline_mw": 6.5,
+      "energized_capacity_mw": 1,
+      "developed_capacity_mw": 1.5,
+      "pipeline_under_development_mw": 5,
       "first_deployment_date": "2025-02",
       "first_deployment_location": "Ogboinbiri, Bayelsa State, Nigeria",
-      "operational_months": 13,
+      "operational_since": "2025-02",
       "deployment_speed_days": "60-90",
       "pue_target": 1.2,
-      "uptime_percent": 95
+      "pue_note": "Target, not an operating result",
+      "uptime_percent": 94
     },
     "energy": {
-      "cost_per_kwh_usd_low": 0.02,
-      "cost_per_kwh_usd_high": 0.032,
+      "cost_per_kwh_usd": 0.03,
       "energy_sources": ["Associated gas (flare)", "Geothermal", "Hydroelectric", "Curtailed renewables"],
       "power_agreement_type": "Community based power purchase agreement"
     },
     "environmental": {
       "co2e_mitigated_tonnes": 300,
       "methodology": "Displacement of methane flaring through productive combustion in gas generators powering compute infrastructure",
-      "carbon_position": "Carbon-negative",
-      "verification_standard": "Aligned with Verra VCS AM0009 methodology"
+      "carbon_position": "300+ tonnes CO2e mitigated to date. NRG Bloom does not claim a carbon-negative position pending third-party verification.",
+      "verification_standard": "Aligned with UNFCCC CDM methodology AM0009 (recovery and utilization of gas from oil fields that would otherwise be flared or vented). Not third-party verified.",
+      "verification_status": "Unverified. No credits have been issued."
     },
     "employment": {
-      "jobs_per_site": "5-10",
+      "jobs_created_at_ogboinbiri": 5,
       "hiring_policy": "Local-first",
       "skills_transfer": true
     },
@@ -52,7 +53,8 @@
           "site": "Ogboinbiri",
           "energy_source": "Associated gas (flare)",
           "status": "Operational",
-          "capacity_mw": 1.5
+          "energized_capacity_mw": 1,
+          "developed_capacity_mw": 1.5
         }
       ],
       "pipeline": [

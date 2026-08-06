@@ -1,5 +1,5 @@
 /* ============================================
-   NRG BLOOM — INVESTOR-GRADE REDESIGN
+   NRG BLOOM: INVESTOR-GRADE REDESIGN
    Override layer on top of Webflow CSS
    ============================================ */
 
@@ -98,7 +98,7 @@ body {
 /* ============================================
    NAVIGATION
    ============================================ */
-/* Navbar base — transparent over hero */
+/* Navbar base: transparent over hero */
 .navbar-2 {
   position: fixed !important;
   top: 0;
@@ -137,7 +137,7 @@ body {
   margin-top: 8px;
 }
 
-/* Nav links — pushed to the right, vertically centered */
+/* Nav links: pushed to the right, vertically centered */
 .navbar-2 .nav-links-wrap {
   display: flex;
   align-items: center;
@@ -158,7 +158,7 @@ body {
   gap: 8px;
 }
 
-/* BTC price row — align with last link's right edge */
+/* BTC price row: align with last link's right edge */
 .btc-price-row {
   display: flex;
   justify-content: flex-end;
@@ -211,7 +211,7 @@ body {
   opacity: 1;
 }
 
-/* Logo — big white on hero, smaller color logo in pill */
+/* Logo: big white on hero, smaller color logo in pill */
 .logo-link {
   display: flex;
   align-items: center;
@@ -274,7 +274,7 @@ body {
   display: none;
 }
 
-/* Color logo on scroll — same size as white */
+/* Color logo on scroll: same size as white */
 .navbar-2.scrolled .logo-image.logo-white {
   display: none;
 }
@@ -618,7 +618,7 @@ body {
 
 .opportunity-stat-highlight {
   display: flex;
-  align-items: baseline;
+  align-items: center;
   gap: 12px;
   margin-top: 2rem;
   padding: 1.5rem;
@@ -1227,7 +1227,7 @@ body {
    RESPONSIVE
    ============================================ */
 @media screen and (max-width: 991px) {
-  /* Force flex layout — overrides Webflow's display:block at 991px */
+  /* Force flex layout: overrides Webflow's display:block at 991px */
   .navbar-2 .container.cc-navbar {
     display: flex !important;
     align-items: center;
@@ -1247,7 +1247,7 @@ body {
     width: 120px;
   }
 
-  /* Kill clearfix pseudo-elements — they become ghost flex items */
+  /* Kill clearfix pseudo-elements: they become ghost flex items */
   .navbar-2 .container.cc-navbar::before,
   .navbar-2 .container.cc-navbar::after {
     display: none;
@@ -1295,7 +1295,7 @@ body {
   }
 
   /*
-     Dropdown panel — flush against the navbar container.
+     Dropdown panel: flush against the navbar container.
      Positioned relative to .container.cc-navbar (position:relative),
      so left:0 / right:0 aligns perfectly with the container edges.
   */
@@ -1337,7 +1337,7 @@ body {
     ) !important;
   }
 
-  /* Graduated blur — fades in with the gradient via mask */
+  /* Graduated blur: fades in with the gradient via mask */
   .navbar-2:not(.scrolled) [data-nav-menu-open]::before {
     content: '';
     position: absolute;
@@ -1991,12 +1991,13 @@ body {
     rgba(8, 14, 32, 0) 100%
   );
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   pointer-events: none;
 }
 
 .inner-hero .hero-stamp {
   padding-left: 8%;
+  padding-bottom: 2.75rem;
   display: flex;
   flex-direction: column;
   gap: 0.45rem;
@@ -2071,10 +2072,325 @@ body {
   }
   .inner-hero .hero-stamp {
     padding-left: 6%;
+    padding-bottom: 1.5rem;
     font-size: 0.72rem;
     gap: 0.35rem;
   }
   .inner-hero .hero-stamp-flags img {
     width: 22px;
+  }
+}
+
+/* ==========================================================================
+   Case study pages (/case-studies/*)
+   Added 2026-08-06 for the Ogboinbiri, Bayelsa State case study.
+   ========================================================================== */
+
+/* The advantage grid is a 4-column layout; case studies use 3 cards. */
+.advantage-grid.cols-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+/* The stats bar is built for 4 tiles; case studies carry 5. */
+.stats-bar-inner.cols-5 {
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.callout {
+  border-left: 3px solid #14489b;
+  border-radius: 10px;
+  padding: 1.25rem 1.5rem;
+  font-size: 0.95rem;
+  line-height: 1.65;
+  color: #334155;
+  background: rgba(20, 72, 155, 0.04);
+}
+
+.callout.callout-white {
+  background: #fff;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.06);
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  border-left: 3px solid #14489b;
+}
+
+.callout strong {
+  color: #0f172a;
+  font-weight: 650;
+}
+
+.inline-link {
+  color: #14489b;
+  font-weight: 600;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(20, 72, 155, 0.3);
+  padding-bottom: 1px;
+  transition: color 0.2s ease, border-color 0.2s ease;
+}
+
+.inline-link:hover {
+  color: #0f172a;
+  border-color: #0f172a;
+}
+
+.source-list {
+  margin: 0;
+  padding-left: 1.25rem;
+  font-size: 0.84rem;
+  line-height: 1.7;
+  color: #475569;
+}
+
+.source-list li {
+  margin-bottom: 0.9rem;
+  padding-left: 0.35rem;
+}
+
+.source-list li:last-child {
+  margin-bottom: 0;
+}
+
+.source-list a {
+  color: #14489b;
+  text-decoration: underline;
+  word-break: break-word;
+}
+
+.source-list em {
+  font-style: italic;
+  color: #334155;
+}
+
+.source-note {
+  margin-top: 1.75rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
+  font-size: 0.8rem;
+  line-height: 1.65;
+  color: #64748b;
+}
+
+/* Footnote markers in body copy */
+.opportunity-text sup a {
+  color: #14489b;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 0 1px;
+}
+
+.opportunity-text sup a:hover {
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 991px) {
+  .stats-bar-inner.cols-5 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .stats-bar-inner.cols-5 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .callout {
+    padding: 1rem 1.15rem;
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .stats-bar-inner.cols-5 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .advantage-grid.cols-3 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .advantage-grid.cols-3 {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* About & Leadership hero: the curtain holds a location stamp at the bottom
+   left, and the hero title is vertically centred on the same left edge. The
+   default hero height is not tall enough for both, so the stamp collided with
+   the subtitle. Give this hero extra bottom room instead of shrinking either. */
+.inner-hero.inner-hero-curtain {
+  padding-bottom: 8rem;
+}
+
+@media (max-width: 768px) {
+  .inner-hero.inner-hero-curtain {
+    padding-bottom: 4.5rem;
+  }
+}
+
+/* Centred section headers: .rd-heading and .rd-subheading are max-width
+   constrained with margin-left 0, so "text-align: center" centres the text
+   inside a box that is still pinned to the left. Give those boxes auto side
+   margins whenever their header is centred, so the block itself centres too.
+   Matches the inline style used throughout the site, and any future one. */
+.rd-section-header[style*="center"] .rd-heading,
+.rd-section-header[style*="center"] .rd-subheading,
+.rd-section-header[style*="center"] > p {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ==========================================================================
+   Lightbox for photo strips
+   Added 2026-08-06. The strip thumbnails are deliberately small; clicking one
+   opens it full size. Vanilla CSS and JS only, no library, per the repo rules.
+   ========================================================================== */
+
+.photo-strip-item {
+  cursor: zoom-in;
+}
+
+.photo-strip-item::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(8, 14, 32, 0);
+  transition: background 0.25s ease;
+  pointer-events: none;
+}
+
+.photo-strip-item:hover::after,
+.photo-strip-item:focus-visible::after {
+  background: rgba(8, 14, 32, 0.28);
+}
+
+.photo-strip-item:focus-visible {
+  outline: 2px solid var(--nrg-accent, #14489b);
+  outline-offset: 3px;
+}
+
+.lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 10000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4vmin;
+  background: rgba(6, 10, 24, 0.92);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.25s ease, visibility 0.25s ease;
+}
+
+.lightbox.is-open {
+  opacity: 1;
+  visibility: visible;
+}
+
+.lightbox-figure {
+  margin: 0;
+  max-width: 100%;
+  max-height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.9rem;
+  transform: scale(0.97);
+  transition: transform 0.25s ease;
+}
+
+.lightbox.is-open .lightbox-figure {
+  transform: scale(1);
+}
+
+.lightbox-figure img {
+  max-width: 100%;
+  max-height: 82vh;
+  width: auto;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 24px 70px rgba(0, 0, 0, 0.55);
+}
+
+.lightbox-caption {
+  color: rgba(255, 255, 255, 0.82);
+  font-family: 'Intertight Variablefont Wght', sans-serif;
+  font-size: 0.88rem;
+  line-height: 1.5;
+  text-align: center;
+  max-width: 60ch;
+}
+
+.lightbox-close,
+.lightbox-nav {
+  position: absolute;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  color: #fff;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s ease, border-color 0.2s ease;
+  line-height: 1;
+}
+
+.lightbox-close:hover,
+.lightbox-nav:hover {
+  background: rgba(255, 255, 255, 0.22);
+  border-color: rgba(255, 255, 255, 0.45);
+}
+
+.lightbox-close {
+  top: 18px;
+  right: 20px;
+  width: 42px;
+  height: 42px;
+  font-size: 1.4rem;
+}
+
+.lightbox-nav {
+  top: 50%;
+  transform: translateY(-50%);
+  width: 46px;
+  height: 46px;
+  font-size: 1.5rem;
+}
+
+.lightbox-prev { left: 18px; }
+.lightbox-next { right: 18px; }
+
+.lightbox-counter {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: rgba(255, 255, 255, 0.6);
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
+}
+
+body.lightbox-open {
+  overflow: hidden;
+}
+
+@media (max-width: 767px) {
+  .lightbox-nav { width: 38px; height: 38px; font-size: 1.2rem; }
+  .lightbox-prev { left: 8px; }
+  .lightbox-next { right: 8px; }
+  .lightbox-figure img { max-height: 70vh; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .lightbox,
+  .lightbox-figure,
+  .photo-strip-item::after {
+    transition: none;
   }
 }

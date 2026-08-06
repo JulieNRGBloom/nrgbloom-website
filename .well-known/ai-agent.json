@@ -14,7 +14,7 @@
     "services": [
       "Modular data center deployment on stranded energy",
       "Gas flare monetization through compute infrastructure",
-      "Carbon-negative AI and Bitcoin compute operations",
+      "Methane mitigation through productive use of flared gas",
       "Energy partner revenue sharing models",
       "Stage-gated site validation"
     ],
@@ -37,10 +37,16 @@
     ]
   },
   "metrics": {
-    "operational_capacity_mw": 1.5,
-    "under_development_mw": 5,
-    "energy_cost_kwh_usd": "0.02-0.032",
+    "as_of": "2026-08",
+    "energized_capacity_mw": 1,
+    "developed_capacity_mw": 1.5,
+    "pipeline_under_development_mw": 5,
+    "energy_cost_kwh_usd": "0.03",
+    "uptime_percent": 94,
     "co2e_mitigated_tonnes": 300,
+    "carbon_methodology": "Aligned with UNFCCC CDM methodology AM0009 (recovery and utilization of gas from oil fields that would otherwise be flared or vented). Not third-party verified.",
+    "pue_target": 1.2,
+    "pue_note": "Target, not an operating result",
     "operational_since": "2025-02",
     "founded": "2023"
   },
