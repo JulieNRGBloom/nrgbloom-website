@@ -106,7 +106,7 @@
         <h1 class="hero-title">De-Risked Infrastructure. Transparent Metrics. Institutional Access.</h1>
         <p class="hero-subtitle">NRG Bloom converts stranded energy into productive compute revenue. Our stage-gated model validates before scaling, generating returns from day one.</p>
         <div class="hero-ctas">
-          <a href="nrg-bloom-investor-presentation-2026-03.pdf" download class="btn-primary">Request Investor Deck <span class="btn-arrow">&rarr;</span></a>
+          <a href="#request" class="btn-primary">Request Investor Pack <span class="btn-arrow">&rarr;</span></a>
           <a href="strategy.html" class="btn-secondary">View Strategy <span class="btn-arrow">&rarr;</span></a>
         </div>
       </div>
@@ -310,6 +310,56 @@
       </div>
     </section>
 
+    <!-- ========== INVESTOR PACK REQUEST ========== -->
+    <section class="rd-section rd-section-darker" id="request">
+      <div class="rd-container">
+        <div class="rd-section-header reveal" style="text-align: center;">
+          <span class="rd-eyebrow">Investor Pack</span>
+          <h2 class="rd-heading">Request the materials</h2>
+          <p class="rd-subheading">Deployment economics, capital plans and site-level commercial terms are shared directly rather than published. Tell us what you are evaluating and we will send the relevant pack.</p>
+        </div>
+        <div class="reveal" style="max-width: 560px; margin: 2rem auto 0; background:#fff; padding: 2rem; border-radius: 12px; box-shadow: 0 4px 24px rgba(0,0,0,0.06); border: 1px solid rgba(0,0,0,0.06);">
+          <form name="investor-pack" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+            <input type="hidden" name="form-name" value="investor-pack">
+            <p style="display:none"><label>Don't fill this out: <input name="bot-field"></label></p>
+              <div style="margin-bottom: 16px;">
+                <label for="investor-name" style="display:block;font-family:'Intertight Variablefont Wght',sans-serif;font-size:0.9rem;font-weight:600;color:#0f172a;margin-bottom:6px;">Your Name *</label>
+                <input type="text" id="investor-name" name="investor-name" required style="width:100%;padding:12px 16px;border:1px solid rgba(0,0,0,0.15);border-radius:8px;font-size:0.95rem;font-family:inherit;background:#fff;transition:border-color 0.2s ease;outline:none;box-sizing:border-box;" onfocus="this.style.borderColor='#14489b'" onblur="this.style.borderColor='rgba(0,0,0,0.15)'">
+              </div>
+              <div style="margin-bottom: 16px;">
+                <label for="investor-firm" style="display:block;font-family:'Intertight Variablefont Wght',sans-serif;font-size:0.9rem;font-weight:600;color:#0f172a;margin-bottom:6px;">Firm / Organisation *</label>
+                <input type="text" id="investor-firm" name="investor-firm" required style="width:100%;padding:12px 16px;border:1px solid rgba(0,0,0,0.15);border-radius:8px;font-size:0.95rem;font-family:inherit;background:#fff;transition:border-color 0.2s ease;outline:none;box-sizing:border-box;" onfocus="this.style.borderColor='#14489b'" onblur="this.style.borderColor='rgba(0,0,0,0.15)'">
+              </div>
+              <div style="margin-bottom: 16px;">
+                <label for="investor-email" style="display:block;font-family:'Intertight Variablefont Wght',sans-serif;font-size:0.9rem;font-weight:600;color:#0f172a;margin-bottom:6px;">Email *</label>
+                <input type="email" id="investor-email" name="investor-email" required style="width:100%;padding:12px 16px;border:1px solid rgba(0,0,0,0.15);border-radius:8px;font-size:0.95rem;font-family:inherit;background:#fff;transition:border-color 0.2s ease;outline:none;box-sizing:border-box;" onfocus="this.style.borderColor='#14489b'" onblur="this.style.borderColor='rgba(0,0,0,0.15)'">
+              </div>
+              <div style="margin-bottom: 16px;">
+                <label for="investor-role" style="display:block;font-family:'Intertight Variablefont Wght',sans-serif;font-size:0.9rem;font-weight:600;color:#0f172a;margin-bottom:6px;">Role</label>
+                <input type="text" id="investor-role" name="investor-role" placeholder="e.g. Partner, Analyst, Family Office" style="width:100%;padding:12px 16px;border:1px solid rgba(0,0,0,0.15);border-radius:8px;font-size:0.95rem;font-family:inherit;background:#fff;transition:border-color 0.2s ease;outline:none;box-sizing:border-box;" onfocus="this.style.borderColor='#14489b'" onblur="this.style.borderColor='rgba(0,0,0,0.15)'">
+              </div>
+              <div style="margin-bottom: 16px;">
+                <label for="investor-interest" style="display:block;font-family:'Intertight Variablefont Wght',sans-serif;font-size:0.9rem;font-weight:600;color:#0f172a;margin-bottom:6px;">What are you evaluating? *</label>
+                <select id="investor-interest" name="investor-interest" required style="width:100%;padding:12px 16px;border:1px solid rgba(0,0,0,0.15);border-radius:8px;font-size:0.95rem;font-family:inherit;background:#fff;transition:border-color 0.2s ease;outline:none;box-sizing:border-box;" onfocus="this.style.borderColor='#14489b'" onblur="this.style.borderColor='rgba(0,0,0,0.15)'">
+                  <option value="">Select one</option>
+                  <option>Equity investment</option>
+                  <option>Debt or project finance</option>
+                  <option>Development finance / DFI</option>
+                  <option>Strategic partnership</option>
+                  <option>Other</option>
+                </select>
+              </div>
+              <div style="margin-bottom: 24px;">
+                <label for="investor-message" style="display:block;font-family:'Intertight Variablefont Wght',sans-serif;font-size:0.9rem;font-weight:600;color:#0f172a;margin-bottom:6px;">Anything specific you want to see?</label>
+                <textarea id="investor-message" name="investor-message" rows="4" style="width:100%;padding:12px 16px;border:1px solid rgba(0,0,0,0.15);border-radius:8px;font-size:0.95rem;font-family:inherit;background:#fff;transition:border-color 0.2s ease;outline:none;box-sizing:border-box;resize:vertical;" onfocus="this.style.borderColor='#14489b'" onblur="this.style.borderColor='rgba(0,0,0,0.15)'"></textarea>
+              </div>
+              <button type="submit" class="btn-primary" style="width:100%;justify-content:center;border:none;cursor:pointer;font-size:0.95rem;">Request the Investor Pack <span class="btn-arrow">&rarr;</span></button>
+          </form>
+          <p style="font-size:0.78rem;color:#64748b;margin-top:1rem;margin-bottom:0;text-align:center;">We reply directly. Your details are not added to any mailing list. See our <a href="privacy-policy.html" style="color:#14489b;">Privacy Policy</a>.</p>
+        </div>
+      </div>
+    </section>
+
     <!-- ========== CTA BANNER ========== -->
     <section class="rd-section">
       <div class="cta-banner reveal">
@@ -318,9 +368,9 @@
         </div>
         <div class="cta-banner-content">
           <h2>Ready to Explore the Opportunity?</h2>
-          <p>Request our investor deck, review our financials, or schedule a direct conversation with our founder.</p>
+          <p>Request the investor pack or schedule a direct conversation with our founder.</p>
           <div class="cta-banner-buttons">
-            <a href="nrg-bloom-investor-presentation-2026-03.pdf" download class="btn-primary">Request Investor Deck <span class="btn-arrow">&rarr;</span></a>
+            <a href="#request" class="btn-primary">Request Investor Pack <span class="btn-arrow">&rarr;</span></a>
             <a href="strategy.html" class="btn-secondary">View Our Strategy <span class="btn-arrow">&rarr;</span></a>
           </div>
         </div>
