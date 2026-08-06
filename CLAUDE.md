@@ -87,6 +87,13 @@ figure from an older file, a cached draft, or another page.
   may be reintroduced, in copy, meta, schema, `llms.txt`, `llms-full.txt`
   or `ai-agent.json`. Describe capability in plain operational terms, never
   as a named proprietary product or an IP claim.
+- **/facts-and-numbers is retired.** Founder decision 2026-08-06. It was an
+  investor deck at a public URL: raise ladder, revenue projections, named
+  counterparties and published commercial terms. The confidentiality pass
+  stripped it, then the founder removed the page outright. It 301s to
+  /investor-relations. Do not rebuild a public metrics or data-room page.
+  Numbers go in the investor pack, which is requested through the form on
+  /investor-relations and sent per conversation.
 - **Third parties are never named.** No energy partner, no client, no
   counterparty, anywhere public, including attributed quotes, without
   written consent from that party. Removed site-wide 2026-08-06 after a
@@ -204,16 +211,16 @@ Fonts CDN.
 Every URL on this site is in exactly ONE of four states. There is no fifth
 state and there is no "it just ended up that way". Before 2026-08-06 the
 site had 48 HTML files and 16 indexed pages, and nobody had decided which
-16. Now it has 39 files and 24 intentionally indexed pages.
+16. Now it has 38 files and 23 intentionally indexed pages.
 
 | State | Rule | Count |
 |---|---|---|
-| **Indexed** | In `sitemap.xml`, no noindex tag, links to a pillar | 24 |
+| **Indexed** | In `sitemap.xml`, no noindex tag, links to a pillar | 23 |
 | **Noindex** | Has `noindex, follow`, NOT in sitemap, stays crawlable | 13 |
 | **Redirected** | File deleted, 301 in `_redirects` to nearest live page | n/a |
 | **Error** | `401.html`, `404.html`. Never indexed by design | 2 |
 
-24 + 13 + 2 = 39 files. Run the reconciliation before every deploy. If the
+23 + 13 + 2 = 38 files. Run the reconciliation before every deploy. If the
 arithmetic does not close, something shipped by accident.
 
 ### Invariants (a deploy is broken if any of these fail)
