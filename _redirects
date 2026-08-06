@@ -2,9 +2,16 @@
 
 # NRG Bloom 301 Redirects
 # Old site structure -> New site structure
+#
+# NOTE ON SHADOWING: Netlify serves a matching static file BEFORE it
+# evaluates a non-forced redirect rule. A rule whose source path has a
+# corresponding .html file in this repo will never fire unless it is
+# forced with "301!". Before adding a rule here, check whether
+# <source>.html exists. If it does, either delete the file or force the
+# rule. This is why /team and /partnership sat at 200 for months despite
+# having rules below.
 
 /energy              /strategy           301
-/partnership         /energy-partners    301
 /impact/problem-flared-gas-nigeria      /esg-impact    301
 /impact/electricity-opportunity-nigeria  /esg-impact    301
 /impact/bitcoin-mining                  /strategy      301
@@ -12,4 +19,16 @@
 /faq                 /investor-relations 301
 /about               /about-leadership   301
 /for-investors       /investor-relations 301
-/contact             /discuss-partnership 301
+/blog                /insights           301
+/index.html          /                   301!
+
+# /partnership -> /energy-partners is intentionally NOT active.
+# partnership.html is live, on-message, and shadows any non-forced rule.
+# Redirecting it is a content-strategy decision (it cannibalises
+# /energy-partners), deferred until Search Console data exists.
+# To activate: delete partnership.html, or force the rule below.
+# /partnership       /energy-partners    301!
+
+# /contact -> /discuss-partnership was REMOVED 2026-08-06. contact.html is
+# a real page in the nav, footer and sitemap. The rule was dead (shadowed)
+# and would have broken the contact page if anyone had forced it.
