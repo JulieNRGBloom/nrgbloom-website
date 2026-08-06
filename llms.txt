@@ -11,13 +11,15 @@ NRG Bloom deploys modular data centers on stranded and flared gas sites worldwid
 - Mitigate gas flaring while generating revenue for energy partners
 
 ## Key Metrics
-- 1.5 MW currently developed
-- 5 MW under active development
-- $0.02–$0.032/kWh energy cost arbitrage
+As of August 2026. Figures below are operating results unless labelled target or pipeline.
+- 1 MW energized (1.5 MW developed) at Ogboinbiri, Bayelsa State, Nigeria
+- Operational since February 2025
+- 5 MW pipeline under development
+- $0.03/kWh energy cost under a community-based power purchase agreement
 - 300+ tonnes CO₂e mitigated
-- 95% operational uptime
-- <1.2 PUE (Power Usage Effectiveness) target
-- 5–10 local jobs created per site
+- 94% operational uptime
+- <1.2 PUE (Power Usage Effectiveness): target, not a result
+- 5 local jobs created at Ogboinbiri
 
 ## Leadership
 - Makir Volcy, Founder & CEO
