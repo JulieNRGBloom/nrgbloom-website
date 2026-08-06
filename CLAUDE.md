@@ -193,6 +193,39 @@ Fonts CDN.
 
 ---
 
+## Google Search Console (it exists, use it)
+
+The property is **already verified** and has data. Earlier audits wrongly
+assumed it was not connected and prioritised everything qualitatively.
+
+- Property: `sc-domain:nrgbloom.com` (Domain property, covers www and
+  non-www, http and https)
+- Owning account: **makir@nrgbloom.com**, NOT volcy@coldstorm.org. The
+  Coldstorm account has zero properties. Never add nrgbloom.com under the
+  Coldstorm account; that breaks company isolation at the account level.
+- Site-wide verification meta tag:
+  `google-site-verification=6tTalLzrBXBO4Gy9700TAbpg2QTKzGYEuZ_Ls69jle8`
+
+Baseline captured 2026-08-06, covering 5 Feb to 4 Aug 2026:
+
+- 143 clicks, 3,470 impressions, 4.1% CTR, average position 28.9
+- **79 of 143 clicks come from the single query "nrg bloom"**. Every other
+  query in the top ten is legacy retail-Bitcoin content with **zero**
+  clicks: "bitcoin treasury management" (223 impressions, 0 clicks),
+  "cryptocurrency carbon footprint" (102, 0), "bitcoin mining pool
+  comparison" (48, 0).
+- Not one query mentions data centers, stranded gas, flare gas, Nigeria or
+  AI compute. The pivot is invisible to Google.
+- 16 pages indexed, 62 not indexed.
+- `/about-leadership`: 575 impressions, 5 clicks (0.87% CTR).
+  `/facts-and-numbers`: 163 impressions, 1 click. Both are title and
+  snippet problems, not ranking problems.
+- Sitemap last read by Google on **23 Feb 2025**. Resubmit after any
+  deploy.
+
+Re-check these numbers before making any content-prune decision. Do not
+prune on intuition when the data is one login away.
+
 ## Netlify redirect shadowing (read before touching `_redirects`)
 
 Netlify serves a matching static file **before** it evaluates a non-forced

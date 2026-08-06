@@ -22,6 +22,16 @@
 /blog                /insights           301
 /index.html          /                   301!
 
+# Legacy Webflow bio URLs. Confirmed 404 on 2026-08-06 while Search
+# Console showed Google still sending clicks to them over the prior six
+# months (/team/makir-volcy 9 clicks, /team/jordane-volcy 3 clicks).
+# Specific rules first, then a catch-all for any other /team/ child.
+/team/makir-volcy    /makir-volcy        301
+/team/julie-peeters  /julie-peeters      301
+/team/jordane-volcy  /jordane-volcy      301
+/team/gus-anyim      /gus-anyim          301
+/team/*              /about-leadership   301
+
 # /partnership -> /energy-partners is intentionally NOT active.
 # partnership.html is live, on-message, and shadows any non-forced rule.
 # Redirecting it is a content-strategy decision (it cannibalises
