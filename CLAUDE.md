@@ -27,8 +27,8 @@ modular data centers at stranded and wasted energy sources, turning flare
 gas, curtailed renewables, and off-grid power into productive compute revenue.
 
 **Bitcoin mining** is still part of our model (as a load-balancing and
-validation tool), but it is NOT our identity. It is one output of NEXUS
-orchestration, a technical mechanism, not a brand pillar.
+validation tool), but it is NOT our identity. It is one workload among
+several, a technical mechanism, not a brand pillar.
 
 **Key taglines:**
 - "We're not hyperscalers, we're modular off-grid enablers."
@@ -76,44 +76,49 @@ figure from an older file, a cached draft, or another page.
   2026-08-06. Correct phrasing: "aligned with UNFCCC CDM methodology
   AM0009", always paired with the note that no credits have been issued.
 
-### Open questions for the founder (do NOT guess)
+### Founder decisions (settled, do not reopen)
 
-- **Founding year.** `data/impact.json`, `.well-known/ai-agent.json` and
-  the homepage Organization schema all say 2023. An earlier version of this
-  file said 2024. The published 2023 is left in place pending confirmation.
-- **Energy partner name.** The partner is not named anywhere public. Do not
-  name them, and do not publish an attributed quote, without written
-  consent.
-- **NEXUS and "patent pending".** Commit 8977f1 deliberately stripped
-  NEXUS, Pathfinder and patent-pending claims from investor-relations. An
-  earlier version of this file instructed the opposite. Do not reintroduce
-  either without a founder decision.
+- **Founding year is 2023.** Confirmed by the founder 2026-08-06. It is
+  what `data/impact.json`, `.well-known/ai-agent.json` and the homepage
+  Organization schema already publish. Any note claiming 2024 is wrong.
+- **NEXUS, Pathfinder and "patent pending" are OUT.** Founder decision
+  2026-08-06, verbatim: "leave nexus patent pending out, we don't talk
+  about this at all." None of these appear anywhere on the site and none
+  may be reintroduced, in copy, meta, schema, `llms.txt`, `llms-full.txt`
+  or `ai-agent.json`. Describe capability in plain operational terms, never
+  as a named proprietary product or an IP claim.
+- **Third parties are never named.** No energy partner, no client, no
+  counterparty, anywhere public, including attributed quotes, without
+  written consent from that party. Removed site-wide 2026-08-06 after a
+  third-party review flagged NDA exposure. Applies to future additions too,
+  not just the ones that were removed.
+
+---
+
+## Technology: how to describe it (NEXUS is retired)
+
+Founder decision 2026-08-06: **do not use the name NEXUS, do not use
+Pathfinder, and do not make any patent-pending or IP claim.** They appear
+nowhere on the site and must not return. An earlier version of this file
+instructed the opposite; that instruction is void.
+
+Describe the capability plainly, as an operating practice rather than a
+named product:
+
+- Good: "power is allocated across workloads in real time based on
+  available energy and market pricing"
+- Bad: "NEXUS, our proprietary orchestration platform (patent pending)"
+
+The same applies to the satellite flare-scoring work. Describe what it does
+if it is relevant, do not brand it and do not claim IP over it.
+
+Why: a named proprietary platform invites the question "show me the
+patent", and an IP claim you have to soften later costs more credibility
+than the branding ever earned. The operating record is the differentiator,
+not the product name.
 
 ---
 
-## Core Technology: NEXUS
-
-**NEXUS** is NRG Bloom's proprietary hybrid compute orchestration system.
-It dynamically routes available stranded power between workloads, AI
-inference and Bitcoin mining, based on real-time economic signals.
-
-NEXUS is **source-agnostic**: it works with any power input:
-Flare gas → Curtailed renewables → Hydroelectric → SMR/nuclear
-
-Current status: see the founder open-question above before publishing any
-patent-pending claim. A prior commit deliberately removed it from the live
-site.
-
-NEXUS was called "Dynamic Load Orchestration" on the old strategy page.
-Do NOT roll NEXUS branding back onto the live site without a founder
-decision; see the open question above.
-
-**Second technology pillar:** NRG Bloom Flare Intelligence, a
-satellite-based platform that detects and scores global flare gas sites
-for commercial viability. Built on NOAA VIIRS nightfire data. Bridges the
-gap between flare detection and compute deployment.
-
----
 
 ## Team (Current: Use These Exact Details)
 
@@ -133,8 +138,8 @@ gap between flare detection and compute deployment.
 2. **Meta descriptions**: Rewrite for cleantech positioning
 3. **Hero headline**: "Unlocking the Value of Stranded Energy for AI" is
    okay but can be stronger. Explore alternatives.
-4. **Strategy page**: Rename "Dynamic Load Orchestration" to NEXUS
-   throughout. Reframe the 3-stage model in cleantech language.
+4. **Strategy page**: DONE. Do not reintroduce a product name here; see
+   the technology section above.
 5. **About page**: Update Julie's title to "Co-Founder & Director of
    Operations"
 6. **Broken image URLs**: Some images load from
@@ -145,7 +150,8 @@ gap between flare detection and compute deployment.
    eventual replacement.
 
 ### New pages to build:
-- `technology.html`: NEXUS deep dive plus Flare Intelligence
+- `technology.html`: only if it can be written without a product name or
+  an IP claim; otherwise do not build it
 - `markets.html`: Nigeria / Kenya / Colombia with operational detail
 - `impact.html`: Cleantech ESG, carbon credits, UNFCCC CDM AM0009 (NOT Verra)
 
@@ -350,7 +356,7 @@ either delete the file or force the rule. Do not add a duplicate rule.
 1. `styles/global.css`, design system first
 2. `styles/components.css`, nav + footer components
 3. `index.html`, homepage revamp
-4. `strategy.html`, NEXUS rename + cleantech reframe
+4. `strategy.html`, cleantech reframe (no product name)
 5. `technology.html`, new page
 6. `markets.html`, new page
 7. `about-leadership.html`, team updates
