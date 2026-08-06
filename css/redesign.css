@@ -137,7 +137,7 @@ body {
   margin-top: 8px;
 }
 
-/* Nav links — pushed to the right, vertically centered */
+/* Nav links: pushed to the right, vertically centered */
 .navbar-2 .nav-links-wrap {
   display: flex;
   align-items: center;
@@ -158,7 +158,7 @@ body {
   gap: 8px;
 }
 
-/* BTC price row — align with last link's right edge */
+/* BTC price row: align with last link's right edge */
 .btc-price-row {
   display: flex;
   justify-content: flex-end;
@@ -211,7 +211,7 @@ body {
   opacity: 1;
 }
 
-/* Logo — big white on hero, smaller color logo in pill */
+/* Logo: big white on hero, smaller color logo in pill */
 .logo-link {
   display: flex;
   align-items: center;
@@ -274,7 +274,7 @@ body {
   display: none;
 }
 
-/* Color logo on scroll — same size as white */
+/* Color logo on scroll: same size as white */
 .navbar-2.scrolled .logo-image.logo-white {
   display: none;
 }
@@ -1227,7 +1227,7 @@ body {
    RESPONSIVE
    ============================================ */
 @media screen and (max-width: 991px) {
-  /* Force flex layout — overrides Webflow's display:block at 991px */
+  /* Force flex layout: overrides Webflow's display:block at 991px */
   .navbar-2 .container.cc-navbar {
     display: flex !important;
     align-items: center;
@@ -1247,7 +1247,7 @@ body {
     width: 120px;
   }
 
-  /* Kill clearfix pseudo-elements — they become ghost flex items */
+  /* Kill clearfix pseudo-elements: they become ghost flex items */
   .navbar-2 .container.cc-navbar::before,
   .navbar-2 .container.cc-navbar::after {
     display: none;
@@ -1295,7 +1295,7 @@ body {
   }
 
   /*
-     Dropdown panel — flush against the navbar container.
+     Dropdown panel: flush against the navbar container.
      Positioned relative to .container.cc-navbar (position:relative),
      so left:0 / right:0 aligns perfectly with the container edges.
   */
@@ -1337,7 +1337,7 @@ body {
     ) !important;
   }
 
-  /* Graduated blur — fades in with the gradient via mask */
+  /* Graduated blur: fades in with the gradient via mask */
   .navbar-2:not(.scrolled) [data-nav-menu-open]::before {
     content: '';
     position: absolute;
