@@ -2084,6 +2084,11 @@ body {
    Added 2026-08-06 for the Ogboinbiri, Bayelsa State case study.
    ========================================================================== */
 
+/* The advantage grid is a 4-column layout; case studies use 3 cards. */
+.advantage-grid.cols-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
 /* The stats bar is built for 4 tiles; case studies carry 5. */
 .stats-bar-inner.cols-5 {
   grid-template-columns: repeat(5, 1fr);
@@ -2193,5 +2198,17 @@ body {
 @media screen and (max-width: 479px) {
   .stats-bar-inner.cols-5 {
     grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .advantage-grid.cols-3 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .advantage-grid.cols-3 {
+    grid-template-columns: 1fr;
   }
 }
