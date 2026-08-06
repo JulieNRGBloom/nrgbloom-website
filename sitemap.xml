@@ -4,47 +4,49 @@
   <!-- Homepage -->
   <url>
     <loc>https://nrgbloom.com/</loc>
-    <lastmod>2026-05-26</lastmod>
+    <lastmod>2026-08-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
+  </url>
+
+  <!-- Case Studies -->
+  <url>
+    <loc>https://nrgbloom.com/case-studies/bayelsa</loc>
+    <lastmod>2026-08-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
   </url>
 
   <!-- Core Pages -->
   <url>
     <loc>https://nrgbloom.com/strategy</loc>
-    <lastmod>2026-03-18</lastmod>
+    <lastmod>2026-08-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://nrgbloom.com/about-leadership</loc>
-    <lastmod>2026-03-18</lastmod>
+    <lastmod>2026-08-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://nrgbloom.com/energy-partners</loc>
-    <lastmod>2026-03-18</lastmod>
+    <lastmod>2026-08-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://nrgbloom.com/investor-relations</loc>
-    <lastmod>2026-03-18</lastmod>
+    <lastmod>2026-08-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <!-- Site Pages -->
   <url>
-    <loc>https://nrgbloom.com/team</loc>
-    <lastmod>2026-03-18</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://nrgbloom.com/insights</loc>
-    <lastmod>2026-03-18</lastmod>
+    <lastmod>2026-08-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -68,13 +70,13 @@
   </url>
   <url>
     <loc>https://nrgbloom.com/esg-impact</loc>
-    <lastmod>2026-03-18</lastmod>
+    <lastmod>2026-08-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://nrgbloom.com/facts-and-numbers</loc>
-    <lastmod>2026-03-18</lastmod>
+    <lastmod>2026-08-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -204,7 +206,7 @@
   </url>
   <url>
     <loc>https://nrgbloom.com/blog/why-africa-is-the-future-of-bitcoin-mining</loc>
-    <lastmod>2026-03-18</lastmod>
+    <lastmod>2026-08-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -216,7 +218,7 @@
   </url>
   <url>
     <loc>https://nrgbloom.com/blog/builders-not-theorists-operational-know-how</loc>
-    <lastmod>2026-04-22</lastmod>
+    <lastmod>2026-08-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -242,11 +244,5 @@
   </url>
 
   <!-- Data Endpoints -->
-  <url>
-    <loc>https://nrgbloom.com/data/impact.json</loc>
-    <lastmod>2026-03-18</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
 
 </urlset>

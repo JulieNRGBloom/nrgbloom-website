@@ -2078,3 +2078,120 @@ body {
     width: 22px;
   }
 }
+
+/* ==========================================================================
+   Case study pages (/case-studies/*)
+   Added 2026-08-06 for the Ogboinbiri, Bayelsa State case study.
+   ========================================================================== */
+
+/* The stats bar is built for 4 tiles; case studies carry 5. */
+.stats-bar-inner.cols-5 {
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.callout {
+  border-left: 3px solid #14489b;
+  border-radius: 10px;
+  padding: 1.25rem 1.5rem;
+  font-size: 0.95rem;
+  line-height: 1.65;
+  color: #334155;
+  background: rgba(20, 72, 155, 0.04);
+}
+
+.callout.callout-white {
+  background: #fff;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.06);
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  border-left: 3px solid #14489b;
+}
+
+.callout strong {
+  color: #0f172a;
+  font-weight: 650;
+}
+
+.inline-link {
+  color: #14489b;
+  font-weight: 600;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(20, 72, 155, 0.3);
+  padding-bottom: 1px;
+  transition: color 0.2s ease, border-color 0.2s ease;
+}
+
+.inline-link:hover {
+  color: #0f172a;
+  border-color: #0f172a;
+}
+
+.source-list {
+  margin: 0;
+  padding-left: 1.25rem;
+  font-size: 0.84rem;
+  line-height: 1.7;
+  color: #475569;
+}
+
+.source-list li {
+  margin-bottom: 0.9rem;
+  padding-left: 0.35rem;
+}
+
+.source-list li:last-child {
+  margin-bottom: 0;
+}
+
+.source-list a {
+  color: #14489b;
+  text-decoration: underline;
+  word-break: break-word;
+}
+
+.source-list em {
+  font-style: italic;
+  color: #334155;
+}
+
+.source-note {
+  margin-top: 1.75rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
+  font-size: 0.8rem;
+  line-height: 1.65;
+  color: #64748b;
+}
+
+/* Footnote markers in body copy */
+.opportunity-text sup a {
+  color: #14489b;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 0 1px;
+}
+
+.opportunity-text sup a:hover {
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 991px) {
+  .stats-bar-inner.cols-5 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .stats-bar-inner.cols-5 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .callout {
+    padding: 1rem 1.15rem;
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .stats-bar-inner.cols-5 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
