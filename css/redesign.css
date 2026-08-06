@@ -1991,12 +1991,13 @@ body {
     rgba(8, 14, 32, 0) 100%
   );
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   pointer-events: none;
 }
 
 .inner-hero .hero-stamp {
   padding-left: 8%;
+  padding-bottom: 2.75rem;
   display: flex;
   flex-direction: column;
   gap: 0.45rem;
@@ -2071,6 +2072,7 @@ body {
   }
   .inner-hero .hero-stamp {
     padding-left: 6%;
+    padding-bottom: 1.5rem;
     font-size: 0.72rem;
     gap: 0.35rem;
   }
@@ -2210,5 +2212,19 @@ body {
 @media screen and (max-width: 767px) {
   .advantage-grid.cols-3 {
     grid-template-columns: 1fr;
+  }
+}
+
+/* About & Leadership hero: the curtain holds a location stamp at the bottom
+   left, and the hero title is vertically centred on the same left edge. The
+   default hero height is not tall enough for both, so the stamp collided with
+   the subtitle. Give this hero extra bottom room instead of shrinking either. */
+.inner-hero.inner-hero-curtain {
+  padding-bottom: 8rem;
+}
+
+@media (max-width: 768px) {
+  .inner-hero.inner-hero-curtain {
+    padding-bottom: 4.5rem;
   }
 }
