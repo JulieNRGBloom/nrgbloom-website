@@ -1,5 +1,5 @@
 /* ============================================
-   NRG BLOOM — INVESTOR-GRADE REDESIGN
+   NRG BLOOM: INVESTOR-GRADE REDESIGN
    Override layer on top of Webflow CSS
    ============================================ */
 
@@ -98,7 +98,7 @@ body {
 /* ============================================
    NAVIGATION
    ============================================ */
-/* Navbar base — transparent over hero */
+/* Navbar base: transparent over hero */
 .navbar-2 {
   position: fixed !important;
   top: 0;
