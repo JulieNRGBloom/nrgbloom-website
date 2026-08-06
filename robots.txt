@@ -41,9 +41,12 @@ Allow: /
 User-agent: cohere-ai
 Allow: /
 
-# Disallow deleted/internal pages
-Disallow: /detail_*
-Disallow: /pools-test.html
+# No Disallow rules.
+# Retired pages are handled with 301 redirects, not Disallow. A disallowed
+# URL cannot be crawled, so Google never sees the redirect and the URL
+# lingers in the index. The former "Disallow: /detail_*" blocked exactly
+# that. Pages we do not want indexed carry a noindex meta tag instead,
+# which requires the page to remain crawlable.
 
 # Machine-readable resources
 # LLM-optimized: /llms.txt

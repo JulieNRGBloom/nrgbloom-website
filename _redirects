@@ -32,12 +32,21 @@
 /team/gus-anyim      /gus-anyim          301
 /team/*              /about-leadership   301
 
-# /partnership -> /energy-partners is intentionally NOT active.
-# partnership.html is live, on-message, and shadows any non-forced rule.
-# Redirecting it is a content-strategy decision (it cannibalises
-# /energy-partners), deferred until Search Console data exists.
-# To activate: delete partnership.html, or force the rule below.
-# /partnership       /energy-partners    301!
+# Founder decision 2026-08-06: /partnership cannibalised /energy-partners
+# for the same partner queries and earned zero clicks in six months of
+# Search Console data. partnership.html is deleted so this rule fires.
+/partnership         /energy-partners    301
+
+# Retired Webflow template leftovers, deleted 2026-08-06. They were never
+# linked from a real page and had no search value. Sent to the nearest
+# live equivalent rather than left to 404.
+/search              /insights           301
+/detail_blog         /insights           301
+/detail_team         /about-leadership   301
+/detail_impact       /esg-impact         301
+/detail_services     /strategy           301
+/detail_resources    /insights           301
+/template/*          /                   301
 
 # /contact -> /discuss-partnership was REMOVED 2026-08-06. contact.html is
 # a real page in the nav, footer and sitemap. The rule was dead (shadowed)

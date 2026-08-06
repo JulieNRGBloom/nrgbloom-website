@@ -193,6 +193,65 @@ Fonts CDN.
 
 ---
 
+## The index policy (founder decision, 2026-08-06)
+
+Every URL on this site is in exactly ONE of four states. There is no fifth
+state and there is no "it just ended up that way". Before 2026-08-06 the
+site had 48 HTML files and 16 indexed pages, and nobody had decided which
+16. Now it has 39 files and 24 intentionally indexed pages.
+
+| State | Rule | Count |
+|---|---|---|
+| **Indexed** | In `sitemap.xml`, no noindex tag, links to a pillar | 24 |
+| **Noindex** | Has `noindex, follow`, NOT in sitemap, stays crawlable | 13 |
+| **Redirected** | File deleted, 301 in `_redirects` to nearest live page | n/a |
+| **Error** | `401.html`, `404.html`. Never indexed by design | 2 |
+
+24 + 13 + 2 = 39 files. Run the reconciliation before every deploy. If the
+arithmetic does not close, something shipped by accident.
+
+### Invariants (a deploy is broken if any of these fail)
+
+1. **No URL is both in the sitemap and noindexed.** That tells Google two
+   opposite things. Twelve blog posts were in this state until 2026-08-06.
+2. **No indexable page is missing from the sitemap.**
+3. **No sitemap entry lacks a file on disk.**
+4. **Never use `Disallow` to retire a page.** A disallowed URL cannot be
+   crawled, so Google never sees the 301 and the URL lingers in the index
+   forever. Retire with a 301; suppress with `noindex`.
+
+### The rule for adding anything new
+
+A page ships only if you can state, in one line each:
+- the search query it targets, and
+- which pillar it attaches to (`/strategy`, `/energy-partners`, or
+  `/esg-impact`).
+
+If you cannot name both, it does not get built. Volume does not grow
+rankings; a tight cluster around one topic does. The 2026-08-06 Search
+Console baseline is the proof: 19 blog posts produced 1 click in six months
+because they pointed at five unrelated topics.
+
+### Pillar and cluster structure
+
+- **Pillars** (the topic hubs): `/strategy` = the stage-gated model,
+  `/energy-partners` = the supply side, `/esg-impact` = the compliance and
+  carbon angle.
+- **Proof layer**: `/case-studies/*`, which feeds all three pillars.
+- **Cluster**: each blog post attaches to exactly one pillar, links up to
+  it, and is linked back down from it.
+
+### Deferred, deliberately (next session)
+
+Three indexed posts are on-thesis but Bitcoin-framed in title and slug:
+`why-africa-is-the-future-of-bitcoin-mining`,
+`bitcoin---helping-the-oil-industry-to-end-gas-flaring` (note the slug
+typo, three hyphens), `stranded-energy-bitcoin-waste-recovery-explained`.
+They are the only content ranking for flare-gas and Africa terms, so they
+stay indexed and earning until they are rewritten flare-gas-first with
+clean slugs and the old slugs 301'd. Do not noindex them before the
+replacements rank.
+
 ## Google Search Console (it exists, use it)
 
 The property is **already verified** and has data. Earlier audits wrongly
