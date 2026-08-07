@@ -1,6 +1,14 @@
 # NRG Bloom: Website Revamp Project
 ## CLAUDE.md: Read this at the start of every session.
 
+> **Canonical source of truth for positioning and facts:**
+> `~/Work/nrg-bloom/PUBLIC-NARRATIVE.md`. Where this file and PUBLIC-NARRATIVE
+> disagree on how NRG Bloom is described publicly (the one-line positioning,
+> taglines, verified figures, the carbon claim), PUBLIC-NARRATIVE wins and
+> this file is updated to match. This file is authoritative only on
+> repo-operational detail: the index policy, the Netlify redirect-shadowing
+> trap, the deploy flow, and Search Console. Reconciled 2026-08-07.
+
 ---
 
 ## Project Overview
@@ -10,8 +18,9 @@ Stack: plain HTML5, CSS3, vanilla JS. No framework. No build step.
 Files are edited locally and pushed live directly.
 
 **Goal:** Complete identity and design revamp. We are not patching the old
-site, we are rebuilding it to reflect NRG Bloom's evolved brand as a
-cleantech compute infrastructure company.
+site, we are rebuilding it to reflect NRG Bloom's positioning as an off-grid
+data center operator on stranded and flared gas, operational in Nigeria
+since February 2025.
 
 ---
 
@@ -21,19 +30,27 @@ The old site positioned NRG Bloom as "Off-Grid AI & Bitcoin Infrastructure."
 That identity is DEAD. Do not carry it forward anywhere, not in titles,
 meta tags, headlines, body copy, or image alt text.
 
-**New identity:**
-NRG Bloom is a **cleantech compute infrastructure company** that deploys
-modular data centers at stranded and wasted energy sources, turning flare
-gas, curtailed renewables, and off-grid power into productive compute revenue.
+**New identity (canonical, per PUBLIC-NARRATIVE.md):**
+NRG Bloom operates **off-grid data centers on stranded and flared gas** in
+emerging markets, operational in Bayelsa State, Nigeria since February 2025.
+It deploys modular compute at stranded and wasted energy sources, stage-gated
+from Bitcoin-mining validation toward AI inference.
+
+The earlier lead framing "cleantech compute on stranded energy" is retired.
+It had close to zero search demand and told a buyer nothing. Lead with the
+off-grid-data-centers-on-stranded-gas positioning instead.
 
 **Bitcoin mining** is still part of our model (as a load-balancing and
 validation tool), but it is NOT our identity. It is one workload among
 several, a technical mechanism, not a brand pillar.
 
-**Key taglines:**
-- "We're not hyperscalers, we're modular off-grid enablers."
-- "Turning wasted energy into productive compute."
-- "Where the grid ends, we begin."
+**Positioning line (use verbatim or a close variant, everywhere):**
+"Off-grid data centers on stranded gas. Operational in Nigeria since
+February 2025."
+
+**Brand slogan (optional, secondary):** "Where the grid ends, we begin."
+Do not use "Turning wasted energy into productive compute" or "cleantech
+compute" as the lead positioning.
 
 ---
 
@@ -143,8 +160,9 @@ not the product name.
 ### Immediate fixes:
 1. **Page `<title>` tags**: Remove "Bitcoin" from every page title
 2. **Meta descriptions**: Rewrite for cleantech positioning
-3. **Hero headline**: "Unlocking the Value of Stranded Energy for AI" is
-   okay but can be stronger. Explore alternatives.
+3. **Hero headline**: DONE. The live hero leads with the canonical line,
+   "Off-grid data centers on stranded gas." Keep it aligned to
+   PUBLIC-NARRATIVE; do not revert to "cleantech compute" phrasing.
 4. **Strategy page**: DONE. Do not reintroduce a product name here; see
    the technology section above.
 5. **About page**: Update Julie's title to "Co-Founder & Director of
@@ -156,17 +174,28 @@ not the product name.
    for content strategy review. Do not delete, just note they need
    eventual replacement.
 
-### New pages to build:
-- `technology.html`: only if it can be written without a product name or
-  an IP claim; otherwise do not build it
-- `markets.html`: Nigeria / Kenya / Colombia with operational detail
-- `impact.html`: Cleantech ESG, carbon credits, UNFCCC CDM AM0009 (NOT Verra)
+### New pages (status as of 2026-08-07)
+These were proposed in the original revamp but superseded by the 2026-08-06
+index policy. Do not build any of them on the old rationale. A page ships
+only if it names its target query and attaches to a pillar (see "The index
+policy" below).
+- `technology.html`: NOT built and not planned. NEXUS, Pathfinder and
+  patent-pending are retired (founder decision 2026-08-06), so a technology
+  page has no distinct, publishable content. Describe capability in plain
+  operating terms on `/strategy` instead.
+- `markets.html`: not built. Market detail lives on the relevant pillar and
+  in `/case-studies/*`. Build only with a named query plus a pillar.
+- `impact.html`: not built. The carbon and compliance angle is served by the
+  existing `/esg-impact` pillar.
 
-### Nav restructure (new):
+### Navigation (canonical pillars, per the index policy)
+The nav reflects the three pillars plus proof, not the retired
+Technology/Markets/Impact scheme:
 - Home
-- Technology (new)
-- Markets (new)
-- Impact (new)
+- Strategy (pillar: the stage-gated model)
+- Energy Partners (pillar: the supply side)
+- ESG & Impact (pillar: compliance and carbon)
+- Case Studies (proof layer)
 - About & Team
 - Investors
 - Insights

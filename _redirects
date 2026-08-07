@@ -61,3 +61,12 @@
 # /contact -> /discuss-partnership was REMOVED 2026-08-06. contact.html is
 # a real page in the nav, footer and sitemap. The rule was dead (shadowed)
 # and would have broken the contact page if anyone had forced it.
+
+# Dev/internal files must not be served publicly. /CLAUDE.md and /scripts/*
+# were returning 200 (they exist on disk, so a non-forced rule is shadowed).
+# CLAUDE.md exposed the SEO strategy, the Search Console baseline, founder
+# decisions and team emails at a guessable URL. Force a 404. Verified exposed
+# 2026-08-07; PUBLIC-NARRATIVE.md, _redirects, netlify.toml and .git are not
+# in the publish output and already 404.
+/CLAUDE.md    /404.html   404!
+/scripts/*    /404.html   404!
