@@ -70,3 +70,46 @@
 # in the publish output and already 404.
 /CLAUDE.md    /404.html   404!
 /scripts/*    /404.html   404!
+
+# .html page URLs 301 to their clean equivalent (added 2026-08-07).
+# Every page is reachable at both /page and /page.html; the .html twin
+# returned 200 with a canonical to the clean URL, which Search Console
+# reported as "Alternative page with proper canonical tag" (GSC email
+# 2026-08-07). Forced (301!) because the .html file exists on disk and
+# shadows a normal rule. The file stays; Netlify serves the clean URL
+# from it. All targets pre-verified 200 before adding.
+/about-leadership.html                                /about-leadership                            301!
+/ai-agent.html                                        /ai-agent                                    301!
+/blog/ai-infrastructure-stranded-energy-2026.html     /blog/ai-infrastructure-stranded-energy-2026 301!
+/blog/bitcoin---helping-the-oil-industry-to-end-gas-flaring.html /blog/bitcoin---helping-the-oil-industry-to-end-gas-flaring 301!
+/blog/bitcoin-economic-impact-developing-countries-rural-areas.html /blog/bitcoin-economic-impact-developing-countries-rural-areas 301!
+/blog/bitcoin-for-good-how-mining-can-help.html       /blog/bitcoin-for-good-how-mining-can-help   301!
+/blog/bitcoin-mining-pools-explained.html             /blog/bitcoin-mining-pools-explained         301!
+/blog/bitcoin-mining-supply-squeeze.html              /blog/bitcoin-mining-supply-squeeze          301!
+/blog/breaking-barriers-the-power-of-decentralized-bitcoin-mining.html /blog/breaking-barriers-the-power-of-decentralized-bitcoin-mining 301!
+/blog/builders-not-theorists-operational-know-how.html /blog/builders-not-theorists-operational-know-how 301!
+/blog/building-wealth-with-bitcoin-how-mining-can-create-passive-income-opportunities.html /blog/building-wealth-with-bitcoin-how-mining-can-create-passive-income-opportunities 301!
+/blog/carbon-footprint-and-environmental-impact-of-bitcoin-mining.html /blog/carbon-footprint-and-environmental-impact-of-bitcoin-mining 301!
+/blog/comparative-analysis-of-bitcoin-mining-pools.html /blog/comparative-analysis-of-bitcoin-mining-pools 301!
+/blog/digital-gold-mine-bitcoin-mining-for-energy-innovators.html /blog/digital-gold-mine-bitcoin-mining-for-energy-innovators 301!
+/blog/energy-storage-solutions-for-stranded-energy.html /blog/energy-storage-solutions-for-stranded-energy 301!
+/blog/investment-opportunities-with-bitcoin-treasury-management.html /blog/investment-opportunities-with-bitcoin-treasury-management 301!
+/blog/nrg-bloom-setting-up-in-africa.html             /blog/nrg-bloom-setting-up-in-africa         301!
+/blog/stranded-energy-bitcoin-waste-recovery-explained.html /blog/stranded-energy-bitcoin-waste-recovery-explained 301!
+/blog/the-evolution-of-bitcoin-mining-hardware.html   /blog/the-evolution-of-bitcoin-mining-hardware 301!
+/blog/understanding-the-bitcoin-halving.html          /blog/understanding-the-bitcoin-halving      301!
+/blog/why-africa-is-the-future-of-bitcoin-mining.html /blog/why-africa-is-the-future-of-bitcoin-mining 301!
+/case-studies/bayelsa.html                            /case-studies/bayelsa                        301!
+/contact.html                                         /contact                                     301!
+/discuss-partnership.html                             /discuss-partnership                         301!
+/energy-partners.html                                 /energy-partners                             301!
+/esg-impact.html                                      /esg-impact                                  301!
+/gus-anyim.html                                       /gus-anyim                                   301!
+/insights.html                                        /insights                                    301!
+/investor-relations.html                              /investor-relations                          301!
+/jordane-volcy.html                                   /jordane-volcy                               301!
+/julie-peeters.html                                   /julie-peeters                               301!
+/makir-volcy.html                                     /makir-volcy                                 301!
+/privacy-policy.html                                  /privacy-policy                              301!
+/strategy.html                                        /strategy                                    301!
+/terms-of-service.html                                /terms-of-service                            301!
