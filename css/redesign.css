@@ -2394,3 +2394,61 @@ body.lightbox-open {
     transition: none;
   }
 }
+
+/* ===========================================================================
+   BTC ticker on mobile
+   The ticker is authored inside the collapsible nav menu, which Webflow hides
+   below 992px, so it was invisible on phones until the hamburger was opened.
+   js/btc-ticker-mobile.js relocates it into the navbar container below that
+   breakpoint and adds .btc-price-mobile. Positioned absolutely because the two
+   navbar variants differ: .navbar-2 is flex, the legacy .navbar-copy used on
+   blog pages is a static block.
+   =========================================================================== */
+@media screen and (max-width: 991px) {
+  .container.cc-navbar {
+    position: relative;
+  }
+
+  .btc-price-mobile {
+    position: absolute;
+    top: 50%;
+    right: 68px;
+    transform: translateY(-50%);
+    display: flex !important;
+    align-items: center;
+    justify-content: flex-end;
+    white-space: nowrap;
+    z-index: 5;
+    margin: 0;
+    pointer-events: none;
+  }
+
+  /* Redesigned pages use .btc-value / .btc-icon */
+  .btc-price-mobile .btc-value {
+    font-size: 0.82rem;
+  }
+
+  .btc-price-mobile .btc-icon {
+    height: 1em;
+  }
+
+  /* Legacy blog pages write inline styles from the embedded script, so these
+     need to win on specificity. */
+  .btc-price-mobile span {
+    font-size: 0.82rem !important;
+    min-width: 0 !important;
+    line-height: 1 !important;
+  }
+
+  .btc-price-mobile img {
+    height: 1em !important;
+    padding-right: 3px !important;
+  }
+}
+
+@media screen and (max-width: 374px) {
+  .btc-price-mobile .btc-value,
+  .btc-price-mobile span {
+    font-size: 0.72rem !important;
+  }
+}
