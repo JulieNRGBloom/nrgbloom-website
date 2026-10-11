@@ -114,3 +114,13 @@
 /privacy-policy.html                                  /privacy-policy                              301!
 /strategy.html                                        /strategy                                    301!
 /terms-of-service.html                                /terms-of-service                            301!
+
+# Bare blog slugs that were linked without the /blog/ prefix (2026-10-11,
+# website-upgrade-v4 T1). The in-page links are fixed; these are the safety
+# net for any external link or cached Google result pointing at the old
+# shape. No <source>.html exists at the repo root for these, so an
+# unforced 301 fires correctly.
+/ai-infrastructure-stranded-energy-2026                        /blog/ai-infrastructure-stranded-energy-2026                        301
+/bitcoin---helping-the-oil-industry-to-end-gas-flaring         /blog/bitcoin---helping-the-oil-industry-to-end-gas-flaring         301
+/carbon-footprint-and-environmental-impact-of-bitcoin-mining   /blog/carbon-footprint-and-environmental-impact-of-bitcoin-mining   301
+/why-africa-is-the-future-of-bitcoin-mining                    /blog/why-africa-is-the-future-of-bitcoin-mining                    301
