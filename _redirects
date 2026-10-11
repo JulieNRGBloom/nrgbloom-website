@@ -1,5 +1,12 @@
 /.well-known/*  /.well-known/:splat  200
 
+# Internal working documents live in the repo but the repo root is also the
+# Netlify publish directory, so anything here is fetchable unless blocked.
+# docs/website-upgrade/ holds the upgrade brief and raw crawl notes, which
+# are internal. Forced (404!) because a matching static file would otherwise
+# be served before a non-forced rule. See the shadowing note below.
+/docs/*  /404.html  404!
+
 # NRG Bloom 301 Redirects
 # Old site structure -> New site structure
 #
