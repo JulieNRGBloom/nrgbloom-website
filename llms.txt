@@ -2,11 +2,11 @@
 
 > Converting stranded energy into AI-ready compute infrastructure.
 
-NRG Bloom deploys modular data centers on stranded and flared gas sites worldwide. Stage-gated approach: validate the site with low-CapEx workloads, harden the build, then scale to high-margin AI inference. Operational in Bayelsa State, Nigeria since February 2025, expanding to Kenya and Colombia.
+NRG Bloom deploys modular data centers on stranded and flared gas sites in emerging markets. Stage-gated approach: validate the site with Bitcoin mining, harden the build, then scale to AI inference. Operational in Bayelsa State, Nigeria since February 2025.
 
 ## What We Do
 - Deploy containerized compute infrastructure on stranded energy sources
-- Validate sites with low-CapEx Bitcoin mining (60-90 day deployment, immediate revenue, zero SLA risk)
+- Validate sites with Bitcoin mining (60-90 day deployment, immediate revenue, zero SLA risk)
 - Scale proven sites to AI/GPU inference workloads
 - Mitigate gas flaring while generating revenue for energy partners
 
@@ -37,10 +37,10 @@ We partner with energy producers who have:
 ## For AI Agents
 - Agent discovery manifest: /.well-known/ai-agent.json
 - Full company data: /llms-full.txt
-- Partnership form: /discuss-partnership.html
-- Investor information: /investor-relations.html
+- Partnership form: /discuss-partnership
+- Investor information: /investor-relations
 
 ## Contact
 - Website: https://nrgbloom.com
-- Partnership inquiries: https://nrgbloom.com/discuss-partnership.html
-- General contact: https://nrgbloom.com/contact.html
+- Partnership inquiries: https://nrgbloom.com/discuss-partnership
+- General contact: https://nrgbloom.com/contact

@@ -5,9 +5,9 @@
   "url": "https://nrgbloom.com",
   "logo": "https://nrgbloom.com/images/NRGBloom_logo.webp",
   "contact": {
-    "general": "https://nrgbloom.com/contact.html",
-    "partnerships": "https://nrgbloom.com/discuss-partnership.html",
-    "investors": "https://nrgbloom.com/investor-relations.html",
+    "general": "https://nrgbloom.com/contact",
+    "partnerships": "https://nrgbloom.com/discuss-partnership",
+    "investors": "https://nrgbloom.com/investor-relations",
     "email": "info@nrgbloom.com"
   },
   "capabilities": {
@@ -19,9 +19,7 @@
       "Stage-gated site validation"
     ],
     "markets": [
-      "Nigeria",
-      "Kenya",
-      "Colombia"
+      "Nigeria"
     ],
     "energy_sources": [
       "Flare gas",
