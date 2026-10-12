@@ -240,16 +240,19 @@ Fonts CDN.
 Every URL on this site is in exactly ONE of four states. There is no fifth
 state and there is no "it just ended up that way". Before 2026-08-06 the
 site had 48 HTML files and 16 indexed pages, and nobody had decided which
-16. Now it has 38 files and 23 intentionally indexed pages.
+16. As of 2026-10-11 it has 40 files and 25 intentionally indexed pages. The
+count was 38 / 23 at the 2026-08-06 decision; the gas flaring explainer and
+the NGFCP award post were added since. `scripts/check-index.py` is the
+authority, not this paragraph.
 
 | State | Rule | Count |
 |---|---|---|
-| **Indexed** | In `sitemap.xml`, no noindex tag, links to a pillar | 23 |
+| **Indexed** | In `sitemap.xml`, no noindex tag, links to a pillar | 25 |
 | **Noindex** | Has `noindex, follow`, NOT in sitemap, stays crawlable | 13 |
 | **Redirected** | File deleted, 301 in `_redirects` to nearest live page | n/a |
 | **Error** | `401.html`, `404.html`. Never indexed by design | 2 |
 
-23 + 13 + 2 = 38 files. Run the reconciliation before every deploy. If the
+25 + 13 + 2 = 40 files. Run the reconciliation before every deploy. If the
 arithmetic does not close, something shipped by accident.
 
 ### Invariants (a deploy is broken if any of these fail)
@@ -269,7 +272,14 @@ A page ships only if you can state, in one line each:
 - which pillar it attaches to (`/strategy`, `/energy-partners`, or
   `/esg-impact`).
 
-If you cannot name both, it does not get built. Volume does not grow
+If you cannot name both, it does not get built.
+
+Pages added under this rule since 2026-08-06:
+
+| Page | Target query | Pillar |
+|---|---|---|
+| `/blog/gas-flaring-explained-waste-to-energy` | what is gas flaring | `/energy-partners` |
+| `/blog/ngfcp-flare-gas-award-review` | NGFCP flare gas award | `/energy-partners` | Volume does not grow
 rankings; a tight cluster around one topic does. The 2026-08-06 Search
 Console baseline is the proof: 19 blog posts produced 1 click in six months
 because they pointed at five unrelated topics.

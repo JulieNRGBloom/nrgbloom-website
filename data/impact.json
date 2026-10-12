@@ -30,7 +30,12 @@
     },
     "energy": {
       "cost_per_kwh_usd": 0.03,
-      "energy_sources": ["Associated gas (flare)", "Geothermal", "Hydroelectric", "Curtailed renewables"],
+      "energy_sources": [
+        "Associated gas (flare)",
+        "Geothermal",
+        "Hydroelectric",
+        "Curtailed renewables"
+      ],
       "power_agreement_type": "Community based power purchase agreement"
     },
     "environmental": {
@@ -57,18 +62,7 @@
           "developed_capacity_mw": 1.5
         }
       ],
-      "pipeline": [
-        {
-          "country": "Kenya",
-          "energy_source": "Geothermal + Hydroelectric",
-          "status": "Market analysis"
-        },
-        {
-          "country": "Colombia",
-          "energy_source": "Diversified",
-          "status": "Regulatory feasibility"
-        }
-      ]
+      "pipeline": []
     }
   },
   "citation": {
