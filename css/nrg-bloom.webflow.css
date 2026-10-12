@@ -1,6 +1,7 @@
 @font-face {
   font-family: Switzer Variable;
-  src: url('../fonts/Switzer-Variable.ttf') format("truetype");
+  src: url('../fonts/Switzer-Variable.woff2') format('woff2'),
+       url('../fonts/Switzer-Variable.ttf') format('truetype');
   font-weight: 100 900;
   font-style: normal;
   font-display: swap;
@@ -8,7 +9,8 @@
 
 @font-face {
   font-family: Intertight Variablefont Wght;
-  src: url('../fonts/InterTight-VariableFont_wght.ttf') format("truetype");
+  src: url('../fonts/InterTight-VariableFont_wght.woff2') format('woff2'),
+       url('../fonts/InterTight-VariableFont_wght.ttf') format('truetype');
   font-weight: 100 900;
   font-style: normal;
   font-display: swap;
@@ -6392,14 +6394,16 @@ figcaption {
 
 @font-face {
   font-family: 'Switzer Variable';
-  src: url('../fonts/Switzer-Variable.ttf') format('truetype');
+  src: url('../fonts/Switzer-Variable.woff2') format('woff2'),
+       url('../fonts/Switzer-Variable.ttf') format('truetype');
   font-weight: 100 900;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: 'Intertight Variablefont Wght';
-  src: url('../fonts/InterTight-VariableFont_wght.ttf') format('truetype');
+  src: url('../fonts/InterTight-VariableFont_wght.woff2') format('woff2'),
+       url('../fonts/InterTight-VariableFont_wght.ttf') format('truetype');
   font-weight: 100 900;
   font-style: normal;
   font-display: swap;
