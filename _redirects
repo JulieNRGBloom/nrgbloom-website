@@ -7,6 +7,10 @@
 # be served before a non-forced rule. See the shadowing note below.
 /docs/*  /404.html  404!
 
+# tools/ holds build tooling (the post cover generator), not site content.
+# Same forced 404 for the same reason.
+/tools/*  /404.html  404!
+
 # NRG Bloom 301 Redirects
 # Old site structure -> New site structure
 #
