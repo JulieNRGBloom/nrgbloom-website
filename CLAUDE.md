@@ -352,6 +352,29 @@ them. An SEO audit read the 200s and concluded the rules were missing.
 Before adding a rule, check whether `<source>.html` exists. If it does,
 either delete the file or force the rule. Do not add a duplicate rule.
 
+## Post images (skill: `nrg-post-images`)
+
+Invoke the **`nrg-post-images`** skill before choosing any image for a post.
+Do not browse `images/` and pick something that looks right.
+
+- **Catalogue and do-not-use list:** `docs/image-library/INDEX.md`. Every
+  asset was reviewed visually on 2026-10-18. It names the ~35 original
+  Ogboinbiri photographs worth using and the four categories that must never
+  be published: close-up photos of identifiable children with no consent
+  record, `TON_*` litigation-era files, third-party trademarks, and AI
+  renders including a "250 MW Campus" image that implies capacity NRG does
+  not have.
+- **Cover generator:** `tools/cover-generator/`. Builds 1200x675 branded text
+  covers around a post's best number, the pattern proven by the NGFCP
+  thumbnail. See its README for flags.
+- **Never scrape images from blogs or news outlets.** It is infringement, it
+  gets billed, and it contradicts a site built on sourced claims.
+- **Never reuse a photo already serving as another card's thumbnail.** Check
+  the usage counts in `INDEX.md`. Two identical images on adjacent homepage
+  cards has happened once.
+- `/docs/*` and `/tools/*` are forced to 404 in `_redirects`, so both live in
+  the repo without being part of the site.
+
 ## Technical Rules
 
 - HTML5, CSS3, vanilla JS only. No frameworks. No build tools.
